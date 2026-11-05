@@ -1,0 +1,56 @@
+.room-lounge.table-lobby { width:100%; max-width:none; height:100dvh; min-height:360px; display:flex; flex-direction:column; padding:8px max(12px,env(safe-area-inset-right)) 8px max(12px,env(safe-area-inset-left)); background:#05291c; }
+.table-lobby .rl-header,.table-lobby .rl-main { width:100%; max-width:none; }
+.table-lobby .rl-header { width:100%; padding:0 0 6px; flex-wrap:nowrap; gap:8px; }
+.table-lobby .rl-heading { gap:8px; }
+.table-lobby .rl-heading h1 { font-size:18px; }
+.table-lobby .rl-heading>svg,.table-lobby .rl-heading span { display:none; }
+.table-lobby .rl-actions { flex-wrap:nowrap; gap:6px; }
+.table-lobby .rl-icon,.table-lobby .rl-leave { width:40px; height:40px; min-height:40px; padding:6px; }
+.table-lobby .rl-leave span { display:none; }
+.table-lobby .profile-button { width:40px; padding:3px; }
+.table-lobby .profile-button>span:last-child { display:none; }
+.rl-view-tabs { display:flex; gap:4px; }
+.rl-view-tabs button { width:40px; height:40px; display:grid; place-items:center; border:1px solid #66846a; border-radius:6px; color:#fff4ce; background:#123e2c; }
+.rl-view-tabs button[aria-pressed=true] { color:#183324; background:#f3d675; }
+.table-lobby .rl-main { width:100%; flex:1; min-height:0; display:flex; flex-direction:column; }
+.table-lobby .rl-invite { flex-shrink:0; min-height:0; padding:3px 8px; background:#073622; border:0; gap:12px; flex-wrap:nowrap; }
+.table-lobby .rl-code-block { display:flex; align-items:center; gap:8px; width:auto; }
+.table-lobby .rl-label { font-size:11px; }
+.table-lobby .rl-code-line { gap:8px; margin:0; }
+.table-lobby .rl-code-line strong { font-size:20px; }
+.table-lobby .rl-code-line .rl-icon { width:36px; height:36px; min-height:36px; }
+.table-lobby .rl-copy-status { margin:0; min-height:0; font-size:11px; }
+.table-lobby .rl-connection { border:0; padding:4px; font-size:12px; background:transparent; }
+.rl-dealer { display:flex; align-items:center; gap:6px; font-size:12px; min-width:0; }
+.rl-dealer select { min-width:0; max-width:140px; min-height:36px; border:1px solid #c9b36c; border-radius:4px; background:#123e2c; color:#fff4ce; padding:4px; }
+.rl-dealer-dialog { background:#092e22; color:#fff4ce; border:1px solid #c9b36c; }
+.rl-dealer-options { display:grid; gap:8px; min-height:0; overflow-y:auto; max-height:55dvh; }
+.rl-dealer-option { display:flex; align-items:center; gap:12px; padding:10px; min-height:48px; border:1px solid #66846a; border-radius:6px; cursor:pointer; }
+.rl-dealer-option:focus-within { outline:2px solid #f3d675; outline-offset:2px; }
+.rl-dealer-option input { width:20px; height:20px; flex-shrink:0; accent-color:#f3d675; }
+.rl-dealer-option .rl-small-avatar { width:32px; height:32px; flex-shrink:0; }
+.rl-dealer-option>span:last-child { min-width:0; overflow-wrap:anywhere; }
+@media (max-width:500px) { .table-lobby .rl-invite { flex-wrap:wrap; gap:4px; } .rl-dealer { width:100%; } }
+.table-lobby .rl-table { flex:1; min-height:0; padding:0; display:flex; flex-direction:column; }
+.table-lobby .rl-seats { position:relative; display:block; flex:1; min-height:180px; background:url('/donkey-tropical-table.png') center/cover no-repeat; }
+.table-lobby .rl-seat { position:absolute; transform:translate(-50%,-50%); width:88px; min-height:0; padding:3px; gap:1px; background:transparent; border:0; box-shadow:none; }
+.table-lobby .rl-avatar { width:40px; height:40px; margin:0; font-size:20px; box-shadow:0 2px 8px #0009; }
+.table-lobby .rl-you .rl-avatar { border:3px solid #fff09b; }
+.table-lobby .rl-crown { width:19px; height:19px; top:-13px; left:9px; }
+.table-lobby .rl-seat>strong { font-size:9px; color:#ffe68b; line-height:11px; }
+.table-lobby .rl-player-name { font-size:11px; line-height:13px; background:#05291de8; border-radius:4px; padding:1px 3px; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+.table-lobby .rl-seat small { font-size:9px; }
+.table-lobby .rl-empty { font-size:10px; color:#ffeda6; }
+.table-lobby .rl-empty .rl-avatar { background:#174f35; border-style:dashed; }
+.rl-center-deck { position:absolute; left:50%; top:50%; width:40px; height:56px; transform:translate(-50%,-50%) rotate(-12deg); border:2px solid #f0d67c; border-radius:5px; background:#faf0c6; box-shadow:3px 3px 0 #e7dab6,6px 6px 0 #bcab80,0 8px 16px #0008; overflow:hidden; pointer-events:none; }
+.rl-center-deck img { width:100%; height:100%; object-fit:cover; }
+.table-lobby .rl-start-row { padding:5px 8px 0; border:0; min-height:48px; flex-shrink:0; flex-direction:row; justify-content:center; }
+.table-lobby .rl-start-row p { display:none; }
+.table-lobby .rl-start { background:linear-gradient(#ffe692,#e6b940); border-color:#ffefab; color:#42300a; min-height:42px; width:220px; font-size:15px; }
+.table-lobby .rl-start:disabled { background:#354b36; color:#c4cebd; border-color:#688264; font-size:12px; }
+.table-lobby .rl-details,.table-lobby .rl-chat { display:none; }
+.table-lobby[data-view=details] .rl-table,.table-lobby[data-view=chat] .rl-table { display:none; }
+.table-lobby[data-view=details] .rl-details { display:grid; overflow-y:auto; min-height:0; padding:12px 0; }
+.table-lobby[data-view=chat] .rl-chat { display:block; overflow-y:auto; min-height:0; margin-top:8px; }
+@media (min-height:650px) { .table-lobby .rl-avatar { width:56px; height:56px; } .table-lobby .rl-seat { width:110px; } .table-lobby .rl-player-name { font-size:13px; line-height:17px; } .rl-center-deck { width:72px; height:102px; } }
+@media (max-width:500px) and (orientation:portrait) { .table-lobby .rl-header { flex-wrap:wrap; } .table-lobby .rl-actions { width:100%; justify-content:space-between; } .table-lobby .rl-connection { font-size:10px; } .table-lobby .rl-label { display:none; } .table-lobby .rl-seat { width:66px; } .table-lobby .rl-avatar { width:36px; height:36px; } .table-lobby .rl-player-name { font-size:10px; } }

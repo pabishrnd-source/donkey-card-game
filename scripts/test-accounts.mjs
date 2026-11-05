@@ -1,0 +1,92 @@
+import assert from 'node:assert/strict';
+import { createRequire } from 'node:module';
+import { fileURLToPath } from 'node:url';
+import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join, resolve } from 'node:path';
+import { randomBytes } from 'node:crypto';
+const require = createRequire(new URL('../artifacts/api-server/package.json', import.meta.url));
+const { build } = require('esbuild');
+const temp = mkdtempSync(join(tmpdir(), 'donkey-account-test-'));
+process.env.ACCOUNTS_FILE = join(temp, 'accounts.json');
+process.env.NODE_ENV = 'production';
+process.env.LOG_LEVEL = 'silent';
+const output = new URL('../artifacts/api-server/.local/account-tests/entry.mjs', import.meta.url);
+await build({ stdin: { contents: 'export {default as app} from "./app"; export * from "./lib/gameManager"; export * from "./lib/accounts";', resolveDir: fileURLToPath(new URL('../artifacts/api-server/src', import.meta.url)), loader: 'ts' }, outfile: fileURLToPath(output), bundle: true, platform: 'node', format: 'esm', external: ['express', 'cors', 'pino-http', 'pino', 'ws'] });
+const { app, handleMessage, handleDisconnect, tokenUser } = await import(output.href);
+const server = app.listen(0, '127.0.0.1');
+await new Promise(resolve => server.once('listening', resolve));
+const base = `http://127.0.0.1:${server.address().port}/api/auth/`;
+const password = randomBytes(6).toString('hex');
+const socket = () => ({ readyState: 1, messages: [], send(raw) { this.messages.push(JSON.parse(raw)); } });
+const send = (ws, type, payload = {}) => handleMessage(ws, JSON.stringify({ type, payload }));
+const last = (ws, type) => ws.messages.filter(message => message.type === type).at(-1)?.payload;
+async function auth(action, body = {}, token = '') {
+  const response = await fetch(base + action, { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify(body) });
+  return { status: response.status, ...await response.json() };
+}
+const host = socket(), guest = socket(), other = socket(), device = socket();
+try {
+  for (const password of ['12345', 'x'.repeat(16)]) {
+    assert.equal((await auth('register', { username: 'bounds_test', password })).status, 400);
+  }
+  send(other, 'create_game', { playerName: 'Unsigned' });
+  assert.equal(last(other, 'joined'), undefined);
+  assert.match(last(other, 'error').message, /sign in/i);
+  const a = await auth('register', { username: 'test_admin', password });
+  const b = await auth('register', { username: 'test_friend', password });
+  assert.equal(a.status, 200); assert.equal(b.status, 200);
+  assert.equal((await auth('register', { username: 'TEST_ADMIN', password })).status, 409);
+  assert.equal((await auth('login', { username: 'test_admin', password: 'wrong_password' })).status, 401);
+  const login = await auth('login', { username: 'TEST_ADMIN', password });
+  assert.equal(login.user.id, a.user.id);
+  const saved = readFileSync(process.env.ACCOUNTS_FILE, 'utf8');
+  assert.ok(!saved.includes(password) && !saved.includes(a.token));
+  console.log('PASS accounts: registration, normalization, duplicate/wrong-password rejection, hashed credentials and tokens');
+  send(other, 'friend_request', { username: 'test_admin' }); assert.ok(last(other, 'error'));
+  send(host, 'authenticate', { token: a.token }); send(guest, 'authenticate', { token: b.token });
+  send(host, 'friend_request', { username: 'test_friend' });
+  assert.equal(last(guest, 'social_state').incoming[0].id, a.user.id);
+  send(guest, 'friend_answer', { userId: a.user.id, accept: true });
+  assert.equal(last(host, 'social_state').friends[0].online, true);
+  send(host, 'create_game', { playerName: 'Admin' });
+  const room = last(host, 'joined');
+  assert.match(room.gameId, /^[A-Z0-9]{6}$/, 'room codes must match the Join Room UI format');
+  send(other, 'resume_game', room); assert.ok(last(other, 'error')); assert.equal(last(other, 'joined'), undefined);
+  send(other, 'join_game', { gameId: room.gameId, playerName: 'Unsigned' }); assert.equal(last(other, 'joined'), undefined);
+  send(host, 'match_invite', { userId: b.user.id });
+  const invite = last(guest, 'social_state').invitations[0]; assert.ok(invite);
+  send(guest, 'invite_answer', { inviteId: invite.id, accept: true });
+  const guestRoom = last(guest, 'joined'); assert.equal(guestRoom.gameId, room.gameId);
+  send(guest, 'remove_player', { gameId: room.gameId, playerId: room.playerId }); assert.ok(last(guest, 'error'));
+  send(host, 'restart_tournament', { gameId: room.gameId });
+  assert.equal(last(host, 'game_state').players[0].accountId, a.user.id);
+  send(device, 'authenticate', { token: login.token });
+  send(device, 'resume_game', room); assert.equal(last(device, 'joined').playerId, room.playerId); assert.ok(last(host, 'removed'));
+  send(device, 'select_dealer', { gameId: room.gameId, playerId: room.playerId });
+  send(device, 'start_game', { gameId: room.gameId, dealNumber: 0 }); assert.equal(last(device, 'game_state').phase, 'playing');
+  send(device, 'remove_player', { gameId: room.gameId, playerId: guestRoom.playerId });
+  assert.equal(last(device, 'game_state').phase, 'lobby'); assert.equal(last(device, 'game_state').players.length, 1); assert.ok(last(guest, 'removed'));
+  const joinedCount = guest.messages.filter(message => message.type === 'joined').length;
+  send(guest, 'join_game', { gameId: room.gameId, playerName: 'Blocked' });
+  assert.equal(guest.messages.filter(message => message.type === 'joined').length, joinedCount);
+  handleDisconnect(guest); assert.equal(last(device, 'social_state').friends[0].online, false);
+  console.log('PASS friends/admin: request acceptance, online presence, invitations, protected seats, cross-device resume, admin-only removal and bans');
+  const changed = await auth('password', { password, newPassword: password + 'new' }, login.token);
+  assert.equal(changed.status, 200); assert.equal(tokenUser(a.token), null); assert.equal(tokenUser(login.token), null);
+  assert.equal(tokenUser(changed.token).id, a.user.id);
+  assert.equal((await auth('logout', {}, changed.token)).status, 200); assert.equal(tokenUser(changed.token), null);
+  console.log('PASS password changes and logout revoke sessions');
+  const reloaded = await import(output.href + '?fresh-store');
+  assert.equal(reloaded.publicUser(a.user.id).username, 'test_admin');
+  assert.equal(reloaded.friendData(a.user.id).friends[0].id, b.user.id);
+  assert.equal(reloaded.tokenUser(changed.token), null);
+  console.log('PASS account/friend persistence and revoked sessions after store reload');
+} finally {
+  for (const ws of [host, guest, other, device]) handleDisconnect(ws);
+  await new Promise(resolve => server.close(resolve));
+  // Only remove this test's unique OS-temp directory.
+  assert.ok(resolve(temp).startsWith(resolve(tmpdir()) + '/') || resolve(temp).startsWith(resolve(tmpdir()) + '\\'));
+  assert.ok(temp.includes('donkey-account-test-'));
+  rmSync(temp, { recursive: true, force: true });
+}

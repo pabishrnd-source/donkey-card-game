@@ -1,0 +1,8 @@
+import { n as defineTransformer, t as defineConfig } from "./options-4Ily1jp3.mjs";
+export * from "@orval/core";
+//#region src/index.ts
+const generate = (...args) => import("./generate-CPF24fNH.mjs").then(({ generate }) => generate(...args));
+//#endregion
+export { generate as default, generate, defineConfig, defineTransformer };
+
+//# sourceMappingURL=index.mjs.map

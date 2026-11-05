@@ -1,0 +1,421 @@
+.donkey-start.royal-start { min-height:100svh; }
+.royal-start .donkey-start-art { position:relative; inset:auto; width:100%; height:min(50svh,430px); margin:52px auto 0; object-fit:contain; z-index:0; }
+.royal-start .donkey-start-content { flex:none; padding:8px 20px 16px; }
+.royal-start #donkey-title { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+.royal-start .donkey-title-ornament { display:none; }
+.royal-start .donkey-powered-by { margin:0 0 12px; }
+.royal-start .donkey-start-actions { gap:10px; }
+.royal-start .donkey-play-button { min-height:48px; padding:8px 16px; font-size:22px; }
+.royal-start .donkey-secondary-actions { gap:8px; }
+@media(orientation:landscape) and (max-height:500px) {
+  .royal-start .donkey-start-art { height:105px; margin-top:8px; }
+  .royal-start .donkey-start-content { padding:4px 16px 8px; }
+  .royal-start .donkey-powered-by { margin-bottom:6px; font-size:12px; }
+  .royal-start .donkey-start-actions { gap:6px; }
+}
+.donkey-start {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: max(700px, 100svh);
+  flex-direction: column;
+  overflow: hidden;
+  background: #06100b;
+  color: #f9e9c6;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.donkey-start-art {
+  position: absolute;
+  z-index: -2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  pointer-events: none;
+}
+
+.donkey-start-frame {
+  position: absolute;
+  z-index: -1;
+  inset: 16px;
+  border: 1px solid #ba90494d;
+  pointer-events: none;
+}
+
+.donkey-sound-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border: 1px solid #9d7d46;
+  border-radius: 50%;
+  background: #09100ee8;
+  color: #f0d49c;
+}
+
+.donkey-start-content {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  padding: max(260px, 35svh, 23vw) 24px 30px;
+  text-align: center;
+  animation: donkey-menu-enter 650ms ease-out both;
+}
+
+.donkey-start h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 132px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  background: linear-gradient(
+    180deg,
+    #fff8dc 8%,
+    #fce7a8 28%,
+    #d29a34 55%,
+    #ffdf85 70%,
+    #b06a1b 96%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #f1cf87;
+  filter: drop-shadow(0 3px 0 #5e300c) drop-shadow(0 7px 0 #231607)
+    drop-shadow(0 12px 16px #000);
+}
+
+.donkey-powered-by {
+  margin: 12px 0 0;
+  max-width: 100%;
+  color: #f9e9c6;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  overflow-wrap: anywhere;
+  text-shadow: 0 2px 5px #000;
+}
+.donkey-powered-by strong {
+  color: #ffe098;
+  font-weight: 700;
+}
+
+.donkey-title-ornament {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 24px 0 34px;
+  color: #caab6c;
+}
+
+.donkey-title-ornament svg {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1;
+}
+.donkey-title-ornament .donkey-red-suit {
+  color: #ba5a4a;
+}
+.donkey-title-ornament span {
+  width: 58px;
+  height: 1px;
+  background: #c5a76a73;
+}
+
+.donkey-start-actions {
+  display: grid;
+  width: min(100%, 340px);
+  gap: 20px;
+}
+
+.donkey-start button {
+  cursor: pointer;
+  transition:
+    background-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+.donkey-start button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+.donkey-start button:focus-visible {
+  outline: 3px solid #fff0b3;
+  outline-offset: 5px;
+}
+
+.donkey-play-button {
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 14px 20px;
+  border: 1px solid #b3db55;
+  border-radius: 8px;
+  background: linear-gradient(
+    180deg,
+    #39ba28,
+    #188a16 48%,
+    #086514 52%,
+    #086c1c
+  );
+  box-shadow:
+    inset 0 2px 0 #d3f9939c,
+    inset 0 0 0 4px #87cc3633,
+    0 5px 0 #033b0b,
+    0 10px 24px #000a;
+  color: #fffbe7;
+  font:
+    700 27px/1.15 Georgia,
+    "Times New Roman",
+    serif;
+  text-transform: uppercase;
+  text-shadow: 0 2px 2px #003009;
+}
+
+.donkey-play-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 2px 0 #d3f993,
+    inset 0 0 0 4px #87cc3633,
+    0 7px 0 #033b0b,
+    0 12px 28px #000a;
+}
+.donkey-play-button:active:not(:disabled) {
+  transform: translateY(3px);
+}
+
+.donkey-secondary-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.donkey-secondary-actions button:first-child { grid-column:1 / -1; }
+.donkey-secondary-actions.has-resume button:first-child { grid-column:auto; }
+.donkey-secondary-actions button {
+  display: flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid #8d7a53;
+  border-radius: 8px;
+  background: #0a1415e6;
+  box-shadow:
+    inset 0 1px 0 #e9d9b21f,
+    0 3px 0 #030906;
+  font-size: 14px;
+  color: #f7e9cf;
+}
+.donkey-secondary-actions button:hover,
+.donkey-sound-button:hover {
+  background: #283026;
+}
+
+.donkey-start-footer {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  padding: 8px 24px 32px;
+  color: #e0c995;
+  font-size: 12px;
+  text-shadow: 0 1px 5px #000;
+}
+.donkey-game-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.donkey-game-details span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.donkey-game-details > i {
+  height: 12px;
+  border-left: 1px solid #b6a57880;
+}
+.donkey-connection {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #b2b9ac;
+  font-size: 11px;
+}
+.donkey-connection i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d8a255;
+}
+.donkey-connection i.is-connected {
+  background: #69c781;
+}
+
+.donkey-start-error {
+  display: flex;
+  max-width: 420px;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  padding: 10px 14px;
+  border: 1px solid #b96656;
+  border-radius: 8px;
+  background: #421a16;
+  color: #ffe4d6;
+  font-size: 13px;
+}
+.donkey-start-error button {
+  flex-shrink: 0;
+  padding: 4px;
+}
+
+.donkey-menu-dialog {
+  width: calc(100% - 40px);
+  max-width: 480px;
+  max-height: calc(100svh - 48px);
+  overflow-y: auto;
+  border: 1px solid #967743;
+  border-radius: 8px;
+  background: #0b1913;
+  color: #f4e4c2;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  letter-spacing: 0;
+  box-shadow: 0 24px 80px #000b;
+}
+.donkey-menu-dialog h2 {
+  padding-right: 18px;
+  font:
+    700 28px/1.2 Georgia,
+    serif;
+  letter-spacing: 0;
+}
+.donkey-setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 0 8px;
+  border-top: 1px solid #8c774343;
+}
+.donkey-setting-row label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.donkey-rules {
+  counter-reset: rule;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.donkey-rules li {
+  position: relative;
+  padding: 16px 0 16px 36px;
+  border-bottom: 1px solid #8c774343;
+}
+.donkey-rules li:last-child {
+  padding-bottom: 0;
+  border: 0;
+}
+.donkey-rules li::before {
+  counter-increment: rule;
+  content: counter(rule, decimal-leading-zero);
+  position: absolute;
+  top: 18px;
+  left: 0;
+  color: #c0a269;
+  font-size: 12px;
+}
+.donkey-rules strong {
+  color: #f7e5b7;
+  font-size: 15px;
+}
+.donkey-rules p {
+  margin: 6px 0 0;
+  color: #c3c6b9;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+@keyframes donkey-menu-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1100px) {
+  .donkey-start h1 {
+    font-size: 108px;
+  }
+}
+@media (max-width: 640px) {
+  .donkey-start {
+    min-height: max(680px, 100svh);
+  }
+  .donkey-start h1 {
+    font-size: 76px;
+  }
+  .donkey-start-content {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+  .donkey-start-frame {
+    inset: 10px;
+  }
+  .donkey-sound-button {
+    top: 22px;
+    right: 22px;
+  }
+  .donkey-title-ornament {
+    margin: 20px 0 28px;
+  }
+  .donkey-play-button {
+    min-height: 64px;
+    font-size: 24px;
+  }
+  .donkey-start-footer {
+    padding-bottom: 26px;
+  }
+}
+@media (max-width: 420px) {
+  .donkey-start h1 {
+    font-size: 64px;
+  }
+  .donkey-start-actions {
+    width: min(100%, 290px);
+  }
+  .donkey-title-ornament span {
+    width: 42px;
+  }
+}
+@media (max-width: 359px) {
+  .donkey-start h1 {
+    font-size: 54px;
+  }
+  .donkey-game-details {
+    gap: 12px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .donkey-start-content {
+    animation: none;
+  }
+  .donkey-start button {
+    transition: none;
+  }
+}

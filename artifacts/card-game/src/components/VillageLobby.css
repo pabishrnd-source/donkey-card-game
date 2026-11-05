@@ -1,0 +1,514 @@
+.donkey-dashboard {
+  --dd-muted: #bfd5cb;
+  background: #103c32;
+  color: #fff8e8;
+}
+.dd-header { background: #163f34; border-bottom: 3px solid #aa8050; }
+.dd-header-caption { color: #dfd7ae; }
+.dd-navigation { background: #10362f; border-color: #749d8060; }
+.dd-navigation button { color: #e0eee2; }
+.dd-navigation .is-selected { background: #28644d; border-color: #c2ad70; box-shadow: inset 3px 0 #eed08b; }
+.dd-hero { min-height: 220px; aspect-ratio: 5 / 1; }
+.dd-hero-art img { object-position: center 45%; }
+.dd-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #073c37e0, #073c3720 75%); }
+.dd-hero h1 { font-size: 48px; }
+.dd-hero p { font-size: 19px; margin: 8px 0 16px; }
+.dd-hero-meta { color: #fff7dc; }
+.dd-village-lobby { padding: 24px 28px; gap: 24px; background: #16463b; border-top: 3px solid #aa8050; }
+.dd-village-lobby .dd-room-actions { order: 1; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.dd-village-lobby .dd-action {
+  min-width: 0;
+  min-height: 94px;
+  padding: 16px;
+  gap: 12px;
+  background: #28754e;
+  border: 1px solid #dcc08a;
+  border-bottom: 4px solid #926541;
+  box-shadow: inset 0 1px #ffffff40, 0 4px 8px #09291f55;
+  color: #fff7dc;
+}
+.dd-village-lobby .dd-action-join { background: #246b80; }
+.dd-village-lobby .dd-action-resume { background: #754b4a; }
+.dd-village-lobby .dd-action > span:not(.dd-action-icon) { min-width: 0; overflow-wrap: anywhere; }
+.dd-village-lobby .dd-action strong { font: 700 21px/1.2 Georgia, serif; }
+.dd-village-lobby .dd-action small { color: #f0ecda; font-size: 12px; }
+.dd-village-lobby .dd-action-icon { background: #0002; border: 1px solid #e5d6a570; }
+.dd-village-lobby .dd-action:disabled { cursor: not-allowed; opacity: .55; }
+.dd-village-lobby .dd-section-label h2 { font: 700 23px/1.2 Georgia, serif; color: #f9df9d; }
+.dd-village-lobby .dd-section-label > span { color: #c9dfd0; }
+.dd-village-lobby .dd-seats { gap: 14px; }
+.dd-village-lobby .dd-seat {
+  --seat-accent: #e8cf91;
+  --seat-bg: #1c5445;
+  min-height: 140px;
+  border: 1px solid #719781;
+  border-bottom: 4px solid #9c764c;
+  box-shadow: none;
+}
+.dd-village-lobby .dd-seat-blue { --seat-bg: #255563; }
+.dd-village-lobby .dd-seat-violet { --seat-bg: #4b5350; }
+.dd-village-lobby .dd-seat-amber { --seat-bg: #5d4c3a; }
+.dd-village-lobby .dd-seat strong { font-size: 16px; }
+.dd-village-lobby .dd-seat small { color: #dce8dc; }
+.dd-village-lobby .dd-seat-avatar { box-shadow: none; }
+.dd-village-lobby .dd-rules-link { color: #f9df9d; border-color: #9cad7860; }
+.dd-village-lobby .dd-footer { color: #c2d9cc; font-size: 12px; flex-wrap: wrap; }
+
+@media (max-width: 900px) {
+  .dd-navigation { background: #10362ff7; border-top: 2px solid #aa8050; }
+  .dd-hero { min-height: 180px; }
+  .dd-hero-copy { width: auto; padding: 20px; }
+  .dd-hero h1 { font-size: 36px; margin: 0; }
+  .dd-hero p { font-size: 16px; }
+  .dd-village-lobby { padding: 18px 16px; gap: 20px; }
+  .dd-village-lobby .dd-action { min-height: 82px; padding: 12px; gap: 8px; }
+  .dd-village-lobby .dd-action strong { font-size: 18px; }
+  .dd-village-lobby .dd-action small { font-size: 11px; }
+  .dd-village-lobby .dd-seat { min-height: 116px; }
+}
+@media (max-width: 520px) {
+  .dd-header { padding: 10px 12px; gap: 8px; }
+  .dd-header .dd-brand > span { font-size: 21px; }
+  .dd-header .dd-brand > svg { width: 21px; }
+  .dd-header .profile-button, .dd-header .account-button { min-height: 44px; padding: 8px; font-size: 12px; }
+  .dd-village-lobby .dd-room-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .dd-village-lobby .dd-action-resume { grid-column: 1 / -1; min-height: 60px; }
+  .dd-village-lobby .dd-section-label h2 { font-size: 20px; }
+  .dd-village-lobby .dd-action strong { font-size: 17px; }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .dd-hero { min-height: 140px; }
+  .dd-hero h1 { font-size: 30px; }
+  .dd-hero p { margin-bottom: 8px; }
+  .dd-village-lobby .dd-seats { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* Village square dashboard layout. The controls remain live; this only changes their presentation. */
+.donkey-dashboard {
+  --dd-gold: #ffe09a;
+  min-height: 100svh;
+  background:
+    linear-gradient(180deg, #082f27c9, #0a3c30f0 72%),
+    url('/donkey-village-lobby-reference.png') center top / cover fixed no-repeat;
+  color: #fff6d9;
+}
+.dd-header {
+  width: 100%;
+  max-width: none;
+  min-height: 86px;
+  padding: 10px 32px;
+  background: linear-gradient(180deg, #1b5139f2, #0b3529f5);
+  border-bottom: 4px solid #9c7041;
+  box-shadow: inset 0 1px #ffe6a144, 0 5px 14px #031b13aa;
+}
+.dd-brand { flex: 0 0 auto; min-width: 280px; gap: 12px; color: #ffe39b; }
+.dd-brand > svg { color: #ffd66f; fill: #9b681e; }
+.dd-brand > span { font-size: 35px; text-shadow: 0 3px 0 #7c4a19, 0 5px 9px #020c08; }
+.dd-header-caption { color: #fff1bd; font: 700 20px Georgia, serif; text-shadow: 0 2px 3px #03150e; }
+.dd-profile { gap: 8px; }
+.dd-profile .account-button,
+.dd-profile .profile-button {
+  min-height: 48px;
+  padding: 8px 18px;
+  border: 2px solid #d6b873;
+  border-radius: 24px;
+  background: #153f31;
+  color: #fff1bf;
+  box-shadow: inset 0 1px #fff4bd44, 0 3px 0 #5d3a20;
+  font-weight: 800;
+}
+.dd-layout { width: 100%; max-width: none; grid-template-columns: 224px minmax(0, 1fr); }
+.dd-navigation {
+  min-height: calc(100svh - 86px);
+  padding: 30px 14px 24px;
+  gap: 0;
+  background: linear-gradient(180deg, #5b331df0, #2b160df7 84%, #18382bea);
+  border-right: 4px solid #9d6c3d;
+  box-shadow: inset -1px 0 #f0c27355, 8px 0 18px #03150dcc;
+}
+.dd-navigation button {
+  min-height: 68px;
+  padding: 14px 18px;
+  border: 0;
+  border-bottom: 1px solid #d5a76135;
+  border-radius: 0;
+  color: #fff1cf;
+  font: 700 16px Georgia, serif;
+}
+.dd-navigation button > svg { width: 28px; height: 28px; color: #ffe8ad; }
+.dd-navigation button:hover { background: #f4c87318; color: #fff8e4; }
+.dd-navigation .is-selected {
+  background: linear-gradient(90deg, #437e27, #275a2ce8);
+  border: 2px solid #d3ad5e;
+  border-left-width: 5px;
+  box-shadow: inset 0 1px #eff6ba66, 0 3px 0 #452713;
+}
+.dd-navigation .dd-nav-back { min-height: 48px; margin-top: auto; border-bottom: 0; font-size: 12px; }
+.dd-main {
+  background:
+    linear-gradient(180deg, #0b4937d9, #0b4937ed 74%),
+    url('/donkey-village-lobby-reference.png') center top / cover no-repeat;
+}
+.dd-hero {
+  min-height: 330px;
+  aspect-ratio: auto;
+  align-items: flex-end;
+  background:
+    url('/donkey-tropical-results-mascot.png') right 5% bottom / auto 94% no-repeat,
+    linear-gradient(90deg, #0d4b39d9, #0d4b3930 72%),
+    url('/donkey-tropical-landscape-stage.png') center / cover no-repeat;
+  border-bottom: 5px solid #9c7041;
+  box-shadow: inset 0 -20px 30px #061d1470;
+}
+.dd-hero-art { display: none; }
+.dd-hero-copy { position: relative; z-index: 1; width: min(52%, 540px); padding: 34px 42px 30px; }
+.dd-hero h1 { margin: 0 0 8px; font-size: clamp(48px, 5vw, 78px); color: #ffe09a; text-shadow: 0 4px 0 #8b551f, 0 7px 15px #02110b; }
+.dd-hero p { margin: 0 0 18px; font: 700 25px Georgia, serif; color: #fff5d8; }
+.dd-hero-meta { font-size: 15px; color: #fff5d8; }
+.dd-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 22px 20px;
+  padding: 24px 28px 20px;
+  background:
+    linear-gradient(180deg, #0b4937e8, #0b4937f2),
+    url('/donkey-village-lobby-reference.png') center bottom / cover no-repeat;
+}
+.dd-room-actions, .dd-seats-section { grid-column: 1 / -1; }
+.dd-room-actions { order: 1; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.dd-action {
+  min-height: 112px;
+  padding: 18px 22px;
+  border: 2px solid #d9bb70;
+  border-bottom: 6px solid #875b31;
+  border-radius: 12px;
+  background:
+    linear-gradient(145deg, #328854e8, #176342f2),
+    url('/donkey-village-lobby-reference.png') center / cover no-repeat;
+  box-shadow: inset 0 2px #fff8c944, 0 5px 0 #061e16, 0 8px 18px #041a12aa;
+}
+.dd-action-join { background: linear-gradient(145deg, #2586a2, #166076); border-color: #a7d2cb; }
+.dd-action-resume { background: linear-gradient(145deg, #835023, #543017); }
+.dd-action strong { font: 700 24px Georgia, serif; text-shadow: 0 2px 2px #082314; }
+.dd-action small { margin-top: 7px; font-size: 14px; color: #fff6d9; }
+.dd-action-icon { width: 48px; height: 48px; border: 2px solid #f6dea0; background: #2a1a0d55; }
+.dd-action-icon svg { width: 28px; height: 28px; }
+.dd-action-arrow { width: 26px; height: 26px; color: #ffe9a6; }
+.dd-seats-section { order: 2; }
+.dd-section-label { margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #d6ae6b; }
+.dd-section-label h2 { font: 700 28px Georgia, serif; color: #ffe09a; }
+.dd-section-label > span { color: #fff4d2; font-size: 14px; }
+.dd-seats { gap: 16px; }
+.dd-seat {
+  min-height: 152px;
+  padding: 18px 12px;
+  border: 2px solid #d6b873;
+  border-bottom: 6px solid #875b31;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #276f55, #18533f);
+  box-shadow: inset 0 1px #ffffff35, 0 5px 0 #061e16;
+}
+.dd-seat-blue { background: linear-gradient(145deg, #277e97, #195c70); }
+.dd-seat-violet { background: linear-gradient(145deg, #624c72, #40344d); }
+.dd-seat-amber { background: linear-gradient(145deg, #85623a, #614627); }
+.dd-seat strong { font: 700 18px Georgia, serif; }
+.dd-seat small { font-size: 13px; color: #fff4d5; }
+.dd-seat-avatar { width: 54px; height: 54px; border: 2px solid #f1d48b; background: #1d2c1e66; }
+.dd-seat-suit { width: 88px; height: 88px; top: 20px; left: -10px; opacity: .16; }
+.dd-rules-link, .dd-footer { align-self: stretch; min-height: 72px; padding: 14px 20px; border: 2px solid #9d7043; background: linear-gradient(90deg, #633a1e, #4a2a17); color: #fff1cf; }
+.dd-rules-link { grid-column: 1; order: 3; border-radius: 10px 0 0 10px; border-right: 0; }
+.dd-footer { grid-column: 2; order: 4; border-radius: 0 10px 10px 0; display: flex; justify-content: center; gap: 24px; color: #fff1cf; font-size: 13px; }
+.dd-rules-link strong { font: 700 19px Georgia, serif; }
+.dd-rules-link small { color: #fbe7b1; font-size: 12px; }
+.dd-rules-icon { width: 44px; height: 44px; background: #2d1a0d80; border: 1px solid #e0bd72; }
+
+@media (max-width: 900px) {
+  .dd-header { min-height: 72px; padding: 8px 18px; }
+  .dd-brand { min-width: 0; }
+  .dd-brand > span { font-size: 28px; }
+  .dd-header-caption { font-size: 16px; }
+  .dd-layout { grid-template-columns: 1fr; }
+  .dd-navigation { min-height: 0; }
+  .dd-main { min-width: 0; }
+  .dd-hero { min-height: 300px; }
+  .dd-hero-copy { width: 60%; padding: 26px 24px; }
+  .dd-hero h1 { font-size: 48px; }
+  .dd-content { padding: 20px 18px 96px; }
+}
+@media (max-width: 600px) {
+  .dd-header { padding: 8px 12px; }
+  .dd-brand > span { font-size: 24px; }
+  .dd-header-caption { display: none; }
+  .dd-profile .account-button, .dd-profile .profile-button { min-height: 40px; padding: 6px 9px; font-size: 11px; }
+  .dd-hero { min-height: 260px; background-position: 84% bottom, center, center; }
+  .dd-hero-copy { width: 70%; padding: 22px 18px; }
+  .dd-hero h1 { font-size: 40px; }
+  .dd-hero p { font-size: 20px; }
+  .dd-content { grid-template-columns: 1fr; gap: 16px; padding: 16px 12px 92px; }
+  .dd-room-actions, .dd-seats-section, .dd-rules-link, .dd-footer { grid-column: 1; }
+  .dd-room-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .dd-action { min-height: 94px; padding: 12px; gap: 8px; }
+  .dd-action-resume { grid-column: 1 / -1; min-height: 72px; }
+  .dd-action strong { font-size: 17px; }
+  .dd-action small { font-size: 11px; }
+  .dd-action-icon { width: 36px; height: 36px; }
+  .dd-action-icon svg { width: 22px; height: 22px; }
+  .dd-action-arrow { display: none; }
+  .dd-section-label h2 { font-size: 22px; }
+  .dd-seats { gap: 10px; }
+  .dd-seat { min-height: 124px; padding: 12px 8px; }
+  .dd-seat strong { font-size: 14px; }
+  .dd-seat small { font-size: 11px; }
+  .dd-rules-link { border-right: 2px solid #9d7043; border-radius: 10px; }
+  .dd-footer { min-height: 58px; border-radius: 10px; flex-wrap: wrap; gap: 10px; font-size: 11px; }
+}
+
+/* Keep the full village navigation on tablets so it matches the wide village lobby artwork. */
+@media (min-width: 701px) and (max-width: 900px) {
+  .donkey-dashboard { padding-bottom: 0; }
+  .dd-layout { display: grid; grid-template-columns: 190px minmax(0, 1fr); }
+  .dd-navigation {
+    position: static;
+    z-index: auto;
+    display: flex;
+    min-height: calc(100svh - 72px);
+    padding: 22px 10px 20px;
+    gap: 0;
+    border-top: 0;
+  }
+  .dd-navigation button { min-height: 58px; padding: 11px 12px; gap: 9px; font-size: 14px; }
+  .dd-navigation button > svg { width: 24px; height: 24px; }
+  .dd-navigation .dd-nav-back { display: flex; margin-top: auto; }
+  .dd-hero { min-height: 270px; }
+  .dd-hero-copy { width: 58%; padding: 24px 26px; }
+  .dd-hero h1 { font-size: 44px; }
+  .dd-hero p { font-size: 19px; }
+  .dd-content { padding: 18px 16px; gap: 18px; }
+  .dd-village-lobby .dd-room-actions { gap: 10px; }
+  .dd-village-lobby .dd-action { min-height: 88px; padding: 12px 10px; gap: 8px; }
+  .dd-village-lobby .dd-action strong { font-size: 17px; }
+  .dd-village-lobby .dd-action small { font-size: 11px; }
+  .dd-village-lobby .dd-seats { gap: 10px; }
+  .dd-village-lobby .dd-seat { min-height: 124px; padding: 12px 8px; }
+}
+
+/* Use the supplied village banner as the hero skin; the semantic copy remains in the DOM. */
+.donkey-dashboard .dd-hero {
+  min-height: 0;
+  aspect-ratio: 4.78 / 1;
+  background: url('/donkey-village-hero-banner.png') center / cover no-repeat;
+}
+.donkey-dashboard .dd-hero::after { display: none; }
+.donkey-dashboard .dd-hero-art { display: none; }
+.donkey-dashboard .dd-hero-copy { opacity: 0; pointer-events: none; }
+@media (max-width: 600px) {
+  .donkey-dashboard .dd-hero {
+    min-height: 150px;
+    aspect-ratio: 4.78 / 1;
+  }
+}
+
+/* Match the supplied wooden village header while retaining live hit areas. */
+.donkey-dashboard .dd-header {
+  position: relative;
+  min-height: 104px;
+  padding: 0;
+  background: url('/donkey-village-header-banner.png') center / 100% 100% no-repeat;
+  border-bottom: 0;
+  box-shadow: none;
+}
+.donkey-dashboard .dd-header::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 4px;
+  background: #9c7041;
+  pointer-events: none;
+}
+.donkey-dashboard .dd-header .dd-brand,
+.donkey-dashboard .dd-header .dd-header-caption,
+.donkey-dashboard .dd-header > .account-button,
+.donkey-dashboard .dd-header > .profile-button {
+  position: absolute;
+  z-index: 2;
+}
+.donkey-dashboard .dd-header .dd-brand {
+  inset: 0 auto 0 0;
+  width: 25%;
+  min-width: 0;
+  opacity: 0;
+}
+.donkey-dashboard .dd-header .dd-header-caption {
+  left: 27%;
+  top: 30%;
+  width: 28%;
+  opacity: 0;
+}
+.donkey-dashboard .dd-header > .account-button {
+  top: 24%;
+  right: 13%;
+  width: 10%;
+  height: 54%;
+  min-height: 44px;
+  opacity: 0;
+}
+.donkey-dashboard .dd-header > .profile-button {
+  top: 24%;
+  right: 1.5%;
+  width: 10%;
+  height: 54%;
+  min-height: 44px;
+  opacity: 0;
+}
+@media (max-width: 600px) {
+  .donkey-dashboard .dd-header { min-height: 76px; }
+  .donkey-dashboard .dd-header > .account-button { right: 12%; width: 17%; }
+  .donkey-dashboard .dd-header > .profile-button { right: 1%; width: 17%; }
+}
+
+/* Keep the supplied village header as the single source of visual truth at every viewport size. */
+.donkey-dashboard > .dd-header {
+  isolation: isolate;
+  background: none !important;
+  border-bottom: 0 !important;
+  overflow: hidden;
+}
+.donkey-dashboard > .dd-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('/donkey-village-header-banner.png') center / 100% 100% no-repeat;
+  pointer-events: none;
+}
+.donkey-dashboard > .dd-header::after {
+  z-index: 1;
+}
+.donkey-dashboard > .dd-header .dd-brand,
+.donkey-dashboard > .dd-header .dd-header-caption,
+.donkey-dashboard > .dd-header > .account-button,
+.donkey-dashboard > .dd-header > .profile-button {
+  opacity: 0 !important;
+}
+.donkey-dashboard > .dd-header > .account-button,
+.donkey-dashboard > .dd-header > .profile-button {
+  z-index: 3;
+}
+@media (max-width: 600px) {
+  .donkey-dashboard > .dd-header { min-height: 90px; }
+}
+
+/* Full-page village lobby artwork skin. Live controls stay over the matching artwork. */
+.donkey-dashboard {
+  position: relative;
+  height: 100svh;
+  min-height: 100svh;
+  background: #0b352b;
+  overflow: hidden;
+}
+.donkey-dashboard > .dd-header {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 5;
+  min-height: 0;
+  height: 100%;
+  padding: 0;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none;
+  pointer-events: none;
+}
+.donkey-dashboard > .dd-header::before,
+.donkey-dashboard > .dd-header::after { display: none; }
+.donkey-dashboard > .dd-header .dd-brand,
+.donkey-dashboard > .dd-header .dd-header-caption,
+.donkey-dashboard > .dd-header > .account-button,
+.donkey-dashboard > .dd-header > .profile-button {
+  pointer-events: auto;
+  opacity: 0 !important;
+}
+.donkey-dashboard > .dd-header .dd-brand {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 34%;
+  height: 22%;
+}
+.donkey-dashboard > .dd-header > .account-button {
+  position: absolute;
+  top: 1%;
+  right: 11%;
+  width: 10%;
+  height: 11%;
+}
+.donkey-dashboard > .dd-header > .profile-button {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 10%;
+  height: 11%;
+}
+.donkey-dashboard > .dd-layout {
+  position: relative;
+  display: block;
+  height: 100svh;
+  min-height: 100svh;
+}
+.donkey-dashboard .dd-navigation { display: none; }
+.donkey-dashboard .dd-main {
+  position: relative;
+  height: 100svh;
+  min-height: 100svh;
+  overflow: hidden;
+  background: url('/donkey-tropical-village-lobby.png') center / 100% 100% no-repeat;
+}
+.donkey-dashboard .dd-hero { display: none; }
+.donkey-dashboard .dd-village-lobby {
+  position: absolute;
+  inset: 0;
+  display: block;
+  min-height: 100svh;
+  padding: 0;
+  background: none;
+  pointer-events: none;
+}
+.donkey-dashboard .dd-room-actions {
+  position: absolute;
+  left: 25%;
+  top: 42%;
+  width: 61%;
+  height: 31%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2%;
+  pointer-events: auto;
+}
+.donkey-dashboard .dd-room-actions .dd-action {
+  min-height: 0;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  opacity: 0;
+}
+.donkey-dashboard .dd-seats-section,
+.donkey-dashboard .dd-footer { display: none; }
+.donkey-dashboard .dd-rules-link {
+  position: absolute;
+  left: 36%;
+  top: 83%;
+  width: 31%;
+  height: 11%;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  opacity: 0;
+  pointer-events: auto;
+}
+@media (max-width: 600px) {
+  .donkey-dashboard .dd-main,
+  .donkey-dashboard .dd-village-lobby { min-height: 100dvh; }
+  .donkey-dashboard .dd-room-actions { left: 18%; top: 41%; width: 78%; height: 32%; gap: 2%; }
+  .donkey-dashboard .dd-rules-link { left: 29%; top: 82%; width: 48%; height: 12%; }
+}

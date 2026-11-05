@@ -1,0 +1,49 @@
+.royal-results { min-height:100dvh; color:#f7f1da; background:#126c5c url("/donkey-tropical-results.png") center / cover fixed no-repeat; font-family:Arial,sans-serif; padding:0 20px 24px; overflow-x:hidden; }
+.results-toolbar { max-width:1080px; margin:auto; min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.results-toolbar>span { color:#f4cc65; font:bold 22px Georgia,serif; background:#10392deb; padding:8px 14px; border:1px solid #c9aa59; border-radius:6px; }
+.royal-results button { cursor:pointer; }
+.royal-results .result-avatar,.royal-results .standing-avatar { display:grid; place-items:center; border-radius:50%; background:#097755; color:#fff; overflow:hidden; flex-shrink:0; }
+.result-loser .result-avatar,.standing-loser .standing-avatar { background:#a3244b; }
+.results-leave { display:flex; align-items:center; justify-content:center; gap:9px; min-height:44px; padding:10px 18px; background:#ad1830; border:1px solid #f4ce65; border-radius:8px; color:#fff; font-weight:700; }
+.results-heading { max-width:850px; margin:auto; text-align:center; }
+.results-art { display:block; width:100%; max-height:160px; object-fit:contain; }
+.results-heading h1 { width:fit-content; max-width:100%; margin:8px auto 12px; padding:10px 20px; background:#193d2def; border-block:2px solid #d7af4f; color:#f7d375; text-shadow:0 2px 0 #593609; font:bold 38px/1.12 Georgia,serif; overflow-wrap:anywhere; }
+.results-heading>p { display:table; max-width:100%; margin:0 auto 18px; padding:7px 14px; background:#10392df2; border-radius:4px; overflow-wrap:anywhere; }
+.results-content { max-width:1040px; margin:auto; }
+.results-outcomes { display:grid; grid-template-columns:minmax(0,1fr); max-width:600px; margin:0 auto 22px; }
+.result-person { border:2px solid #d7af4f; border-radius:8px; padding:12px; min-width:0; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; box-shadow:inset 0 0 0 4px #143c25,0 3px 14px #0008; }
+.result-loser { background:#420d19; box-shadow:inset 0 0 0 4px #681427,0 3px 14px #0008; }
+.royal-results h2 { display:flex; align-items:center; gap:9px; font:700 14px/1.4 Arial,sans-serif; text-transform:uppercase; color:#edd27c; margin:0; }
+.result-loser h2,.result-loser>p { color:#ffb7bc; }
+.result-loser>p { font-size:12px; margin:0; text-transform:uppercase; }
+.royal-results .result-avatar { width:40px; height:40px; border:2px solid #e4c772; font-size:20px; }
+.result-name { font-size:24px; overflow-wrap:anywhere; max-width:100%; text-align:center; }
+.result-penalty { display:flex; align-items:center; gap:10px; font-size:11px; color:#ffb7bc; }
+.result-penalty>span { max-width:65px; }
+.result-penalty>button { width:32px; height:46px; min-width:32px; }
+.result-loser>p.result-loser-label { font-size:14px; font-weight:700; text-transform:none; overflow-wrap:anywhere; max-width:100%; text-align:center; color:#fff; }
+.result-loser-person { display:flex; align-items:center; gap:12px; min-width:0; max-width:100%; }
+.result-loser-person .result-name { font-size:21px; }
+.results-standings { border-top:1px solid #998348; padding:18px 0; }
+.results-standings>h2 { width:fit-content; max-width:100%; padding:8px 12px; background:#10392df2; border-radius:4px; }
+.results-standings ol { list-style:none; margin:12px 0 0; padding:0; display:grid; gap:8px; }
+.results-standings li { display:flex; align-items:center; gap:12px; min-width:0; padding:12px 16px; border:1px solid #266b54; border-radius:8px; background:#07392c; }
+.results-standings li.standing-loser { background:#4a1720; border-color:#b34b58; }
+.royal-results .standing-avatar { width:36px; height:36px; flex-shrink:0; }
+.standing-name { font-weight:700; overflow-wrap:anywhere; min-width:0; }
+.standing-name small { color:#f2d478; }
+.standing-place { font-size:11px; font-weight:700; padding:6px 9px; border-radius:4px; background:#296c60; white-space:nowrap; }
+.standing-loser .standing-place { background:#f18f9b; color:#3b0710; }
+.standing-count { margin-left:auto; font-size:13px; text-align:right; flex-shrink:0; }
+.results-next { display:flex; align-items:center; gap:16px; border-top:2px solid #e4c369; border-bottom:1px solid #897943; background:#10392df2; padding:12px 18px; min-height:84px; }
+.results-next>svg { color:#edc762; flex-shrink:0; }
+.results-next p { flex:1; margin:0; font-size:16px; }
+.next-card { height:68px; overflow:hidden; pointer-events:none; }
+.results-actions { display:flex; justify-content:center; gap:12px; padding:20px 0; flex-wrap:wrap; }
+.results-actions button { display:flex; align-items:center; gap:8px; justify-content:center; padding:12px 22px; min-height:44px; border:1px solid #ade175; border-radius:8px; color:white; background:#097832; font-weight:700; }
+.results-actions .results-secondary { background:#112d26; border-color:#739889; }
+.results-actions p { color:#f7f1da; background:#10392df2; padding:10px 16px; border-radius:4px; font-size:14px; margin:0; }
+.results-audio { border-top:1px solid #819565; background:#10392df2; padding:20px 12px; }
+@media(max-width:600px) { .royal-results { padding:0 12px 18px; } .results-toolbar { min-height:60px; } .results-heading h1 { font-size:28px; margin-bottom:18px; } .results-outcomes { gap:10px; } .result-person { padding:12px 8px; min-height:230px; } .royal-results h2 { font-size:11px; } .result-name { font-size:19px; } .result-loser-person { flex-direction:column; gap:4px; } .royal-results .result-avatar { width:48px; height:48px; font-size:22px; } .results-standings li { gap:8px; padding:10px; flex-wrap:wrap; } .standing-count { width:100%; font-size:12px; } .standing-place { margin-left:auto; } .standing-name { max-width:calc(100% - 48px); } .results-next { padding:10px 0; gap:10px; } .results-next p { font-size:14px; } }
+@media(max-width:600px) { .results-art { max-height:105px; } .result-person { min-height:0; padding:10px 8px; } .royal-results .result-avatar { width:32px; height:32px; font-size:17px; } .result-loser-person { flex-direction:row; flex-wrap:wrap; justify-content:center; } .result-loser-person .result-name { font-size:18px; } }
+@media(orientation:landscape) and (max-height:500px) { .results-heading { display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap; } .results-art { width:100px; height:60px; } .results-heading h1 { font-size:24px; margin:4px 0 10px; } .results-heading>p { margin:0 0 10px; } }

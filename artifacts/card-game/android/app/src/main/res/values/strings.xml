@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Donkey</string>
+    <string name="title_activity_main">Donkey</string>
+    <string name="package_name">com.donkey.cardgame</string>
+    <string name="custom_url_scheme">com.donkey.cardgame</string>
+</resources>

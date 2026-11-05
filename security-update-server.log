@@ -1,0 +1,64 @@
+[18:11:00.928] [32mINFO[39m (3544): [36mServer listening (HTTP + WebSocket)[39m
+    [35mport[39m: 3001
+6:11:01 pm [vite] (client) Re-optimizing dependencies because lockfile has changed
+
+  VITE v7.3.7  ready in 856 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+  ➜  press h + enter to show help
+[18:11:11.648] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[18:11:47.622] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[18:11:52.932] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[18:12:58.208] [32mINFO[39m (3544): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 1,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 3
+6:15:40 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+6:15:41 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[18:15:41.431] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[18:15:46.796] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+6:16:02 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[18:17:45.402] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[18:17:45.411] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[18:20:22.399] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[18:21:09.542] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[18:21:09.563] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[18:32:11.559] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[18:32:13.073] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[10:48:08.566] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[10:48:09.018] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[10:48:22.012] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[10:48:22.117] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[10:48:24.826] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[12:05:49.747] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[12:08:44.311] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[12:08:45.294] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[12:08:52.935] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[12:11:34.173] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[12:11:39.428] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[13:42:10.139] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[14:05:49.700] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[14:05:51.186] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[14:05:58.995] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[16:41:43.506] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[16:41:44.676] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[16:41:44.730] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[16:41:50.665] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[17:08:18.002] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[17:26:21.364] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[17:26:21.452] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[17:26:27.264] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[18:02:07.888] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[18:02:15.700] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[18:33:10.110] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[18:33:31.729] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[18:33:31.912] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[10:41:57.462] [32mINFO[39m (3544): [36mWebSocket client connected[39m
+[10:41:58.499] [32mINFO[39m (3544): [36mWebSocket client disconnected[39m
+[10:42:09.329] [32mINFO[39m (3544): [36mWebSocket client connected[39m

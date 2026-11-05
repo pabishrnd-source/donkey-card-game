@@ -129,7 +129,7 @@
   --chart-4: 217 91% 60%;
   --chart-5: 282 80% 55%;
 
-  --app-font-sans: 'Inter', sans-serif;
+  --app-font-sans: 'Fredoka', 'Trebuchet MS', sans-serif;
   --app-font-serif: Georgia, serif;
   --app-font-mono: Menlo, monospace;
   --radius: .625rem;
@@ -168,10 +168,105 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    background:
+      radial-gradient(circle at top, rgba(57, 184, 255, 0.26), transparent 40%),
+      linear-gradient(180deg, #0a3d93 0%, #1175cf 44%, #0a3d93 100%);
   }
 }
 
 @layer utilities {
+  .card-3d {
+    transform: perspective(520px) rotateX(7deg) rotateY(-4deg);
+    transform-style: preserve-3d;
+  }
+
+  .card-3d::after {
+    content: "";
+    position: absolute;
+    inset: 5px 7px auto auto;
+    width: 38%;
+    height: 28%;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.55);
+    filter: blur(4px);
+    pointer-events: none;
+  }
+
+  .deal-deck {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 4rem;
+    height: 5.75rem;
+    transform: translate(-50%, -50%);
+    animation: deal-deck-pop 3.2s ease both;
+  }
+
+  .deal-stack-card,
+  .deal-card {
+    position: absolute;
+    width: 3.2rem;
+    height: 4.6rem;
+    border: 2px solid rgba(255, 244, 166, 0.95);
+    border-radius: 0.55rem;
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.16), transparent 34%),
+      linear-gradient(135deg, #053d1d, #159447 52%, #ffe14a);
+    box-shadow: 0 7px 0 #033214, 0 16px 26px rgba(0, 0, 0, 0.35);
+  }
+
+  .deal-stack-card {
+    left: 0.4rem;
+    top: 0.4rem;
+    transform: translateX(calc((var(--stack) - 4) * 2px)) rotate(calc((var(--stack) - 4) * 5deg));
+    animation: shuffle-stack 0.62s ease-in-out 3;
+  }
+
+  .deal-card {
+    left: calc(50% - 1.6rem);
+    top: calc(50% - 2.3rem);
+    opacity: 0;
+    animation: fly-to-player 1.25s cubic-bezier(0.2, 0.85, 0.22, 1) var(--delay) both;
+  }
+
+  @keyframes shuffle-stack {
+    0%, 100% {
+      transform: translateX(calc((var(--stack) - 4) * 2px)) rotate(calc((var(--stack) - 4) * 5deg));
+    }
+    50% {
+      transform: translateX(calc((4 - var(--stack)) * 8px)) rotate(calc((4 - var(--stack)) * 9deg));
+    }
+  }
+
+  @keyframes deal-deck-pop {
+    0% {
+      transform: translate(-50%, -50%) scale(0.8) rotate(-8deg);
+      opacity: 0;
+    }
+    12%, 82% {
+      transform: translate(-50%, -50%) scale(1) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0.85) rotate(10deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes fly-to-player {
+    0% {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.8);
+    }
+    14% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(var(--angle)) translateY(-42vmin) rotate(var(--spin)) scale(0.72);
+    }
+  }
+
   input[type="search"]::-webkit-search-cancel-button {
     @apply hidden;
   }

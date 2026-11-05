@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import { createRequire } from 'node:module';
+import { fileURLToPath } from 'node:url';
+const require = createRequire(new URL('../artifacts/api-server/package.json', import.meta.url));
+const { build } = require('esbuild');
+const output = new URL('../artifacts/api-server/.local/profile-tests/account-validation.mjs', import.meta.url);
+await build({ entryPoints: [fileURLToPath(new URL('../artifacts/card-game/src/lib/accountValidation.ts', import.meta.url))], outfile: fileURLToPath(output), platform: 'node', format: 'esm' });
+const { validateAccount } = await import(output.href);
+assert.equal(validateAccount(' Test_123 ', 'abcdefghij'), null);
+for (const name of ['', 'ab', 'two words', 'x'.repeat(21)]) assert.match(validateAccount(name, 'abcdefghij'), /Username/);
+for (const password of ['', '12345', 'x'.repeat(16)]) assert.match(validateAccount('test', password), /Password/);
+assert.equal(validateAccount('test', 'x'.repeat(6)), null);
+assert.equal(validateAccount('test', 'x'.repeat(15)), null);
+assert.equal(validateAccount('test', 'x'.repeat(128), false), null, 'Existing passwords can still sign in');
+assert.equal(validateAccount('test', ' abcdefghi'), null, 'Do not trim passwords');
+console.log('PASS account validation: mobile whitespace, invalid names, password boundaries, passwords preserved');

@@ -9,6 +9,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Game from "@/pages/Game";
 import NotFound from "@/pages/not-found";
+import { useCallback, useState } from "react";
+import { LaunchIntro } from "@/components/LaunchIntro";
+import "./VillageTheme.css";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +25,9 @@ function Router() {
 }
 
 function App() {
+  const [introFinished, setIntroFinished] = useState(false);
+  const finishIntro = useCallback(() => setIntroFinished(true), []);
+  if (!introFinished) return <LaunchIntro onDone={finishIntro} />;
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>

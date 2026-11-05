@@ -1,0 +1,72 @@
+
+  dist\index.mjs                   1.5mb
+  dist\pino-worker.mjs           153.5kb
+  dist\pino-file.mjs             142.1kb
+  dist\pino-pretty.mjs           114.6kb
+  dist\thread-stream-worker.mjs    7.3kb
+  ...and 5 more output files...
+
+Done in 689ms
+5:46:57 pm [vite] (client) Pre-transform error: Failed to load url /src/components/GameOverScreen.tsx (resolved id: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/GameOverScreen.tsx) in C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/pages/Game.tsx. Does the file exist?
+5:47:00 pm [vite] Internal server error: Failed to resolve import "./GameOverScreen.css" from "src/components/GameOverScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/GameOverScreen.tsx:7:7
+  5  |  import { SuitMark } from "./SuitMark";
+  6  |  import { PlayerAvatar } from "./ProfileButton";
+  7  |  import "./GameOverScreen.css";
+     |          ^
+  8  |  const SUITS = { spades: "Spades", clubs: "Clubs", hearts: "Hearts", diamonds: "Diamonds" };
+  9  |  export function GameOverScreen({ gameState, myPlayerId, onNextGame, onRestartTournament, onLeave, audioControls }) {
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+5:47:00 pm [vite] Internal server error: Failed to resolve import "./GameOverScreen.css" from "src/components/GameOverScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/GameOverScreen.tsx:7:7
+  5  |  import { SuitMark } from "./SuitMark";
+  6  |  import { PlayerAvatar } from "./ProfileButton";
+  7  |  import "./GameOverScreen.css";
+     |          ^
+  8  |  const SUITS = { spades: "Spades", clubs: "Clubs", hearts: "Hearts", diamonds: "Diamonds" };
+  9  |  export function GameOverScreen({ gameState, myPlayerId, onNextGame, onRestartTournament, onLeave, audioControls }) {
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+5:47:00 pm [vite] Internal server error: Failed to resolve import "./GameOverScreen.css" from "src/components/GameOverScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/GameOverScreen.tsx:7:7
+  5  |  import { SuitMark } from "./SuitMark";
+  6  |  import { PlayerAvatar } from "./ProfileButton";
+  7  |  import "./GameOverScreen.css";
+     |          ^
+  8  |  const SUITS = { spades: "Spades", clubs: "Clubs", hearts: "Hearts", diamonds: "Diamonds" };
+  9  |  export function GameOverScreen({ gameState, myPlayerId, onNextGame, onRestartTournament, onLeave, audioControls }) {
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 5)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1790772239150,"name":"Error","message":"Should have a queue. You are likely calling Hooks conditionally, which is not allowed. (https://react.dev/link/invalid-hook-call)","stack":"\n\n\n\n    at useVoiceChat C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/hooks/useVoiceChat.ts:49:27\n    at GameContent C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/pages/Game.tsx:59:24\n\n\n\n","loc":{"line":49,"column":27,"file":"C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/hooks/useVoiceChat.ts"},"frame":"47 |    const [error, setError] = useState<string | null>(null);\n48 |    const [peers, setPeers] = useState<VoicePeer[]>([]);\n49 |    const [song, setSong] = useState({ title: \"\", playing: false });\n   |                            ^\n50 |    const [musicVolume, setMusicVolumeState] = useState(0.5);\n51 |    const [voiceVolume, setVoiceVolumeState] = useState(1);"}
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1790773022343,"name":"Error","message":"Should have a queue. You are likely calling Hooks conditionally, which is not allowed. (https://react.dev/link/invalid-hook-call)","stack":"\n\n\n\n    at GameContent C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/pages/Game.tsx:61:37\n\n\n\n\n","loc":{"line":61,"column":37,"file":"C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/pages/Game.tsx"},"frame":"59 |    const voiceSession = useVoiceChat({ gameId: myGameId, myPlayerId, hostId: gameState?.hostId, voiceEvents, sendMessage, connected });\n60 |    const [showStartScreen, setShowStartScreen] = useState(true);\n61 |    const [matchView, setMatchView] = useState(\"table\");\n   |                                      ^\n62 |    const [showDealAnimation, setShowDealAnimation] = useState(false);\n63 |    const previousPhaseRef = useRef<string | null>(null);"}
+7:05:07 pm [vite] ws proxy error:
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:218:20)
+7:05:07 pm [vite] ws proxy socket error:
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:218:20)

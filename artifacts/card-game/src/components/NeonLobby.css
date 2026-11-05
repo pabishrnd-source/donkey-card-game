@@ -1,0 +1,93 @@
+/* Scoped to the room selection screen; live game and dialog layouts stay unchanged. */
+.dd-neon-lobby {
+  background: linear-gradient(#020f14d9, #041411db), url('/donkey-table.png') center / cover;
+  border-top: 1px solid #bd9458;
+  gap: 26px;
+  padding: 30px;
+}
+.dd-neon-lobby .dd-room-actions { order: 1; gap: 24px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.dd-neon-lobby .dd-resume { order: 0; }
+.dd-neon-lobby .dd-action {
+  --glow: #36ff9a;
+  --panel: #00542c;
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+  min-height: 136px;
+  padding: 22px;
+  border: 2px solid #edd18b;
+  background: linear-gradient(145deg, var(--panel), #001a18);
+  box-shadow: inset 0 0 0 4px #081814, inset 0 0 0 5px var(--glow), inset 0 0 24px var(--glow), 0 0 12px #a9d38640;
+  color: #fff2c5;
+}
+.dd-neon-lobby .dd-action-join { --glow: #35bbff; --panel: #074eac; }
+.dd-neon-lobby .dd-action-resume { --glow: #ffce55; --panel: #775015; }
+.dd-neon-lobby .dd-action:disabled { opacity: .55; cursor: not-allowed; }
+.dd-neon-lobby .dd-action > span:not(.dd-action-icon) { min-width: 0; overflow-wrap: anywhere; }
+.dd-neon-lobby .dd-action-icon {
+  width: 64px;
+  height: 64px;
+  border: 2px solid #f6dc96;
+  background: #001b2b8a;
+  box-shadow: 0 0 10px var(--glow), inset 0 0 8px #fff4;
+}
+.dd-neon-lobby .dd-action-icon svg { width: 30px; height: 30px; }
+.dd-neon-lobby .dd-action strong { font: 700 28px/1.15 Georgia, serif; }
+.dd-neon-lobby .dd-action small { font-size: 15px; margin-top: 8px; }
+.dd-neon-lobby .dd-section-label { align-items: center; gap: 20px; }
+.dd-neon-lobby .dd-section-label::after { content: ''; height: 1px; flex: 1; background: #d6b96c; order: 1; }
+.dd-neon-lobby .dd-section-label h2 { font: 700 26px/1.2 Georgia, serif; color: #ffedb4; }
+.dd-neon-lobby .dd-section-label > span { order: 2; color: #ffe8b5; font-size: 14px; white-space: nowrap; }
+.dd-neon-lobby .dd-seats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.dd-neon-lobby .dd-seat {
+  min-height: 180px;
+  padding: 20px 14px;
+  border: 2px solid var(--seat-accent);
+  background-color: var(--seat-bg);
+  background-image: repeating-linear-gradient(45deg, transparent 0 24px, #ffffff06 24px 25px), repeating-linear-gradient(-45deg, transparent 0 24px, #ffffff06 24px 25px);
+  box-shadow: inset 0 0 0 4px #011820, inset 0 0 0 5px #efdaa48c, inset 0 0 24px color-mix(in srgb, var(--seat-accent) 50%, transparent), 0 0 12px color-mix(in srgb, var(--seat-accent) 35%, transparent);
+}
+.dd-neon-lobby .dd-seat-avatar { width: 60px; height: 60px; border: 2px solid #ffe298; box-shadow: 0 0 12px var(--seat-accent); background: #031c24b0; }
+.dd-neon-lobby .dd-seat-avatar > svg { width: 30px; height: 30px; }
+.dd-neon-lobby .dd-seat-avatar .dd-seat-crown { width: 24px; height: 24px; }
+.dd-neon-lobby .dd-seat strong { font: 700 23px/1.2 Georgia, serif; color: #fff1bf; }
+.dd-neon-lobby .dd-seat small { color: #e0efee; font-size: 14px; }
+.dd-neon-lobby .dd-seat-suit { width: 92px; height: 92px; top: auto; bottom: 16px; left: 12px; opacity: .2; }
+.dd-neon-lobby .dd-seat:first-child small { border: 1px solid #2de68a; border-radius: 8px; padding: 3px 12px; background: #002b1b; color: #9dffc5; }
+.dd-neon-lobby .dd-seat:first-child small::before { content: ''; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #43fc95; margin-right: 7px; }
+@media (max-width: 900px), (pointer: coarse) {
+  .dd-neon-lobby { padding: 12px; gap: 12px; }
+  .dd-neon-lobby .dd-room-actions, .dd-neon-lobby .dd-seats { gap: 10px; }
+  .dd-neon-lobby .dd-action { min-height: 72px; padding: 10px; gap: 8px; }
+  .dd-neon-lobby .dd-action-icon { width: 32px; height: 32px; }
+  .dd-neon-lobby .dd-action-icon svg { width: 20px; height: 20px; }
+  .dd-neon-lobby .dd-action strong { font-size: 16px; }
+  .dd-neon-lobby .dd-action small { font-size: 11px; margin-top: 4px; }
+  .dd-neon-lobby .dd-action-arrow { display: none; }
+  .dd-neon-lobby .dd-section-label { gap: 8px; }
+  .dd-neon-lobby .dd-section-label h2 { font-size: 18px; }
+  .dd-neon-lobby .dd-section-label > span { font-size: 11px; }
+  .dd-neon-lobby .dd-seat { min-height: 108px; padding: 10px 8px; gap: 4px; }
+  .dd-neon-lobby .dd-seat strong { font-size: 16px; }
+  .dd-neon-lobby .dd-seat small { font-size: 11px; }
+  .dd-neon-lobby .dd-seat-avatar { width: 34px; height: 34px; }
+  .dd-neon-lobby .dd-seat-avatar > svg { width: 20px; height: 20px; }
+  .dd-neon-lobby .dd-seat-avatar .dd-seat-crown { width: 16px; height: 16px; }
+  .dd-neon-lobby .dd-seat-suit { width: 54px; height: 54px; }
+  .dd-neon-lobby .dd-seat:first-child small { padding: 2px 6px; }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .dd-neon-lobby { padding: 10px; gap: 10px; }
+  .dd-neon-lobby .dd-action { min-height: 60px; padding: 10px; }
+  .dd-neon-lobby .dd-action strong { font-size: 16px; }
+  .dd-neon-lobby .dd-action-icon { width: 30px; height: 30px; }
+  .dd-neon-lobby .dd-seats { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+  .dd-neon-lobby .dd-seat { min-height: 96px; padding: 8px 6px; gap: 4px; }
+  .dd-neon-lobby .dd-seat-avatar { width: 30px; height: 30px; }
+  .dd-neon-lobby .dd-seat strong { font-size: 15px; }
+  .dd-neon-lobby .dd-seat small { font-size: 11px; }
+}
+@media (max-width: 480px) {
+  .dd-neon-lobby .dd-room-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dd-neon-lobby .dd-action-resume { grid-column: 1 / -1; }
+}

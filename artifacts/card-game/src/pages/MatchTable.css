@@ -1,0 +1,78 @@
+.match-lounge { min-height:100dvh; background:linear-gradient(#071310ad,#06100feb),url('/donkey-lobby-wide.png') center/cover fixed; font-family:Arial,sans-serif; padding-top:max(12px,env(safe-area-inset-top)); padding-bottom:max(16px,env(safe-area-inset-bottom)); }
+.match-lounge * { min-width:0; letter-spacing:0!important; }
+.dealer-badge { display:inline-grid; place-items:center; width:18px; height:18px; flex-shrink:0; background:#f1d271; color:#17372b; border-radius:50%; font:700 11px Arial,sans-serif; }
+.match-player .player-card-count { display:inline-flex; gap:3px; white-space:nowrap; }
+.match-dealer-label { font-size:12px; color:#fff0b3; overflow-wrap:anywhere; }
+.match-lounge .match-header { background:#071318e8; border-radius:0; border:0; border-bottom:1px solid #b19857; box-shadow:none; }
+.match-header>div:first-child>div:first-child { color:#eacd82; font:bold 23px Georgia,serif; }
+.match-header>div:first-child>div:last-child { font-size:20px; }
+.match-header button { min-height:44px; }
+.match-header button:focus-visible,.match-lounge button:focus-visible { outline:2px solid #f7df94; outline-offset:3px; }
+.match-opponents { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,240px)); justify-content:center; gap:12px; }
+.match-lounge .match-player { background:#0c1a24f2; border:1px solid #62716d; border-radius:8px; box-shadow:none; color:#e9f2ee; }
+.match-lounge .match-player.ring-4 { --tw-ring-color:#efd26c88; border-color:#edcf75; }
+.match-player .text-slate-950,.match-player .text-slate-500 { color:#d1dfdc; }
+.match-player .text-sky-600 { color:#f3d67c; }
+.match-player [class*="bg-slate-100"] { background:#253b42; color:#d7e2e1; }
+.match-player .text-slate-800 { color:#f1e5b2; }
+.match-opponent>div:first-child { flex-direction:row; align-items:center; gap:8px; }
+.match-opponent>div:first-child>div:last-child { font-size:10px; }
+.match-opponent .match-card-fan { display:flex; flex-wrap:nowrap; gap:0; height:62px; max-height:62px; padding:2px 3px 8px; overflow:hidden; }
+.match-card-fan .donkey-card-back { width:34px; height:49px; margin-right:-9px; box-shadow:0 3px 4px #0008; }
+.match-lounge .donkey-card-back { background:repeating-linear-gradient(45deg,#174270 0 3px,#20568a 3px 5px); border:2px solid #deded5; border-radius:4px; }
+.match-lounge .donkey-card-back>div { border:1px solid #9ec2df; border-radius:40%; background:#112d6099; }
+.match-lounge .donkey-card-back span { display:none; }
+.match-lounge .match-table { background:transparent; border:0; border-radius:0; box-shadow:none; padding:0; overflow:visible; }
+.match-table>div.pointer-events-none,.match-felt>div.pointer-events-none { display:none; }
+.match-round-info { background:#0b1920eb; border-top:1px solid #89784c; padding:12px; border-radius:0; }
+.match-round-info>div:first-child { color:#f3d67f; background:#3a3827; }
+.match-lounge .match-felt { background:#064331 url("/donkey-tropical-table.png") center / 100% 100% no-repeat; border:0; border-radius:8px; min-height:300px; padding:32px; box-shadow:0 10px 20px #0007; }
+.match-felt .card-3d { background:#fff8e5; box-shadow:0 5px 0 #b88832,0 9px 14px #001b1590; }
+.table-card-name { max-width:120px; overflow-wrap:anywhere; text-align:center; }
+.match-stats { grid-template-columns:repeat(4,minmax(0,1fr)); }
+.match-stats>div { background:#101f29ee; border-radius:8px; border-color:#405864; padding:14px; }
+.match-stats>div>span:last-child { color:#f1d58b; font-size:18px; overflow-wrap:anywhere; }
+.match-lounge .match-self { border:1px solid #d7bd68; background:#132720f5; }
+.match-self .match-hand { flex-wrap:nowrap; justify-content:flex-start; overflow-x:auto; padding:10px 4px 15px; scroll-padding:8px; }
+.match-self .match-hand .card-3d { width:64px; height:94px; background:#fff8e5; box-shadow:0 4px 0 #b28842; }
+.match-sidebar>div { background:#0c1b24eb; border-radius:0; border:0; border-top:1px solid #746947; box-shadow:none; }
+.match-roster { background:#0b1821ed; padding:18px 12px; border-top:1px solid #c2a25c; }
+.match-roster h2 { font-size:16px; font-weight:bold; margin-bottom:14px; color:#f4deb0; }
+.match-roster>div { display:flex; align-items:center; gap:9px; padding:12px 0; border-top:1px solid #34474f; }
+.roster-avatar { display:grid; place-items:center; flex-shrink:0; width:38px; height:38px; border-radius:50%; background:#076a55; border:1px solid #d3e8db; font-size:20px; }
+.match-roster strong { display:block; font-size:13px; overflow-wrap:anywhere; }
+.match-roster small { display:block; font-size:11px; color:#b3c6c7; margin-top:4px; }
+.match-roster>div>div { flex:1; }
+.roster-status { font-size:10px; color:#c5d6d8; }
+.roster-current .roster-status { color:#f5d672; }
+@media(max-width:700px) {
+ .match-layout>main { display:flex; flex-direction:column; gap:12px; }
+ .match-layout>main>* { margin-top:0; }
+ .match-lounge .match-table { display:contents; }
+ .match-opponents { order:1; }
+ .match-round-info { order:2; }
+ .match-lounge .match-felt { order:3; margin-top:0; }
+ .match-self { order:4; }
+ .match-stats { order:5; margin-top:0; }
+ .match-header>div:first-child { display:flex; align-items:baseline; gap:12px; }
+ .match-header>div:first-child>div:last-child { font-size:16px; }
+ .match-header>div:last-child>div { padding-left:8px; padding-right:8px; font-size:10px; }
+ .match-header>div:last-child>button:last-child { padding-left:8px; padding-right:8px; }
+ .match-lounge { background-attachment:scroll; padding-left:10px; padding-right:10px; }
+ .match-header { padding:10px!important; }
+ .match-header>div:last-child { gap:6px; }
+ .match-opponents { display:flex; overflow-x:auto; padding:4px 3px 8px; scroll-snap-type:x proximity; }
+ .match-opponents>div { flex:0 0 180px; scroll-snap-align:start; padding:10px; }
+ .match-opponent>div:first-child { margin-bottom:6px; }
+ .match-opponent>div:first-child>div:last-child { display:none; }
+ .match-round-info { gap:8px; padding:10px; }
+ .match-round-info>div:last-child { gap:5px; }
+ .match-round-info>div:last-child>div { padding:5px 8px; font-size:10px; }
+ .match-lounge .match-felt { border-width:5px; border-radius:44px; padding:20px 12px; min-height:230px; }
+ .match-stats { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .match-stats>div { padding:9px; }
+ .match-stats>div>span:first-child { font-size:10px; }
+ .match-stats>div>span:last-child { font-size:14px; }
+ .match-self .match-hand .card-3d { width:56px; height:82px; }
+ .match-self>div:first-child { flex-direction:row; align-items:center; }
+}

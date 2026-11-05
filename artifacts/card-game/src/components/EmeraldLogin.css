@@ -1,0 +1,75 @@
+.account-login-screen {
+  position: relative;
+  isolation: isolate;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 32px max(24px, 6%);
+  background: #041b16;
+  overflow-x: clip;
+}
+.emerald-login-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; z-index: -1; pointer-events: none; }
+.account-login-screen .account-login-box {
+  grid-template-columns: minmax(0, 1fr);
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  width: min(46%, 480px);
+  min-width: 0;
+  padding: 30px;
+  gap: 18px;
+  background: linear-gradient(135deg, #053d2de8, #001a15f5);
+  border: 2px solid #e4bd60;
+  border-radius: 8px;
+  box-shadow: inset 0 0 0 4px #102e22, inset 0 0 0 5px #b890414d, 0 12px 45px #0008;
+  color: #fff0bf;
+}
+.account-login-screen .account-login-box > * { min-width: 0; max-width: 100%; }
+.emerald-login-crown { justify-self: center; width: 44px; height: 36px; color: #ffe086; fill: #9c6c22; filter: drop-shadow(0 2px 1px #000); }
+.account-login-screen h1 { font: 700 58px/1 Georgia, serif; color: #ffe398; text-shadow: 0 2px 0 #8d551c, 0 4px 8px #000; }
+.emerald-login-greeting { margin: 0 0 8px; text-align: center; font-size: 18px; color: #fff0ba; }
+.account-login-screen .account-login-box > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 62px;
+  padding: 12px 16px;
+  border: 2px solid #d4b86e;
+  border-radius: 8px;
+  background: linear-gradient(#164639, #041e19);
+  box-shadow: inset 0 2px 4px #f5de9d40, 0 3px 0 #032319;
+  color: #fff2c7;
+  font-size: 17px;
+}
+.account-login-box > button span { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.account-login-box > button svg { width: 22px; height: 22px; flex-shrink: 0; }
+.account-login-screen .account-login-box .account-continue { background: linear-gradient(#34d889, #08653b 50%, #004827); box-shadow: inset 0 2px 4px #ddffa2, 0 3px 0 #81601c, 0 0 16px #29bc7040; font-weight: 700; }
+.account-login-box > button:disabled { opacity: .6; cursor: wait; }
+.account-login-box > button:hover:not(:disabled) { filter: brightness(1.12); }
+.account-login-box > button:focus-visible { outline: 3px solid #fff1b1; outline-offset: 3px; }
+@media (max-width: 600px) and (orientation: portrait) {
+  .account-login-screen { align-items: flex-end; padding: 38svh 16px 24px; }
+  .emerald-login-art { object-position: 24% center; }
+  .account-login-screen .account-login-box { width: 100%; padding: 22px; gap: 12px; }
+  .account-login-screen h1 { font-size: 44px; }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .emerald-login-art { object-fit: contain; object-position: left center; }
+  .account-login-screen { min-height: 100dvh; padding: 12px max(16px, env(safe-area-inset-right)) 12px max(16px, env(safe-area-inset-left)); }
+  .account-login-screen .account-login-box { width: 46%; max-height: calc(100dvh - 24px); padding: 12px 16px; gap: 7px; }
+  .account-login-screen h1 { font-size: 32px; }
+  .emerald-login-crown { width: 26px; height: 20px; }
+  .emerald-login-greeting { margin-bottom: 2px; font-size: 14px; }
+  .account-login-screen .account-login-box > button { min-height: 46px; padding: 8px; gap: 8px; font-size: 14px; }
+  .account-login-screen .account-panel { gap: 8px; }
+}
+@media (min-height: 501px) and (min-width: 601px) and (max-width: 900px) {
+  .account-login-screen .account-login-box { padding: 20px; gap: 14px; }
+  .account-login-screen h1 { font-size: 42px; }
+}
+@media (max-width: 600px) and (orientation: landscape) {
+  .account-login-screen .account-login-box { width: 62%; }
+}

@@ -1,0 +1,500 @@
+
+  dist\index.mjs                   1.5mb
+  dist\pino-worker.mjs           153.5kb
+  dist\pino-file.mjs             142.1kb
+  dist\pino-pretty.mjs           114.6kb
+  dist\thread-stream-worker.mjs    7.3kb
+  ...and 5 more output files...
+
+Done in 660ms
+3:23:33 pm [vite] Internal server error: Failed to resolve import "./VillageTheme.css" from "src/App.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/App.tsx:14:7
+  10 |  import { useCallback, useState } from "react";
+  11 |  import { LaunchIntro } from "@/components/LaunchIntro";
+  12 |  import "./VillageTheme.css";
+     |          ^
+  13 |  const queryClient = new QueryClient();
+  14 |  function Router() {
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+3:23:33 pm [vite] Internal server error: Failed to resolve import "./VillageTheme.css" from "src/App.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/App.tsx:14:7
+  10 |  import { useCallback, useState } from "react";
+  11 |  import { LaunchIntro } from "@/components/LaunchIntro";
+  12 |  import "./VillageTheme.css";
+     |          ^
+  13 |  const queryClient = new QueryClient();
+  14 |  function Router() {
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 9)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+3:23:35 pm [vite] Internal server error: Failed to resolve import "./VillageLobby.css" from "src/components/GameDashboard.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/GameDashboard.tsx:38:7
+  36 |  import { Switch } from "@/components/ui/switch";
+  37 |  import "./GameDashboard.css";
+  38 |  import "./VillageLobby.css";
+     |          ^
+  39 |  import { ProfileButton, PlayerAvatar } from "./ProfileButton";
+  40 |  import { saveProfile, useProfile } from "@/lib/profile";
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+3:23:35 pm [vite] Internal server error: Failed to resolve import "./VillageLobby.css" from "src/components/GameDashboard.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/GameDashboard.tsx:38:7
+  36 |  import { Switch } from "@/components/ui/switch";
+  37 |  import "./GameDashboard.css";
+  38 |  import "./VillageLobby.css";
+     |          ^
+  39 |  import { ProfileButton, PlayerAvatar } from "./ProfileButton";
+  40 |  import { saveProfile, useProfile } from "@/lib/profile";
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+3:23:38 pm [vite] (client) Pre-transform error: Failed to resolve import "./VillageLobby.css" from "src/components/GameDashboard.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/GameDashboard.tsx:38:7
+  36 |  import { Switch } from "@/components/ui/switch";
+  37 |  import "./GameDashboard.css";
+  38 |  import "./VillageLobby.css";
+     |          ^
+  39 |  import { ProfileButton, PlayerAvatar } from "./ProfileButton";
+  40 |  import { saveProfile, useProfile } from "@/lib/profile";
+3:23:38 pm [vite] Internal server error: Failed to resolve import "./VillageLobby.css" from "src/components/GameDashboard.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/GameDashboard.tsx:38:7
+  36 |  import { Switch } from "@/components/ui/switch";
+  37 |  import "./GameDashboard.css";
+  38 |  import "./VillageLobby.css";
+     |          ^
+  39 |  import { ProfileButton, PlayerAvatar } from "./ProfileButton";
+  40 |  import { saveProfile, useProfile } from "@/lib/profile";
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+3:23:38 pm [vite] Internal server error: Failed to resolve import "./VillageLobby.css" from "src/components/GameDashboard.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/GameDashboard.tsx:38:7
+  36 |  import { Switch } from "@/components/ui/switch";
+  37 |  import "./GameDashboard.css";
+  38 |  import "./VillageLobby.css";
+     |          ^
+  39 |  import { ProfileButton, PlayerAvatar } from "./ProfileButton";
+  40 |  import { saveProfile, useProfile } from "@/lib/profile";
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 6)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+3:50:53 pm [vite] Internal server error: Failed to resolve import "./VillageLogin.css" from "src/components/AccountHub.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/AccountHub.tsx:12:7
+  12 |  import "./EmeraldLogin.css";
+  13 |  import "./EmeraldFriends.css";
+  14 |  import "./VillageLogin.css";
+     |          ^
+  15 |  const AccountContext = createContext(null);
+  16 |  export function AccountButton() {
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 11)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+      at async viteTransformMiddleware (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:24546:20)
+4:15:03 pm [vite] Internal server error: Failed to resolve import "./VillageMenu.css" from "src/components/StartScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/StartScreen.tsx:30:7
+  30 |  import "./StartScreen.css";
+  31 |  import "./RoyalLobby.css";
+  32 |  import "./VillageMenu.css";
+     |          ^
+  33 |  import { AccountButton } from "./AccountHub";
+  34 |  const portraitLetterEdges = [150, 325, 545, 704, 840, 974, 1100];
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+4:15:03 pm [vite] Internal server error: Failed to resolve import "./VillageMenu.css" from "src/components/StartScreen.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/StartScreen.tsx:30:7
+  30 |  import "./StartScreen.css";
+  31 |  import "./RoyalLobby.css";
+  32 |  import "./VillageMenu.css";
+     |          ^
+  33 |  import { AccountButton } from "./AccountHub";
+  34 |  const portraitLetterEdges = [150, 325, 545, 704, 840, 974, 1100];
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 7)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+5:47:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:48:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:49:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:50:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:51:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:52:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:53:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:54:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:55:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:56:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:57:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:58:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+5:59:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:00:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:01:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:02:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:03:08 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:03:11 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:03:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:04:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:05:29 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:05:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:06:29 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:06:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:07:14 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:07:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:08:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:09:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)
+6:10:45 pm [vite] Internal server error: Cannot find module 'C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\dist.js' imported from C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c\node_modules\vite\dist\node\chunks\config.js
+      at finalizeResolution (node:internal/modules/esm/resolve:283:11)
+      at moduleResolve (node:internal/modules/esm/resolve:952:10)
+      at defaultResolve (node:internal/modules/esm/resolve:1188:11)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at o (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/@tailwindcss+node@4.2.1/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs:1:69)
+      at nextResolve (node:internal/modules/esm/hooks:864:28)
+      at Hooks.resolve (node:internal/modules/esm/hooks:306:30)
+      at MessagePort.handleMessage (node:internal/modules/esm/worker:196:24)
+      at [nodejs.internal.kHybridDispatch] (node:internal/event_target:831:20)
+      at MessagePort.<anonymous> (node:internal/per_context/messageport:23:28)

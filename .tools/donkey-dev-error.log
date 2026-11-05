@@ -1,0 +1,300 @@
+
+  dist\index.mjs                   1.5mb
+  dist\pino-worker.mjs           153.5kb
+  dist\pino-file.mjs             142.1kb
+  dist\pino-pretty.mjs           114.6kb
+  dist\thread-stream-worker.mjs    7.3kb
+  ...and 5 more output files...
+
+Done in 874ms
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1790242669806,"name":"Error","message":"Cannot read properties of null (reading 'useRef')","stack":"\n\n\n\n\n\n\n\n\n"}
+5:35:34 pm [vite] Internal server error: C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\artifacts\card-game\src\components\Lobby.tsx: Unterminated JSX contents. (172:21)
+
+  170 |                       accent={["bg-emerald-700", "bg-sky-700", "bg-violet-700", "bg-amber-700"][index % 4]}
+  171 |                     />
+> 172 |                   ))}
+      |                      ^
+  173 |
+  Plugin: vite:react-babel
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/Lobby.tsx:172:21
+  170 |                        accent={["bg-emerald-700", "bg-sky-700", "bg-violet-700", "bg-amber-700"][index % 4]}
+  171 |                      />
+  172 |                    ))}
+      |                       ^
+  173 |  
+      at constructor (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:6599:19)
+      at TypeScriptParserMixin.jsxReadToken (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4448:20)
+      at TypeScriptParserMixin.getTokenFromCode (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4774:12)
+      at TypeScriptParserMixin.getTokenFromCode (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:5782:10)
+      at TypeScriptParserMixin.next (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:5692:10)
+      at TypeScriptParserMixin.eat (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:5696:12)
+      at TypeScriptParserMixin.expect (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:6898:15)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4637:10)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4711:36)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4698:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4698:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4698:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4698:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4698:32)
+      at TypeScriptParserMixin.jsxParseElement (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4749:17)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4759:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10831:21)
+      at C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9775:39
+      at TypeScriptParserMixin.tryParse (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:6907:20)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9775:18)
+      at C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:12493:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11675:28)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10784:23)
+      at C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10780:17)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:13142:28)
+5:35:51 pm [vite] (client) Pre-transform error: C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\artifacts\card-game\src\components\Lobby.tsx: Unterminated JSX contents. (172:21)
+
+  170 |                       accent={["bg-emerald-700", "bg-sky-700", "bg-violet-700", "bg-amber-700"][index % 4]}
+  171 |                     />
+> 172 |                   ))}
+      |                      ^
+  173 |
+  Plugin: vite:react-babel
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/Lobby.tsx:172:21
+  170 |                        accent={["bg-emerald-700", "bg-sky-700", "bg-violet-700", "bg-amber-700"][index % 4]}
+  171 |                      />
+  172 |                    ))}
+      |                       ^
+  173 |  
+5:35:51 pm [vite] Internal server error: C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\artifacts\card-game\src\components\Lobby.tsx: Unterminated JSX contents. (172:21)
+
+  170 |                       accent={["bg-emerald-700", "bg-sky-700", "bg-violet-700", "bg-amber-700"][index % 4]}
+  171 |                     />
+> 172 |                   ))}
+      |                      ^
+  173 |
+  Plugin: vite:react-babel
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/Lobby.tsx:172:21
+  170 |                        accent={["bg-emerald-700", "bg-sky-700", "bg-violet-700", "bg-amber-700"][index % 4]}
+  171 |                      />
+  172 |                    ))}
+      |                       ^
+  173 |  
+      at constructor (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:6599:19)
+      at TypeScriptParserMixin.jsxReadToken (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4448:20)
+      at TypeScriptParserMixin.getTokenFromCode (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4774:12)
+      at TypeScriptParserMixin.getTokenFromCode (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:5782:10)
+      at TypeScriptParserMixin.next (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:5692:10)
+      at TypeScriptParserMixin.eat (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:5696:12)
+      at TypeScriptParserMixin.expect (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:6898:15)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4637:10)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4711:36)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4698:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4698:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4698:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4698:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4698:32)
+      at TypeScriptParserMixin.jsxParseElement (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4749:17)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4759:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10831:21)
+      at C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9775:39
+      at TypeScriptParserMixin.tryParse (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:6907:20)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9775:18)
+      at C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:12493:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11675:28)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10784:23)
+      at C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10780:17)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:13142:28)
+5:36:40 pm [vite] (client) Pre-transform error: C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\artifacts\card-game\src\components\Lobby.tsx: Unterminated JSX contents. (299:6)
+
+  297 |       onResumeGame={onResumeGame}
+  298 |       onBackToStart={onBackToStart}
+> 299 |     />
+      |       ^
+  300 |   );
+  301 | }
+  302 |
+  Plugin: vite:react-babel
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/Lobby.tsx:299:6
+  297 |        onResumeGame={onResumeGame}
+  298 |        onBackToStart={onBackToStart}
+  299 |      />
+      |        ^
+  300 |    );
+  301 |  }
+5:36:40 pm [vite] Internal server error: C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\artifacts\card-game\src\components\Lobby.tsx: Unterminated JSX contents. (299:6)
+
+  297 |       onResumeGame={onResumeGame}
+  298 |       onBackToStart={onBackToStart}
+> 299 |     />
+      |       ^
+  300 |   );
+  301 | }
+  302 |
+  Plugin: vite:react-babel
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/Lobby.tsx:299:6
+  297 |        onResumeGame={onResumeGame}
+  298 |        onBackToStart={onBackToStart}
+  299 |      />
+      |        ^
+  300 |    );
+  301 |  }
+      at constructor (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:365:19)
+      at TypeScriptParserMixin.raise (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:6599:19)
+      at TypeScriptParserMixin.jsxReadToken (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4448:20)
+      at TypeScriptParserMixin.getTokenFromCode (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4774:12)
+      at TypeScriptParserMixin.getTokenFromCode (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9987:11)
+      at TypeScriptParserMixin.nextToken (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:5782:10)
+      at TypeScriptParserMixin.next (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:5692:10)
+      at TypeScriptParserMixin.eat (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:5696:12)
+      at TypeScriptParserMixin.expect (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:6898:15)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4671:10)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10043:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4662:17)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4686:33)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4698:32)
+      at TypeScriptParserMixin.jsxParseElement (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4749:17)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4759:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10831:21)
+      at C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9775:39
+      at TypeScriptParserMixin.tryParse (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:6907:20)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9775:18)
+      at C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10800:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:12426:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10800:17)
+      at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:12493:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11675:28)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11331:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:4764:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11081:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11066:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:11046:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9837:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10899:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10904:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10881:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10831:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9786:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10784:23)
+      at C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10780:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:12421:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:10780:17)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:13142:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:12798:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\pabish\Downloads\Card-Duel-Masters\Card-Duel-Masters\node_modules\.pnpm\@babel+parser@7.29.0\node_modules\@babel\parser\lib\index.js:9508:18)
+6:11:56 pm [vite] Internal server error: Failed to resolve import "./MatchTable.css" from "src/pages/Game.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/pages/Game.tsx:7:7
+  2  |  import { Fragment, jsxDEV } from "react/jsx-dev-runtime";
+  3  |  var _s = $RefreshSig$();
+  4  |  import "./MatchTable.css";
+     |          ^
+  5  |  import { useEffect, useRef, useState } from "react";
+  6  |  import { LogOut, Volume2, VolumeX } from "lucide-react";
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 1)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+      at async viteTransformMiddleware (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:24546:20)
+6:34:21 pm [vite] Internal server error: Failed to resolve import "./PlayingCard.css" from "src/components/PlayingCard.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/PlayingCard.tsx:5:7
+  4  |  import { cn } from "@/lib/utils";
+  5  |  import { SuitMark } from "./SuitMark";
+  6  |  import "./PlayingCard.css";
+     |          ^
+  7  |  const sides = (rows) => rows.flatMap((y) => [[27, y], [73, y]]);
+  8  |  const layouts = {
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 4)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+      at async viteTransformMiddleware (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:24546:20)
+2:35:27 pm [vite] ws proxy error:
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:218:20)
+2:35:27 pm [vite] ws proxy socket error:
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:218:20)
+5:41:26 pm [vite] Internal server error: Failed to resolve import "./Landscape.css" from "src/pages/Game.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/pages/Game.tsx:21:7
+  15 |  import { ChatPanel } from "@/components/ChatPanel";
+  16 |  import { VoiceChatPanel } from "@/components/VoiceChatPanel";
+  17 |  import "./Landscape.css";
+     |          ^
+  18 |  const SUIT_LABELS = {
+  19 |    spades: "Spades",
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29003:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:29000:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27123:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27181:32
+      at async Promise.all (index 14)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:27149:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:28801:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:22670:26)
+      at async viteTransformMiddleware (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.2_@types+node@25.3_d5269a53d302b42e602832b0eaecec0c/node_modules/vite/dist/node/chunks/config.js:24546:20)
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1790341388748,"name":"Error","message":"Should have a queue. You are likely calling Hooks conditionally, which is not allowed. (https://react.dev/link/invalid-hook-call)","stack":"\n\n\n\n    at Game C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/pages/Game.tsx:52:37\n\n\n\n\n","loc":{"line":52,"column":37,"file":"C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/pages/Game.tsx"},"frame":"50 |    const voiceSession = useVoiceChat({ gameId: myGameId, myPlayerId, voiceEvents, sendMessage });\n51 |    const [showStartScreen, setShowStartScreen] = useState(true);\n52 |    const [matchView, setMatchView] = useState(\"table\");\n   |                                      ^\n53 |    const [showDealAnimation, setShowDealAnimation] = useState(false);\n54 |    const previousPhaseRef = useRef<string | null>(null);"}

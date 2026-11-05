@@ -1,0 +1,39 @@
+/* All mobile sections remain reachable by scrolling. */
+.compact-only,.card-page-controls { display:none; }
+.card-pages,.card-pages-items { display:contents; }
+.card-pages-items>div { flex-shrink:0; }
+.room-lounge,.match-lounge,.donkey-dashboard { overflow-wrap:anywhere; }
+.rl-header,.rl-actions,.rl-chat-heading { flex-wrap:wrap; }
+.rl-avatar,.roster-avatar,.rl-small-avatar { flex-shrink:0; }
+.rl-chat-heading>.voice-panel { max-width:100%; width:auto; position:static; }
+@media(max-width:900px) {
+ .dd-navigation { grid-template-columns:repeat(5,minmax(0,1fr)); }
+ .dd-navigation .dd-nav-settings { display:flex; }
+ .dd-header { flex-wrap:wrap; gap:8px; }
+ .dd-profile-gear,.dd-header-caption,.dd-profile-copy { display:none; }
+ .dd-header .profile-button { margin-left:auto; }
+ .match-self .match-hand { flex-wrap:wrap; justify-content:center; overflow:visible; }
+ .match-opponents { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); overflow:visible; }
+ .match-opponents>div { min-width:0; }
+ .rl-chat-heading { align-items:flex-start; gap:12px; }
+}
+@media(orientation:landscape) and (max-height:600px) {
+ .donkey-start { min-height:100dvh; }
+ .donkey-start-content { padding:24px; }
+ .donkey-start h1 { font-size:60px; }
+ .donkey-title-ornament { margin:10px 0; }
+ .donkey-start-actions { gap:10px; }
+ .donkey-play-button { min-height:44px; font-size:22px; padding:8px; }
+ .donkey-start-footer { padding:8px; gap:5px; }
+ .donkey-sound-button { top:12px; right:12px; }
+ .dd-hero { min-height:220px; }
+ .dd-hero h1 { font-size:42px; }
+ .dd-seats,.rl-seats { grid-template-columns:repeat(4,minmax(0,1fr)); }
+ .rl-seat { min-height:140px; }
+ .game-dialog.dd-dialog,.game-dialog.profile-dialog { width:min(600px,calc(100% - 24px)); padding:16px 24px; }
+ .dd-dialog-symbol { display:none; }
+ .dd-dialog h2 { margin:0; font-size:20px; }
+ .dd-form { gap:6px; }
+ .dd-form input { min-height:40px; padding:6px 10px; }
+ .dd-submit { min-height:40px; padding:6px; }
+}

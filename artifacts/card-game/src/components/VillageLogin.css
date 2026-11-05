@@ -1,0 +1,161 @@
+/* Live controls aligned to the text-free wood and leaf artwork. */
+.account-login-screen.village-welcome-screen {
+  padding: 16px max(16px, 5%);
+  align-items: center;
+  background: #126c5c url('/donkey-tropical-results.png') center / cover no-repeat;
+}
+.village-login-sign {
+  position: relative;
+  flex: none;
+  width: min(46%, 460px);
+  aspect-ratio: 1158 / 1358;
+  color: #fff8db;
+  isolation: isolate;
+  z-index: 1;
+}
+.village-login-skin {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+  z-index: -1;
+}
+.village-login-greeting {
+  position: absolute;
+  top: 35.5%;
+  left: 26%;
+  width: 44%;
+  height: 7%;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  text-shadow: 0 2px 3px #261604;
+}
+.village-login-sign .village-leaf-button {
+  position: absolute;
+  left: 6%;
+  width: 87%;
+  height: 12.5%;
+  min-height: 44px;
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) 24px;
+  align-items: center;
+  gap: 12px;
+  padding: 0 5%;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  box-shadow: none;
+  color: #fff7d2;
+  font-size: 19px;
+  line-height: 1.15;
+  font-weight: 800;
+  text-shadow: 0 2px 3px #082612, 0 0 6px #082612;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background-color 120ms, transform 120ms;
+}
+.village-leaf-button span { min-width: 0; overflow-wrap: anywhere; }
+.village-leaf-button svg { width: 28px; height: 28px; filter: drop-shadow(0 2px 2px #12270c); }
+.village-leaf-button svg:last-child { width: 24px; color: #ffe783; stroke-width: 3; }
+.village-login-continue { top: 48%; }
+.village-login-switch { top: 64.7%; }
+.village-login-offline { top: 81.5%; }
+.village-login-sign .village-leaf-button:hover:not(:disabled) { background: #fff9b317; }
+.village-login-sign .village-leaf-button:active:not(:disabled) { transform: translateY(2px); background: #00180d30; }
+.village-login-sign .village-leaf-button:disabled { opacity: .5; cursor: not-allowed; }
+.village-login-status {
+  position: absolute;
+  bottom: -18px;
+  left: 5%;
+  width: 90%;
+  padding: 4px 8px;
+  text-align: center;
+  background: #123e32;
+  border-radius: 6px;
+  font-size: 13px;
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .account-login-screen.village-welcome-screen {
+    justify-content: flex-end;
+    padding: 16px 8px 20px;
+    background-position: 28% center;
+  }
+  .account-login-screen.village-welcome-screen .emerald-login-art {
+    display: block;
+    object-fit: cover;
+    object-position: 28% center;
+  }
+  .village-login-sign { width: min(92%, 460px, calc((100svh - 40px) * .8527)); }
+  .village-login-sign .village-leaf-button { font-size: 17px; gap: 8px; }
+  .village-login-greeting { font-size: 16px; }
+}
+@media (orientation: landscape) and (max-height: 600px) {
+  .account-login-screen.village-welcome-screen { padding: 12px max(24px, 9%); }
+  .village-login-sign { width: min(46%, calc((100dvh - 24px) * .8527)); min-width: 250px; }
+  .village-login-greeting { font-size: 13px; }
+  .village-login-sign .village-leaf-button { font-size: 14px; grid-template-columns: 22px minmax(0, 1fr) 18px; gap: 5px; }
+  .village-leaf-button svg { width: 22px; height: 22px; }
+  .village-leaf-button svg:last-child { width: 18px; }
+}
+@media (max-width: 350px) {
+  .village-login-sign .village-leaf-button { font-size: 14px; grid-template-columns: 24px minmax(0, 1fr) 18px; gap: 6px; }
+  .village-login-greeting { font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .village-login-sign .village-leaf-button { transition: none; }
+}
+
+/* Magician lobby artwork with functional hit areas over every printed option. */
+.account-login-screen.village-welcome-screen {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  min-height: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #0d6b5d url('/magician-donkey-tropical-game-lobby.png?v=20261102') center / 100% 100% no-repeat;
+}
+.account-login-screen.village-welcome-screen > .emerald-login-art,
+.account-login-screen.village-welcome-screen .village-login-skin,
+.account-login-screen.village-welcome-screen .village-login-greeting,
+.account-login-screen.village-welcome-screen .village-leaf-button,
+.account-login-screen.village-welcome-screen .village-login-status { display: none; }
+.account-login-screen.village-welcome-screen .village-login-sign {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  aspect-ratio: auto;
+  pointer-events: none;
+}
+.magician-hit {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  padding: 0;
+  border: 0;
+  border-radius: 18px;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  touch-action: manipulation;
+}
+.magician-hit:hover { background: #fff5b522; }
+.magician-hit:focus-visible { outline: 3px solid #fff1a0; outline-offset: 3px; }
+.magician-play { left: 63.5%; top: 43.5%; width: 25%; height: 10%; }
+.magician-create { left: 63.5%; top: 55.5%; width: 25%; height: 8%; }
+.magician-join { left: 63.5%; top: 66.5%; width: 25%; height: 8%; }
+.magician-rules { left: 63.5%; top: 77.5%; width: 25%; height: 8%; }
+.magician-leaderboard { left: 4%; top: 84%; width: 13%; height: 11%; }
+.magician-friends { left: 17.5%; top: 84%; width: 13%; height: 11%; }
+.magician-rewards { left: 31%; top: 84%; width: 13%; height: 11%; }
+.magician-account { right: 8.7%; top: 1.5%; width: 4%; height: 8%; }
+.magician-notifications { right: 2%; top: 1.5%; width: 4%; height: 8%; }

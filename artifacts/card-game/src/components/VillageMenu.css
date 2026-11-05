@@ -1,0 +1,266 @@
+/* Transparent ornamental skins keep the actual controls and labels accessible. */
+.donkey-start.courtyard-start.village-menu .donkey-start-footer {
+  display: block;
+  width: min(calc(100% - 16px), 900px);
+  height: 110px;
+  min-height: 110px;
+  padding: 0;
+  margin: 0 auto 12px;
+  border: 0;
+  border-radius: 0;
+  background: transparent url('/donkey-snake-status-frame.png') center / 100% 200% no-repeat;
+  box-shadow: none;
+  backdrop-filter: none;
+  color: #fff4d8;
+}
+.village-status-content {
+  position: absolute;
+  left: 17%;
+  right: 12%;
+  top: 44%;
+  height: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 14px;
+  line-height: 1.2;
+  text-shadow: 0 1px 3px #00260e;
+}
+.donkey-start.courtyard-start.village-menu .village-status-content .donkey-game-details { gap: 16px; }
+.donkey-start.courtyard-start.village-menu .village-status-content .donkey-connection {
+  color: #fff4d8;
+  font-size: inherit;
+  white-space: nowrap;
+}
+.village-status-content .donkey-game-details > span { white-space: nowrap; }
+@media (max-width: 600px) {
+  .village-status-content { flex-direction: column; gap: 3px; font-size: 12px; }
+  .donkey-start.courtyard-start.village-menu .village-status-content .donkey-game-details { gap: 10px; }
+  .village-status-content .donkey-game-details svg { width: 14px; height: 14px; }
+}
+.donkey-start.courtyard-start.village-menu .courtyard-logo-scene { z-index: 0; }
+.donkey-start.courtyard-start.village-menu .donkey-start-content,
+.donkey-start.courtyard-start.village-menu .donkey-start-footer { position: relative; z-index: 1; }
+.donkey-start.courtyard-start.village-menu .donkey-play-button {
+  width: min(100%, 620px);
+  min-height: 84px;
+  aspect-ratio: 5 / 1;
+  padding: 14px 18%;
+  gap: 12px;
+  background: transparent url('/donkey-leaf-play-button.png') center / 100% 145% no-repeat;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  color: #fff0bf;
+  font: 800 32px/1.1 "Trebuchet MS", sans-serif;
+  text-shadow: 0 2px 0 #86531e, 0 4px 3px #102810;
+}
+.donkey-start.courtyard-start.village-menu .donkey-play-button svg {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  filter: drop-shadow(0 2px 1px #653b13);
+}
+.donkey-start.courtyard-start.village-menu .donkey-play-button span { min-width: 0; }
+.donkey-start.courtyard-start.village-menu .donkey-secondary-actions {
+  gap: 10px;
+  width: 100%;
+  align-items: start;
+}
+.donkey-start.courtyard-start.village-menu .donkey-secondary-actions button {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+  aspect-ratio: 3 / 2;
+  padding: 0;
+  background: transparent url('/donkey-wood-menu-button.png') center / 100% 100% no-repeat;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  backdrop-filter: none;
+  color: #fff5db;
+  text-shadow: 0 2px 2px #301706, 0 0 4px #301706;
+}
+.donkey-start.courtyard-start.village-menu .donkey-secondary-actions svg {
+  position: absolute;
+  top: 18%;
+  left: 38%;
+  width: 24%;
+  height: 28%;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #623113;
+  stroke-width: 2.5;
+  filter: drop-shadow(0 1px 0 #ffe2a1);
+}
+.donkey-start.courtyard-start.village-menu .donkey-secondary-actions button > span {
+  position: absolute;
+  inset: 60% 13% auto;
+  height: 25%;
+  display: grid;
+  place-items: center;
+  font-size: 17px;
+  line-height: 1.1;
+  font-weight: 800;
+  overflow-wrap: normal;
+}
+.donkey-start.courtyard-start.village-menu .donkey-secondary-actions button:hover:not(:disabled),
+.donkey-start.courtyard-start.village-menu .donkey-play-button:hover:not(:disabled) {
+  filter: brightness(1.12);
+}
+.donkey-start.courtyard-start.village-menu .donkey-secondary-actions button:disabled,
+.donkey-start.courtyard-start.village-menu .donkey-play-button:disabled {
+  opacity: .55;
+  filter: saturate(.4);
+  cursor: not-allowed;
+}
+@media (max-width: 900px) {
+  .donkey-start.courtyard-start.village-menu .donkey-secondary-actions button > span { font-size: 14px; }
+}
+@media (max-width: 500px) {
+  .donkey-start.courtyard-start.village-menu .donkey-play-button {
+    min-height: 70px;
+    padding: 10px 15%;
+    font-size: 25px;
+    gap: 8px;
+  }
+  .donkey-start.courtyard-start.village-menu .donkey-play-button svg { width: 24px; height: 24px; }
+  .donkey-start.courtyard-start.village-menu .donkey-secondary-actions { gap: 4px 8px; }
+  .donkey-start.courtyard-start.village-menu .donkey-secondary-actions button > span { font-size: 14px; }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .donkey-start.courtyard-start.village-menu {
+    justify-content: flex-start;
+    padding-top: max(280px, calc(100vw * .66));
+    background: #164b3c url('/donkey-tropical-results.png') center bottom / cover no-repeat;
+  }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .donkey-start.courtyard-start.village-menu .courtyard-logo-scene { height: calc(100svh - 30px); }
+  .donkey-start.courtyard-start.village-menu .donkey-play-button {
+    width: min(100%, 390px);
+    min-height: 52px;
+    aspect-ratio: 6 / 1;
+    padding: 8px 14%;
+    font-size: 23px;
+  }
+  .donkey-start.courtyard-start.village-menu .donkey-play-button svg { width: 22px; height: 22px; }
+  .donkey-start.courtyard-start.village-menu .donkey-secondary-actions button > span { font-size: 13px; }
+}
+@media (max-width: 350px) {
+  .donkey-start.courtyard-start.village-menu .donkey-secondary-actions button > span { font-size: 12px; }
+}
+.donkey-start.courtyard-start.village-menu .royal-toolbar {
+  top: max(12px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+  gap: 6px;
+  align-items: center;
+}
+.donkey-start.courtyard-start.village-menu .royal-toolbar button {
+  position: relative;
+  inset: auto;
+  flex: 0 0 68px;
+  width: 68px;
+  height: 68px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent url("/donkey-bamboo-tool-button.png") center / contain no-repeat;
+  box-shadow: none;
+  color: #ffe2a0;
+  cursor: pointer;
+  transition: transform 160ms ease, filter 160ms ease;
+  isolation: isolate;
+}
+.donkey-start.courtyard-start.village-menu .royal-toolbar button svg {
+  width: 31px;
+  height: 31px;
+  stroke-width: 2.7;
+  filter: drop-shadow(0 2px 0 #713509) drop-shadow(0 1px 2px #251600);
+}
+.donkey-start.courtyard-start.village-menu .royal-toolbar .donkey-sound-button::before {
+  content: "";
+  position: absolute;
+  inset: 17%;
+  z-index: -1;
+  border-radius: 50%;
+  border: 3px solid #f0ce8b;
+  background: repeating-linear-gradient(87deg, #81421d 0 3px, #945426 4px 6px, #79401e 7px 9px);
+  box-shadow: 0 2px 3px #150e09, inset 0 0 0 2px #5e2e14;
+}
+.donkey-start.courtyard-start.village-menu .royal-toolbar button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.12);
+}
+.donkey-start.courtyard-start.village-menu .royal-toolbar button:active { transform: scale(0.95); }
+.donkey-start.courtyard-start.village-menu .royal-toolbar button:focus-visible {
+  outline: 2px solid #fff4c6;
+  outline-offset: 2px;
+}
+@media (max-width: 600px), (orientation: landscape) and (max-height: 500px) {
+  .donkey-start.courtyard-start.village-menu .royal-toolbar { gap: 4px; right: max(8px, env(safe-area-inset-right)); }
+  .donkey-start.courtyard-start.village-menu .royal-toolbar button { flex-basis: 52px; width: 52px; height: 52px; }
+  .donkey-start.courtyard-start.village-menu .royal-toolbar button svg { width: 25px; height: 25px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .donkey-start.courtyard-start.village-menu .royal-toolbar button { transition: none; }
+}
+.donkey-start.courtyard-start.village-menu .donkey-start-account {
+  top: max(6px, env(safe-area-inset-top));
+  left: max(12px, env(safe-area-inset-left));
+}
+.donkey-start.courtyard-start.village-menu .donkey-start-account .account-button {
+  display: block;
+  width: 190px;
+  height: 78px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent url("/donkey-village-friends-button.png") center / contain no-repeat;
+  box-shadow: none;
+  cursor: pointer;
+  transition: transform 160ms ease, filter 160ms ease;
+}
+.donkey-start.courtyard-start.village-menu .donkey-start-account .account-button > svg { display: none; }
+.donkey-start.courtyard-start.village-menu .donkey-start-account .account-button > span {
+  position: absolute;
+  left: 42%;
+  right: 7%;
+  top: 25%;
+  height: 61%;
+  display: grid;
+  place-items: center;
+  font: 800 25px/1.1 Georgia, serif;
+  letter-spacing: 0;
+  color: #ffe4a0;
+  text-shadow: 0 2px 0 #914605, 0 3px 2px #301d09;
+  white-space: nowrap;
+}
+.donkey-start.courtyard-start.village-menu .donkey-start-account .account-button > b {
+  top: 7px;
+  right: -2px;
+  z-index: 1;
+  border: 1px solid #ffe4a0;
+}
+.donkey-start.courtyard-start.village-menu .donkey-start-account .account-button:hover { transform: translateY(-2px); filter: brightness(1.1); }
+.donkey-start.courtyard-start.village-menu .donkey-start-account .account-button:active { transform: scale(0.96); }
+.donkey-start.courtyard-start.village-menu .donkey-start-account .account-button:focus-visible { outline: 2px solid #fff4c6; outline-offset: 2px; }
+@media (max-width: 600px), (orientation: landscape) and (max-height: 500px) {
+  .donkey-start.courtyard-start.village-menu .donkey-start-account { left: max(8px, env(safe-area-inset-left)); }
+  .donkey-start.courtyard-start.village-menu .donkey-start-account .account-button { width: 132px; height: 55px; }
+  .donkey-start.courtyard-start.village-menu .donkey-start-account .account-button > span { font-size: 17px; }
+}
+@media (max-width: 360px) {
+  .donkey-start.courtyard-start.village-menu .donkey-start-account .account-button { width: 114px; height: 48px; }
+  .donkey-start.courtyard-start.village-menu .donkey-start-account .account-button > span { font-size: 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .donkey-start.courtyard-start.village-menu .donkey-start-account .account-button { transition: none; }
+}

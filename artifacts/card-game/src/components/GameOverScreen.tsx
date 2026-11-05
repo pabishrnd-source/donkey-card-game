@@ -1,123 +1,52 @@
-/**
- * GameOverScreen component
- *
- * Shown when all cards have been played.
- * Displays:
- * - The loser (player who won the most tricks)
- * - The penalty card (Ace of Spades) assigned to the loser
- * - Final trick counts for all players
- * - A "Restart Game" button (host only) or waiting message (others)
- */
-
-import { type GameState } from "@/lib/gameTypes";
+import type { ReactNode } from "react";
+import { Users, LogOut, RotateCcw, ArrowRight } from "lucide-react";
+import type { GameState } from "@/lib/gameTypes";
 import { PlayingCard } from "./PlayingCard";
+import { SuitMark } from "./SuitMark";
+import { PlayerAvatar } from "./ProfileButton";
+import "./GameOverScreen.css";
 
+const SUITS = { spades: "Spades", clubs: "Clubs", hearts: "Hearts", diamonds: "Diamonds" };
 interface GameOverScreenProps {
   gameState: GameState;
   myPlayerId: string | null;
-  onRestart: () => void;
+  onNextGame: () => void;
+  onRestartTournament: () => void;
+  onLeave?: () => void;
+  audioControls?: ReactNode;
 }
-
-export function GameOverScreen({
-  gameState,
-  myPlayerId,
-  onRestart,
-}: GameOverScreenProps) {
-  const loser = gameState.players.find((p) => p.id === gameState.gameOverLoserId);
+export function GameOverScreen({ gameState, myPlayerId, onNextGame, onRestartTournament, onLeave, audioControls }: GameOverScreenProps) {
+  const loser = gameState.players.find(p => p.id === gameState.gameOverLoserId);
   const isHost = myPlayerId === gameState.hostId;
-  const isLoser = myPlayerId === gameState.gameOverLoserId;
-
-  // Sort players by tricks won descending for the scoreboard
-  const sortedPlayers = [...gameState.players].sort(
-    (a, b) => b.tricksWon - a.tricksWon
-  );
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-lg">
-        {/* Header */}
-        <div className="text-center mb-6">
-          <div className="text-5xl mb-2">🎴</div>
-          <h1 className="text-3xl font-bold text-gray-900">Game Over</h1>
-        </div>
-
-        {/* Loser announcement */}
-        {loser && (
-          <div
-            className={`rounded-xl p-4 mb-6 text-center ${
-              isLoser
-                ? "bg-red-50 border-2 border-red-200"
-                : "bg-amber-50 border-2 border-amber-200"
-            }`}
-          >
-            <p className="text-sm text-gray-500 mb-1">
-              {isLoser ? "You lose! Better luck next time 😅" : "The loser is..."}
-            </p>
-            <p className="text-2xl font-bold text-red-600">{loser.name}</p>
-            <p className="text-sm text-gray-500 mt-1">
-              won {loser.tricksWon} trick{loser.tricksWon !== 1 ? "s" : ""} — the most of all players
-            </p>
-
-            {/* Penalty card */}
-            {gameState.penaltyCard && (
-              <div className="mt-4 flex flex-col items-center gap-2">
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest">
-                  Penalty Card
-                </p>
-                <PlayingCard card={gameState.penaltyCard} size="lg" played />
-                <p className="text-xs text-gray-500">Ace of Spades goes to {loser.name}</p>
-              </div>
-            )}
-          </div>
-        )}
-
-        {/* Scoreboard */}
-        <div className="mb-6">
-          <p className="text-sm font-semibold text-gray-700 uppercase tracking-widest mb-3">
-            Final Scores
-          </p>
-          <div className="space-y-2">
-            {sortedPlayers.map((p, i) => (
-              <div
-                key={p.id}
-                className={`flex items-center justify-between rounded-lg px-3 py-2 ${
-                  p.id === gameState.gameOverLoserId
-                    ? "bg-red-50 border border-red-200"
-                    : "bg-gray-50"
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  <span className="text-gray-400 text-sm font-mono w-5">{i + 1}.</span>
-                  <span className="font-medium text-gray-800">{p.name}</span>
-                  {p.id === myPlayerId && (
-                    <span className="text-xs text-blue-500">(you)</span>
-                  )}
-                  {p.id === gameState.gameOverLoserId && (
-                    <span className="text-xs text-red-500 font-semibold">LOSER</span>
-                  )}
-                </div>
-                <span className="font-bold text-gray-700">
-                  {p.tricksWon} trick{p.tricksWon !== 1 ? "s" : ""}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Restart */}
-        {isHost ? (
-          <button
-            onClick={onRestart}
-            className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition-colors"
-          >
-            Restart Game
-          </button>
-        ) : (
-          <p className="text-center text-gray-500 text-sm italic animate-pulse">
-            Waiting for host to restart...
-          </p>
-        )}
-      </div>
+  const orderedPlayers = [...gameState.players].sort((a,b) => (a.finishOrder ?? Infinity) - (b.finishOrder ?? Infinity));
+  return <main className="game-results royal-results">
+    <header className="results-toolbar"><span>DONKEY</span>{onLeave && <button type="button" className="results-leave" onClick={onLeave}><LogOut size={19} />End Game</button>}</header>
+    <section className="results-heading">
+      <img className="results-art" src={`${import.meta.env.BASE_URL}donkey-tropical-results-mascot.png`} alt="Donkey king with a gold crown and playing cards" />
+      <h1>Round {gameState.dealNumber} Complete</h1>
+      <p>Next dealer: {gameState.players.find(p => p.id === gameState.dealerId)?.name ?? "Select in lobby"}</p>
+    </section>
+    <div className="results-content">
+      <section className="results-outcomes" aria-label="Game results">
+        <article className="result-person result-loser">
+          <h2>Final loser</h2>
+          <div className="result-loser-person">{loser && <span className="result-avatar"><PlayerAvatar name={loser.name} avatarUrl={loser.avatarUrl} /></span>}<strong className="result-name">{loser?.name ?? "None"}</strong></div>
+          {loser && <p className="result-loser-label">{loser.name} is Donkey</p>}
+          {gameState.penaltyCard && <div className="result-penalty"><span>Penalty received</span><PlayingCard card={gameState.penaltyCard} size="sm" disabled /></div>}
+        </article>
+      </section>
+      <section className="results-standings" aria-labelledby="results-players">
+        <h2 id="results-players"><Users size={21} />Finished players</h2>
+        <ol>{orderedPlayers.map(player => <li key={player.id} className={player.id === loser?.id ? "standing-loser" : ""}>
+          <span className="standing-avatar"><PlayerAvatar name={player.name} avatarUrl={player.avatarUrl} /></span>
+          <span className="standing-name">{player.name} {player.id === myPlayerId && <small>(you)</small>}</span>
+          <span className="standing-place">{player.id === loser?.id ? "LOSER" : player.finishOrder ? `FINISHED #${player.finishOrder}` : "Remaining"}</span>
+          <span className="standing-count">{player.id === myPlayerId && `${player.hand.length} playable / `}{player.penaltyCards.length} penalty</span>
+        </li>)}</ol>
+      </section>
+      {gameState.nextPenaltyCard && <section className="results-next" aria-label="Next penalty card"><SuitMark suit={gameState.nextPenaltyCard.suit} className="size-7" /><p>Next penalty card: <strong>{gameState.nextPenaltyCard.rank} of {SUITS[gameState.nextPenaltyCard.suit]}</strong></p><div className="next-card"><PlayingCard card={gameState.nextPenaltyCard} size="md" /></div></section>}
+      <div className="results-actions">{isHost ? <><button type="button" onClick={onNextGame}><ArrowRight size={19} />Next Game</button><button type="button" className="results-secondary" onClick={onRestartTournament}><RotateCcw size={18} />Restart Tournament</button></> : <p role="status">Waiting for host...</p>}</div>
+      {audioControls && <section className="results-audio" aria-label="Room audio">{audioControls}</section>}
     </div>
-  );
+  </main>;
 }

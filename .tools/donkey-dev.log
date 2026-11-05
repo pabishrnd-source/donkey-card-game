@@ -1,0 +1,2302 @@
+[17:53:10.303] [32mINFO[39m (2120): [36mServer listening (HTTP + WebSocket)[39m
+    [35mport[39m: 3001
+
+  VITE v7.3.2  ready in 1712 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://169.254.83.107:5173/
+  ➜  Network: http://192.168.0.76:5173/
+  ➜  Network: http://192.168.0.1:5173/
+[17:53:18.839] [32mINFO[39m (2120): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 1,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 23
+[17:53:18.909] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:18.930] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "XDKOUV"
+    [35mplayerId[39m: "player_5k75y0uj"
+    [35mplayerName[39m: "Connection test host"
+[17:53:18.957] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:18.963] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "XDKOUV"
+    [35mplayerId[39m: "player_1yvnrday"
+    [35mplayerName[39m: "Connection test 1"
+[17:53:18.989] [32mINFO[39m (2120): [36mGame started[39m
+    [35mgameId[39m: "XDKOUV"
+[17:53:19.020] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "XDKOUV"
+    [35mplayerId[39m: "player_5k75y0uj"
+    [35mcard[39m: "A♠"
+    [35mautomatic[39m: false
+[17:53:19.046] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "XDKOUV"
+    [35mplayerId[39m: "player_1yvnrday"
+    [35mcard[39m: "K♠"
+    [35mautomatic[39m: false
+[17:53:19.080] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "XDKOUV"
+    [35mplayerId[39m: "player_1yvnrday"
+[17:53:19.080] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.094] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.098] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "XDKOUV"
+    [35mplayerId[39m: "player_1yvnrday"
+[17:53:19.126] [32mINFO[39m (2120): [36mTournament restarted[39m
+    [35mgameId[39m: "XDKOUV"
+[17:53:19.158] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "XDKOUV"
+    [35mplayerId[39m: "player_5k75y0uj"
+[17:53:19.158] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.159] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "XDKOUV"
+    [35mplayerId[39m: "player_1yvnrday"
+[17:53:19.159] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.164] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.166] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_h0k91j5j"
+    [35mplayerName[39m: "Connection test host"
+[17:53:19.210] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.212] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_tb0n0dmz"
+    [35mplayerName[39m: "Connection test 1"
+[17:53:19.240] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.244] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_3m6wud66"
+    [35mplayerName[39m: "Connection test 2"
+[17:53:19.271] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.275] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_c3uvtwku"
+    [35mplayerName[39m: "Connection test 3"
+[17:53:19.312] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.316] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_59xdayog"
+    [35mplayerName[39m: "Connection test 4"
+[17:53:19.346] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.349] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_155q9d6k"
+    [35mplayerName[39m: "Connection test 5"
+[17:53:19.377] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.382] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_mobdjilk"
+    [35mplayerName[39m: "Connection test 6"
+[17:53:19.407] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.410] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_idm4xobu"
+    [35mplayerName[39m: "Connection test 7"
+[17:53:19.440] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.443] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_i10xmlc7"
+    [35mplayerName[39m: "Connection test 8"
+[17:53:19.470] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.476] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_6xp4tjh2"
+    [35mplayerName[39m: "Connection test 9"
+[17:53:19.508] [32mINFO[39m (2120): [36mGame started[39m
+    [35mgameId[39m: "WJC12N"
+[17:53:19.540] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_59xdayog"
+    [35mcard[39m: "A♠"
+    [35mautomatic[39m: false
+[17:53:19.560] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_155q9d6k"
+    [35mcard[39m: "7♠"
+    [35mautomatic[39m: false
+[17:53:19.585] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_mobdjilk"
+    [35mcard[39m: "4♦"
+    [35mautomatic[39m: false
+[17:53:19.617] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_idm4xobu"
+    [35mcard[39m: "J♥"
+    [35mautomatic[39m: false
+[17:53:19.651] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_i10xmlc7"
+    [35mcard[39m: "K♠"
+    [35mautomatic[39m: false
+[17:53:19.674] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_6xp4tjh2"
+    [35mcard[39m: "2♠"
+    [35mautomatic[39m: false
+[17:53:19.697] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_h0k91j5j"
+    [35mcard[39m: "3♦"
+    [35mautomatic[39m: false
+[17:53:19.723] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_tb0n0dmz"
+    [35mcard[39m: "10♠"
+    [35mautomatic[39m: false
+[17:53:19.752] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_3m6wud66"
+    [35mcard[39m: "8♣"
+    [35mautomatic[39m: false
+[17:53:19.775] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_c3uvtwku"
+    [35mcard[39m: "6♥"
+    [35mautomatic[39m: false
+[17:53:19.808] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_tb0n0dmz"
+[17:53:19.808] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.811] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:53:19.815] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_tb0n0dmz"
+[17:53:19.849] [32mINFO[39m (2120): [36mTournament restarted[39m
+    [35mgameId[39m: "WJC12N"
+[17:53:19.880] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_c3uvtwku"
+[17:53:19.880] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.880] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_3m6wud66"
+[17:53:19.880] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.880] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_h0k91j5j"
+[17:53:19.880] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.882] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_6xp4tjh2"
+[17:53:19.882] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.882] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_i10xmlc7"
+[17:53:19.882] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.882] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_155q9d6k"
+[17:53:19.882] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.882] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_59xdayog"
+[17:53:19.882] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.882] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_tb0n0dmz"
+[17:53:19.882] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.883] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_mobdjilk"
+[17:53:19.883] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:19.884] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "WJC12N"
+    [35mplayerId[39m: "player_idm4xobu"
+[17:53:19.884] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:53:39.180] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:54:10.145] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mplayerName[39m: "Test Host"
+[17:54:18.129] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:54:31.611] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mplayerName[39m: "Test Guest"
+[17:54:41.413] [32mINFO[39m (2120): [36mGame started[39m
+    [35mgameId[39m: "LQM092"
+[17:54:49.252] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "A♠"
+    [35mautomatic[39m: false
+[17:55:06.252] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "K♠"
+    [35mautomatic[39m: false
+[17:55:58.771] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+[17:55:59.724] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:55:59.832] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+[17:56:08.076] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "A♣"
+    [35mautomatic[39m: true
+[17:57:08.088] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "K♣"
+    [35mautomatic[39m: true
+[17:58:09.906] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "A♦"
+    [35mautomatic[39m: true
+[17:59:09.921] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "K♦"
+    [35mautomatic[39m: true
+[18:00:11.732] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "A♥"
+    [35mautomatic[39m: true
+[18:01:11.741] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "J♥"
+    [35mautomatic[39m: true
+[18:02:13.562] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:03:13.573] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "10♥"
+    [35mautomatic[39m: true
+[18:04:15.393] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "Q♠"
+    [35mautomatic[39m: true
+[18:05:15.396] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "9♠"
+    [35mautomatic[39m: true
+[18:06:17.218] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "Q♥"
+    [35mautomatic[39m: true
+[18:07:17.232] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "7♥"
+    [35mautomatic[39m: true
+[18:08:19.047] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "J♣"
+    [35mautomatic[39m: true
+[18:09:19.061] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "Q♣"
+    [35mautomatic[39m: true
+[18:10:20.891] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "Q♦"
+    [35mautomatic[39m: true
+[18:11:20.896] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "10♦"
+    [35mautomatic[39m: true
+[18:12:22.718] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "J♦"
+    [35mautomatic[39m: true
+[18:13:22.731] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "9♦"
+    [35mautomatic[39m: true
+[18:14:24.551] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "10♣"
+    [35mautomatic[39m: true
+[18:15:24.556] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "9♣"
+    [35mautomatic[39m: true
+[18:16:26.372] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "8♦"
+    [35mautomatic[39m: true
+[18:17:26.386] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "7♦"
+    [35mautomatic[39m: true
+[18:18:28.207] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "8♣"
+    [35mautomatic[39m: true
+[18:19:28.207] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "5♣"
+    [35mautomatic[39m: true
+[18:20:30.017] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "7♣"
+    [35mautomatic[39m: true
+[18:21:30.026] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "2♣"
+    [35mautomatic[39m: true
+[18:22:31.844] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "6♣"
+    [35mautomatic[39m: true
+[18:23:31.852] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "J♠"
+    [35mautomatic[39m: true
+[18:24:33.671] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "J♠"
+    [35mautomatic[39m: true
+[18:25:33.673] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "10♠"
+    [35mautomatic[39m: true
+[18:26:35.491] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "6♥"
+    [35mautomatic[39m: true
+[18:27:35.503] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "9♥"
+    [35mautomatic[39m: true
+[18:28:37.306] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "8♠"
+    [35mautomatic[39m: true
+[18:29:37.317] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "6♠"
+    [35mautomatic[39m: true
+[18:30:39.135] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "8♥"
+    [35mautomatic[39m: true
+[18:31:39.143] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "4♥"
+    [35mautomatic[39m: true
+[18:32:40.960] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "7♠"
+    [35mautomatic[39m: true
+[18:33:40.968] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "5♠"
+    [35mautomatic[39m: true
+[18:33:51.003] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:56:18.698] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "5♥"
+    [35mautomatic[39m: true
+[18:56:20.930] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:56:21.327] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:56:22.780] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:56:23.615] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[10:47:40.931] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "3♥"
+    [35mautomatic[39m: true
+[10:47:40.967] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[10:47:41.211] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[10:47:42.437] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[10:48:40.812] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "5♦"
+    [35mautomatic[39m: true
+[10:49:40.823] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "6♦"
+    [35mautomatic[39m: true
+[10:50:42.641] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "6♣"
+    [35mautomatic[39m: true
+[10:51:42.647] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "4♠"
+    [35mautomatic[39m: true
+[10:52:44.461] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "6♣"
+    [35mautomatic[39m: true
+[10:53:44.471] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "3♦"
+    [35mautomatic[39m: true
+[10:54:46.294] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "6♣"
+    [35mautomatic[39m: true
+[10:55:46.308] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "2♠"
+    [35mautomatic[39m: true
+[10:56:48.133] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_mj8s1q7g"
+    [35mcard[39m: "6♣"
+    [35mautomatic[39m: true
+[10:57:48.133] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "LQM092"
+    [35mplayerId[39m: "player_40ksuuxo"
+    [35mcard[39m: "2♦"
+    [35mautomatic[39m: true
+[12:23:24.173] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[12:25:08.155] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[12:25:10.498] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[12:25:14.027] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[13:34:27.317] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[14:05:52.923] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[14:05:53.461] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[14:05:57.024] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[14:12:09.588] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[14:21:48.707] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[14:21:49.071] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[14:21:49.558] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+3:07:44 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+3:07:49 pm [vite] (client) ✨ new dependencies optimized: @radix-ui/react-dialog, @radix-ui/react-switch
+3:07:49 pm [vite] (client) ✨ optimized dependencies changed. reloading
+[15:07:49.836] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[15:07:51.676] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+3:07:56 pm [vite] (client) hmr update /src/index.css, /src/components/Lobby.tsx
+3:08:26 pm [vite] (client) hmr update /src/index.css, /src/components/StartScreen.tsx
+3:08:27 pm [vite] (client) hmr update /src/index.css, /src/components/StartScreen.css
+3:11:16 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+[15:11:17.179] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[15:11:17.185] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+3:11:23 pm [vite] (client) hmr update /src/index.css, /src/components/Lobby.tsx
+3:11:37 pm [vite] (client) hmr update /src/index.css
+[15:12:51.304] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[15:13:00.588] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+3:28:09 pm [vite] (client) hmr update /src/index.css, /src/components/Lobby.tsx
+3:28:16 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+[15:28:16.610] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[15:28:16.622] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+3:28:23 pm [vite] (client) page reload index.html
+[15:28:24.023] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[15:28:24.370] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+3:28:25 pm [vite] (client) hmr update /src/index.css, /src/components/GameDashboard.tsx
+3:28:25 pm [vite] (client) hmr update /src/index.css, /src/components/GameDashboard.css
+3:32:03 pm [vite] (client) hmr update /src/index.css, /src/components/GameDashboard.css
+[15:32:52.503] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "K45ZSY"
+    [35mplayerId[39m: "player_f8b89n93"
+    [35mplayerName[39m: "UI Test"
+[15:32:56.845] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "K45ZSY"
+    [35mplayerId[39m: "player_f8b89n93"
+[17:08:55.983] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:08:56.411] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:13:50.414] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:13:50.982] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:14:46.550] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:14:47.030] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+5:16:55 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[17:18:07.608] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:18:08.072] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+5:18:40 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+5:22:06 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[17:22:30.728] [32mINFO[39m (2120): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 2,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 22
+5:26:01 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+5:27:36 pm [vite] (client) page reload android/build/reports/problems/problems-report.html
+[17:29:33.936] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:30:12.459] [32mINFO[39m (2120): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 3,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 2
+[17:34:03.420] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:34:04.448] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+5:35:34 pm [vite] (client) hmr update /src/index.css, /src/components/Lobby.tsx
+[17:35:51.071] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+5:36:40 pm [vite] (client) hmr update /src/index.css, /src/components/Lobby.tsx
+5:37:21 pm [vite] (client) hmr update /src/index.css, /src/components/Lobby.tsx
+[17:37:23.191] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:38:07.107] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "MZPYCQ"
+    [35mplayerId[39m: "player_bg87w14o"
+    [35mplayerName[39m: "Player"
+[17:38:27.086] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:38:28.105] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:38:30.567] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:38:31.923] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+5:39:03 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[17:39:04.421] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "MZPYCQ"
+    [35mplayerId[39m: "player_bg87w14o"
+[17:39:04.421] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:39:05.060] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+5:39:45 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[17:40:08.391] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "MZPYCQ"
+    [35mplayerId[39m: "player_bg87w14o"
+[17:40:12.869] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:40:32.109] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:40:58.630] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+5:46:39 pm [vite] (client) hmr update /src/index.css, /src/components/Lobby.tsx
+5:46:54 pm [vite] (client) hmr update /src/index.css, /src/components/WaitingRoom.css
+5:48:00 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[17:48:01.370] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "MZPYCQ"
+    [35mplayerId[39m: "player_bg87w14o"
+[17:48:01.370] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:48:02.050] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:48:14.360] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "MZPYCQ"
+    [35mplayerId[39m: "player_bg87w14o"
+5:48:38 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[17:49:34.098] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:50:25.125] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:50:31.283] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:50:42.458] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:50:43.407] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:50:50.002] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:50:50.979] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+5:55:48 pm [vite] (client) hmr update /src/index.css, /src/components/ui/dialog.tsx
+[17:56:01.357] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "MZPYCQ"
+    [35mplayerId[39m: "player_bg87w14o"
+[17:56:01.357] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:56:01.751] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+5:56:42 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+[17:56:42.422] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:56:42.425] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+5:56:53 pm [vite] (client) hmr update /src/index.css, /src/components/VoiceChatPanel.tsx
+5:58:11 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[17:58:12.045] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:58:12.673] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+5:58:47 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[17:59:15.381] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:59:34.976] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:59:55.261] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mplayerName[39m: "pabish"
+[18:00:28.844] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mplayerName[39m: "it"
+[18:00:31.254] [32mINFO[39m (2120): [36mGame started[39m
+    [35mgameId[39m: "ZPZBRK"
+[18:01:31.263] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "A♠"
+    [35mautomatic[39m: true
+[18:02:31.271] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "J♠"
+    [35mautomatic[39m: true
+[18:03:33.079] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "A♦"
+    [35mautomatic[39m: true
+[18:04:33.098] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♦"
+    [35mautomatic[39m: true
+[18:05:34.930] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "A♣"
+    [35mautomatic[39m: true
+[18:06:34.930] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "J♣"
+    [35mautomatic[39m: true
+[18:07:13.459] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+[18:07:13.459] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:07:36.742] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "K♠"
+    [35mautomatic[39m: true
+[18:08:36.747] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "10♠"
+    [35mautomatic[39m: true
+[18:09:38.557] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "K♣"
+    [35mautomatic[39m: true
+[18:10:13.743] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:10:38.561] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "10♣"
+    [35mautomatic[39m: true
+[18:10:45.581] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "II2QWL"
+    [35mplayerId[39m: "player_ss0bpoqf"
+    [35mplayerName[39m: "pabish"
+[18:10:49.312] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "II2QWL"
+    [35mplayerId[39m: "player_ss0bpoqf"
+[18:10:49.312] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:11:40.409] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "Q♣"
+    [35mautomatic[39m: true
+6:11:55 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+6:12:09 pm [vite] (client) hmr update /src/index.css, /src/components/GameTable.tsx
+6:12:21 pm [vite] (client) hmr update /src/index.css, /src/components/PlayerArea.tsx
+[18:12:40.425] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "8♣"
+    [35mautomatic[39m: true
+6:12:40 pm [vite] (client) hmr update /src/index.css, /src/components/PlayingCard.tsx
+[18:13:41.213] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+[18:13:41.213] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:13:41.730] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:13:42.234] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "Q♦"
+    [35mautomatic[39m: true
+[18:13:48.352] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+6:14:24 pm [vite] (client) hmr update /src/pages/MatchTable.css
+[18:14:42.238] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "8♦"
+    [35mautomatic[39m: true
+6:14:44 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[18:14:45.779] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+[18:14:45.779] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:14:46.299] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:15:01.079] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+6:15:37 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+6:15:37 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[18:15:44.067] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "Q♠"
+    [35mautomatic[39m: true
+6:15:45 pm [vite] (client) hmr update /src/pages/MatchTable.css, /src/index.css
+6:16:20 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[18:16:21.755] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+[18:16:21.755] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:16:22.224] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:16:31.522] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+[18:16:44.069] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "2♠"
+    [35mautomatic[39m: true
+6:17:01 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+6:17:01 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[18:17:45.900] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "J♦"
+    [35mautomatic[39m: true
+[18:18:45.903] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "7♦"
+    [35mautomatic[39m: true
+[18:19:47.722] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "10♦"
+    [35mautomatic[39m: true
+[18:20:47.735] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "6♦"
+    [35mautomatic[39m: true
+[18:21:49.549] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "10♥"
+    [35mautomatic[39m: true
+[18:22:38.386] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "A♥"
+    [35mautomatic[39m: false
+[18:22:41.613] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: false
+[18:23:41.622] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "9♠"
+    [35mautomatic[39m: true
+[18:24:43.440] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:25:43.446] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "9♣"
+    [35mautomatic[39m: true
+[18:26:45.266] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:27:45.274] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "9♦"
+    [35mautomatic[39m: true
+[18:28:47.087] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:29:47.089] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "8♠"
+    [35mautomatic[39m: true
+[18:30:48.904] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:31:48.913] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "7♠"
+    [35mautomatic[39m: true
+[18:32:50.736] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:33:50.744] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "6♠"
+    [35mautomatic[39m: true
+6:34:20 pm [vite] (client) hmr update /src/index.css, /src/components/PlayingCard.tsx
+6:34:27 pm [vite] (client) hmr update /src/components/PlayerArea.tsx, /src/components/GameOverScreen.tsx, /src/components/GameTable.tsx
+[18:34:52.573] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+6:35:21 pm [vite] (client) hmr update /src/components/PlayingCard.css
+6:35:27 pm [vite] (client) hmr update /src/index.css, /src/components/SuitMark.tsx
+[18:35:41.878] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+[18:35:41.878] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:35:42.444] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:35:49.609] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+[18:35:52.575] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "6♣"
+    [35mautomatic[39m: true
+[18:36:08.511] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: false
+6:36:24 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[18:36:24.707] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+[18:36:24.707] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:36:25.057] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:36:48.023] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+6:36:59 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[18:37:08.516] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "5♠"
+    [35mautomatic[39m: true
+[18:37:45.552] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+[18:38:10.344] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:39:10.346] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "5♦"
+    [35mautomatic[39m: true
+[18:40:12.157] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:41:12.165] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "4♠"
+    [35mautomatic[39m: true
+[18:42:13.977] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:43:13.984] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "4♣"
+    [35mautomatic[39m: true
+[18:44:15.790] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:44:17.057] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[19:21:57.297] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "4♦"
+    [35mautomatic[39m: true
+[19:22:00.093] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[19:22:02.290] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[10:53:17.172] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[10:53:17.656] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[10:54:15.198] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "3♠"
+    [35mautomatic[39m: true
+[10:54:24.578] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[10:55:17.001] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[10:56:17.015] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "3♦"
+    [35mautomatic[39m: true
+[10:57:18.829] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_ndy1wit2"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[10:58:18.837] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "ZPZBRK"
+    [35mplayerId[39m: "player_itkjeas6"
+    [35mcard[39m: "2♦"
+    [35mautomatic[39m: true
+[11:33:51.483] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[11:36:08.722] [32mINFO[39m (2120): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 4,
+      "method": "GET",
+      "url": "/api/healthz"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 4
+[11:38:21.607] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[11:38:21.921] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+11:38:41 am [vite] (client) page reload android/app/src/main/assets/public/index.html
+[11:38:42.476] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[11:38:42.976] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[11:40:24.234] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[12:02:51.856] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[12:02:57.419] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[12:07:33.060] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[12:07:46.495] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[12:07:49.901] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+12:24:03 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[12:24:04.141] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[12:24:04.718] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[13:50:28.201] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[13:50:29.284] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[13:50:29.309] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[13:50:30.158] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[13:50:30.367] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[13:59:16.776] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[13:59:16.843] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[13:59:17.382] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[13:59:21.694] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[13:59:27.064] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[13:59:27.183] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[13:59:28.797] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[14:12:48.838] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[14:35:27.100] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[14:35:27.543] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[14:35:28.181] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[15:20:40.029] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[15:20:47.566] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[15:20:48.214] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[15:20:49.250] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:29:00.307] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:29:02.270] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:40:57.147] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:40:58.064] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+5:41:12 pm [vite] (client) hmr update /src/index.css, /src/components/PlayerArea.tsx
+5:41:19 pm [vite] (client) hmr update /src/index.css, /src/components/Lobby.tsx
+5:41:26 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+5:43:42 pm [vite] (client) hmr update /src/App.tsx
+[17:43:42.729] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:43:42.736] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:44:49.594] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_oyo4onlz"
+    [35mplayerName[39m: "Layout Check"
+[17:45:35.187] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:45:35.188] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:45:35.188] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:45:35.189] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:45:35.190] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:45:35.190] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:45:35.190] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:45:35.191] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:45:35.191] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:45:35.206] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_u8huxvi3"
+    [35mplayerName[39m: "Test 2"
+[17:45:35.207] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_axqfkdy8"
+    [35mplayerName[39m: "Test 1"
+[17:45:35.208] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_ksrxpprr"
+    [35mplayerName[39m: "Test 3"
+[17:45:35.210] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_bu9o737m"
+    [35mplayerName[39m: "Test 4"
+[17:45:35.211] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_prb7kd30"
+    [35mplayerName[39m: "Test 5"
+[17:45:35.212] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_100x8k8s"
+    [35mplayerName[39m: "Test 6"
+[17:45:35.214] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_6820fiok"
+    [35mplayerName[39m: "Test 7"
+[17:45:35.230] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_d42vjm5k"
+    [35mplayerName[39m: "Test 8"
+[17:45:35.232] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_7lb3ctlv"
+    [35mplayerName[39m: "Test 9"
+[17:46:01.599] [32mINFO[39m (2120): [36mGame started[39m
+    [35mgameId[39m: "4JLYFU"
+[17:47:01.606] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_100x8k8s"
+    [35mcard[39m: "A♠"
+    [35mautomatic[39m: true
+5:47:27 pm [vite] (client) hmr update /src/pages/Landscape.css
+5:47:38 pm [vite] (client) hmr update /src/index.css, /src/components/GameOverScreen.tsx
+5:47:45 pm [vite] (client) hmr update /src/index.css, /src/components/CardPages.tsx
+5:47:54 pm [vite] (client) hmr update /src/pages/Landscape.css, /src/index.css
+[17:48:01.621] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_6820fiok"
+    [35mcard[39m: "Q♠"
+    [35mautomatic[39m: true
+[17:49:01.639] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_d42vjm5k"
+    [35mcard[39m: "6♠"
+    [35mautomatic[39m: true
+5:49:11 pm [vite] (client) hmr update /src/pages/Landscape.css, /src/index.css
+[17:49:35.183] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_axqfkdy8"
+[17:49:35.184] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:49:35.189] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_u8huxvi3"
+[17:49:35.189] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:49:35.194] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_ksrxpprr"
+[17:49:35.194] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:49:35.195] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_bu9o737m"
+[17:49:35.195] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:49:35.196] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_prb7kd30"
+[17:49:35.196] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:49:35.198] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_6820fiok"
+[17:49:35.198] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:49:35.199] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_100x8k8s"
+[17:49:35.199] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:49:35.201] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_7lb3ctlv"
+[17:49:35.201] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:49:35.201] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_d42vjm5k"
+[17:49:35.201] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:50:01.647] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_7lb3ctlv"
+    [35mcard[39m: "2♠"
+    [35mautomatic[39m: true
+[17:50:06.787] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_oyo4onlz"
+[17:50:27.665] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mplayerName[39m: "pabish"
+[17:50:41.826] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:50:41.836] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mplayerName[39m: "Layout test"
+[17:51:01.649] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_oyo4onlz"
+    [35mcard[39m: "J♣"
+    [35mautomatic[39m: true
+[17:51:06.723] [32mINFO[39m (2120): [36mGame started[39m
+    [35mgameId[39m: "3XWDF7"
+[17:51:41.835] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+[17:51:41.835] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:52:01.655] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_u8huxvi3"
+    [35mcard[39m: "7♠"
+    [35mautomatic[39m: true
+5:52:04 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+[17:52:05.209] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+[17:52:05.209] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:52:05.218] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:52:06.723] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "A♠"
+    [35mautomatic[39m: true
+5:52:25 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[17:52:26.216] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[17:52:27.189] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:52:38.969] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+[17:52:55.355] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+[17:53:01.656] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_axqfkdy8"
+    [35mcard[39m: "J♠"
+    [35mautomatic[39m: true
+[17:53:06.726] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "9♠"
+    [35mautomatic[39m: true
+5:53:19 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[17:54:01.765] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_ksrxpprr"
+    [35mcard[39m: "K♠"
+    [35mautomatic[39m: true
+[17:54:08.540] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "A♦"
+    [35mautomatic[39m: true
+[17:54:37.573] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[17:55:01.768] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_bu9o737m"
+    [35mcard[39m: "5♠"
+    [35mautomatic[39m: true
+[17:55:08.549] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "J♦"
+    [35mautomatic[39m: true
+[17:55:10.367] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mplayerName[39m: "Pabish"
+[17:55:26.394] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mplayerName[39m: "pabish"
+[17:55:29.321] [32mINFO[39m (2120): [36mGame started[39m
+    [35mgameId[39m: "OE43WI"
+[17:55:38.907] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "A♠"
+    [35mautomatic[39m: false
+[17:55:41.814] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "K♠"
+    [35mautomatic[39m: false
+[17:55:44.829] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "J♠"
+    [35mautomatic[39m: false
+[17:55:46.442] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "Q♠"
+    [35mautomatic[39m: false
+[17:55:50.297] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "10♠"
+    [35mautomatic[39m: false
+[17:55:51.615] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "9♠"
+    [35mautomatic[39m: false
+[17:55:58.837] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "8♠"
+    [35mautomatic[39m: false
+[17:55:59.932] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "5♠"
+    [35mautomatic[39m: false
+[17:56:01.773] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_prb7kd30"
+    [35mcard[39m: "9♠"
+    [35mautomatic[39m: true
+[17:56:02.485] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "7♠"
+    [35mautomatic[39m: false
+[17:56:03.750] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "3♠"
+    [35mautomatic[39m: false
+[17:56:06.149] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "6♠"
+    [35mautomatic[39m: false
+[17:56:07.210] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "2♠"
+    [35mautomatic[39m: false
+[17:56:10.297] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: false
+[17:56:10.369] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "A♣"
+    [35mautomatic[39m: true
+[17:56:11.468] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "A♥"
+    [35mautomatic[39m: false
+[17:56:13.995] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "J♥"
+    [35mautomatic[39m: false
+[17:56:15.935] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "Q♥"
+    [35mautomatic[39m: false
+[17:56:20.622] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "K♦"
+    [35mautomatic[39m: false
+[17:56:21.882] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "A♦"
+    [35mautomatic[39m: false
+[17:56:36.532] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "Q♦"
+    [35mautomatic[39m: false
+[17:56:39.613] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "J♦"
+    [35mautomatic[39m: false
+[17:56:45.413] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "6♦"
+    [35mautomatic[39m: false
+[17:56:47.159] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "10♦"
+    [35mautomatic[39m: false
+[17:56:53.867] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "9♦"
+    [35mautomatic[39m: false
+[17:56:56.717] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "5♦"
+    [35mautomatic[39m: false
+[17:57:00.244] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "8♦"
+    [35mautomatic[39m: false
+[17:57:03.585] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_100x8k8s"
+    [35mcard[39m: "A♦"
+    [35mautomatic[39m: true
+[17:57:04.179] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "3♦"
+    [35mautomatic[39m: false
+[17:57:06.785] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "A♣"
+    [35mautomatic[39m: false
+[17:57:08.114] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "K♣"
+    [35mautomatic[39m: false
+[17:57:10.371] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "K♣"
+    [35mautomatic[39m: true
+[17:57:13.172] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "Q♣"
+    [35mautomatic[39m: false
+[17:57:14.393] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "J♣"
+    [35mautomatic[39m: false
+[17:57:17.395] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "10♣"
+    [35mautomatic[39m: false
+[17:57:18.880] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "8♣"
+    [35mautomatic[39m: false
+[17:57:25.485] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "9♣"
+    [35mautomatic[39m: false
+[17:58:03.600] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_6820fiok"
+    [35mcard[39m: "K♦"
+    [35mautomatic[39m: true
+[17:58:12.190] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "K♠"
+    [35mautomatic[39m: true
+[17:58:25.500] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "10♥"
+    [35mautomatic[39m: true
+[17:59:03.614] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_d42vjm5k"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[17:59:12.195] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "8♠"
+    [35mautomatic[39m: true
+[17:59:27.322] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "10♥"
+    [35mautomatic[39m: true
+[18:00:03.619] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_7lb3ctlv"
+    [35mcard[39m: "Q♦"
+    [35mautomatic[39m: true
+[18:00:14.019] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "K♦"
+    [35mautomatic[39m: true
+[18:00:27.329] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "9♥"
+    [35mautomatic[39m: true
+[18:01:03.623] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_oyo4onlz"
+    [35mcard[39m: "4♦"
+    [35mautomatic[39m: true
+[18:01:14.027] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "9♦"
+    [35mautomatic[39m: true
+[18:01:29.147] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "9♣"
+    [35mautomatic[39m: true
+[18:02:03.637] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_u8huxvi3"
+    [35mcard[39m: "10♦"
+    [35mautomatic[39m: true
+[18:02:15.834] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "Q♦"
+    [35mautomatic[39m: true
+[18:02:29.160] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "8♥"
+    [35mautomatic[39m: true
+[18:03:03.637] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_axqfkdy8"
+    [35mcard[39m: "9♦"
+    [35mautomatic[39m: true
+[18:03:15.834] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "8♦"
+    [35mautomatic[39m: true
+[18:03:30.978] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "9♣"
+    [35mautomatic[39m: true
+[18:04:03.643] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_ksrxpprr"
+    [35mcard[39m: "6♦"
+    [35mautomatic[39m: true
+[18:04:17.660] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "Q♥"
+    [35mautomatic[39m: true
+[18:04:30.992] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "7♥"
+    [35mautomatic[39m: true
+[18:05:03.646] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_bu9o737m"
+    [35mcard[39m: "3♦"
+    [35mautomatic[39m: true
+[18:05:17.675] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "A♥"
+    [35mautomatic[39m: true
+[18:05:32.803] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "9♣"
+    [35mautomatic[39m: true
+[18:06:03.663] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_prb7kd30"
+    [35mcard[39m: "10♣"
+    [35mautomatic[39m: true
+[18:06:19.492] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:06:32.813] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "6♥"
+    [35mautomatic[39m: true
+[18:07:05.472] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_100x8k8s"
+    [35mcard[39m: "A♠"
+    [35mautomatic[39m: true
+[18:07:17.518] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+[18:07:17.518] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:07:18.593] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:07:18.605] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+[18:07:19.497] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "J♥"
+    [35mautomatic[39m: true
+[18:07:24.096] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "8♥"
+    [35mautomatic[39m: false
+[18:07:25.304] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "5♥"
+    [35mautomatic[39m: false
+[18:07:27.920] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "7♥"
+    [35mautomatic[39m: false
+[18:07:28.900] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "4♥"
+    [35mautomatic[39m: false
+[18:07:36.271] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "6♥"
+    [35mautomatic[39m: false
+[18:07:40.419] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "3♥"
+    [35mautomatic[39m: false
+[18:07:45.736] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "4♦"
+    [35mautomatic[39m: false
+[18:07:47.425] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "2♦"
+    [35mautomatic[39m: false
+[18:07:50.347] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "7♦"
+    [35mautomatic[39m: false
+[18:07:51.679] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "2♥"
+    [35mautomatic[39m: false
+[18:07:58.628] [32mINFO[39m (2120): [36mNext game prepared[39m
+    [35mgameId[39m: "OE43WI"
+[18:08:02.734] [32mINFO[39m (2120): [36mGame started[39m
+    [35mgameId[39m: "OE43WI"
+[18:08:05.485] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_6820fiok"
+    [35mcard[39m: "J♦"
+    [35mautomatic[39m: true
+[18:08:19.668] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+[18:08:21.306] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "J♣"
+    [35mautomatic[39m: true
+[18:08:24.026] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+[18:08:31.550] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "2UHGM0"
+    [35mplayerId[39m: "player_cqg2xvr9"
+    [35mplayerName[39m: "Pavi"
+[18:09:02.749] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "K♠"
+    [35mautomatic[39m: true
+[18:09:05.493] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_d42vjm5k"
+    [35mcard[39m: "Q♣"
+    [35mautomatic[39m: true
+[18:09:21.318] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "Q♣"
+    [35mautomatic[39m: true
+[18:09:24.796] [32mINFO[39m (2120): [36mPlayer joined game[39m
+    [35mgameId[39m: "2UHGM0"
+    [35mplayerId[39m: "player_kr6o5kk5"
+    [35mplayerName[39m: "pabish"
+[18:10:02.752] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "10♠"
+    [35mautomatic[39m: true
+[18:10:05.503] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_7lb3ctlv"
+    [35mcard[39m: "9♥"
+    [35mautomatic[39m: true
+[18:10:23.127] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "Q♠"
+    [35mautomatic[39m: true
+[18:11:04.569] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "K♦"
+    [35mautomatic[39m: true
+[18:11:05.513] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_oyo4onlz"
+    [35mcard[39m: "10♥"
+    [35mautomatic[39m: true
+[18:11:23.135] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "6♠"
+    [35mautomatic[39m: true
+[18:12:04.578] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "A♦"
+    [35mautomatic[39m: true
+[18:12:05.517] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_u8huxvi3"
+    [35mcard[39m: "8♥"
+    [35mautomatic[39m: true
+[18:12:24.948] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "J♠"
+    [35mautomatic[39m: true
+[18:13:05.522] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_axqfkdy8"
+    [35mcard[39m: "10♠"
+    [35mautomatic[39m: true
+[18:13:06.395] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "A♣"
+    [35mautomatic[39m: true
+[18:13:24.954] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "5♠"
+    [35mautomatic[39m: true
+[18:14:05.534] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_ksrxpprr"
+    [35mcard[39m: "3♠"
+    [35mautomatic[39m: true
+[18:14:06.396] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "10♣"
+    [35mautomatic[39m: true
+[18:14:26.763] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "10♠"
+    [35mautomatic[39m: true
+[18:15:05.545] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_bu9o737m"
+    [35mcard[39m: "A♥"
+    [35mautomatic[39m: true
+[18:15:08.212] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "A♥"
+    [35mautomatic[39m: true
+[18:15:26.769] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "4♠"
+    [35mautomatic[39m: true
+[18:16:05.555] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_prb7kd30"
+    [35mcard[39m: "9♣"
+    [35mautomatic[39m: true
+[18:16:08.222] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "Q♥"
+    [35mautomatic[39m: true
+[18:16:28.598] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "10♥"
+    [35mautomatic[39m: true
+[18:17:07.386] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_100x8k8s"
+    [35mcard[39m: "A♦"
+    [35mautomatic[39m: true
+[18:17:10.034] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[18:17:28.606] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "8♥"
+    [35mautomatic[39m: true
+[18:18:07.400] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_6820fiok"
+    [35mcard[39m: "2♦"
+    [35mautomatic[39m: true
+[18:18:10.047] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "J♥"
+    [35mautomatic[39m: true
+[18:18:30.414] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "10♦"
+    [35mautomatic[39m: true
+[18:19:07.404] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_d42vjm5k"
+    [35mcard[39m: "6♥"
+    [35mautomatic[39m: true
+[18:19:08.508] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "2UHGM0"
+    [35mplayerId[39m: "player_kr6o5kk5"
+[18:19:08.508] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:19:09.440] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:19:11.868] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "K♣"
+    [35mautomatic[39m: true
+[18:19:30.422] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "7♦"
+    [35mautomatic[39m: true
+6:19:47 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+[18:19:47.802] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:19:47.806] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+6:19:56 pm [vite] (client) hmr update /src/index.css, /src/components/Lobby.tsx
+6:20:03 pm [vite] (client) hmr update /src/index.css, /src/components/PlayerArea.tsx
+[18:20:07.421] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_7lb3ctlv"
+    [35mcard[39m: "7♥"
+    [35mautomatic[39m: true
+[18:20:11.874] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "9♣"
+    [35mautomatic[39m: true
+[18:20:32.251] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "9♥"
+    [35mautomatic[39m: true
+[18:21:07.433] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_oyo4onlz"
+    [35mcard[39m: "6♣"
+    [35mautomatic[39m: true
+[18:21:13.678] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "Q♣"
+    [35mautomatic[39m: true
+[18:21:32.261] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "6♥"
+    [35mautomatic[39m: true
+6:21:58 pm [vite] (client) hmr update /src/pages/Landscape.css, /src/index.css
+[18:22:07.439] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_u8huxvi3"
+    [35mcard[39m: "8♦"
+    [35mautomatic[39m: true
+[18:22:13.693] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "6♣"
+    [35mautomatic[39m: true
+6:22:14 pm [vite] (client) hmr update /src/index.css, /src/components/GameDashboard.tsx
+[18:22:30.151] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:22:31.153] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:22:34.069] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "8♣"
+    [35mautomatic[39m: true
+[18:23:07.441] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_axqfkdy8"
+    [35mcard[39m: "4♠"
+    [35mautomatic[39m: true
+[18:23:15.503] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "J♦"
+    [35mautomatic[39m: true
+[18:23:34.083] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "10♣"
+    [35mautomatic[39m: true
+6:23:47 pm [vite] (client) hmr update /src/index.css, /src/components/VoiceChatPanel.tsx
+[18:24:07.441] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_ksrxpprr"
+    [35mcard[39m: "K♣"
+    [35mautomatic[39m: true
+[18:24:15.509] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "Q♦"
+    [35mautomatic[39m: true
+[18:24:35.902] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "9♣"
+    [35mautomatic[39m: true
+6:24:38 pm [vite] (client) hmr update /src/index.css, /src/components/VoiceChatPanel.tsx
+[18:25:07.456] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_bu9o737m"
+    [35mcard[39m: "Q♥"
+    [35mautomatic[39m: true
+[18:25:17.334] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "Q♠"
+    [35mautomatic[39m: true
+[18:25:35.903] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "7♣"
+    [35mautomatic[39m: true
+[18:26:07.467] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_prb7kd30"
+    [35mcard[39m: "8♣"
+    [35mautomatic[39m: true
+[18:26:17.350] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "9♠"
+    [35mautomatic[39m: true
+[18:26:37.619] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "2UHGM0"
+    [35mplayerId[39m: "player_cqg2xvr9"
+[18:26:37.725] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "6♣"
+    [35mautomatic[39m: true
+[18:26:44.884] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:26:55.353] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:27:09.295] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_100x8k8s"
+    [35mcard[39m: "A♠"
+    [35mautomatic[39m: true
+[18:27:13.529] [32mINFO[39m (2120): [36mGame created[39m
+    [35mgameId[39m: "UM098X"
+    [35mplayerId[39m: "player_rsd6z5bl"
+    [35mplayerName[39m: "Pavi"
+[18:27:19.178] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "J♠"
+    [35mautomatic[39m: true
+[18:27:34.704] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "UM098X"
+    [35mplayerId[39m: "player_rsd6z5bl"
+[18:27:37.732] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "4♣"
+    [35mautomatic[39m: true
+[18:28:09.306] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_6820fiok"
+    [35mcard[39m: "2♥"
+    [35mautomatic[39m: true
+[18:28:19.191] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "7♠"
+    [35mautomatic[39m: true
+[18:28:39.550] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "5♥"
+    [35mautomatic[39m: true
+[18:29:09.310] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_d42vjm5k"
+    [35mcard[39m: "4♣"
+    [35mautomatic[39m: true
+[18:29:21.003] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "10♥"
+    [35mautomatic[39m: true
+[18:29:29.963] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:29:30.346] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:29:39.559] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "7♥"
+    [35mautomatic[39m: true
+[18:30:09.320] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_7lb3ctlv"
+    [35mcard[39m: "4♥"
+    [35mautomatic[39m: true
+[18:30:21.010] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "9♥"
+    [35mautomatic[39m: true
+[18:30:41.363] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "7♠"
+    [35mautomatic[39m: true
+[18:31:09.328] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_oyo4onlz"
+    [35mcard[39m: "2♣"
+    [35mautomatic[39m: true
+[18:31:22.816] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "10♦"
+    [35mautomatic[39m: true
+[18:31:41.374] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "3♠"
+    [35mautomatic[39m: true
+6:31:43 pm [vite] (client) hmr update /src/index.css, /src/components/VoiceChatPanel.tsx
+6:31:44 pm [vite] (client) hmr invalidate /src/components/VoiceChatPanel.tsx Could not Fast Refresh (new export)
+6:31:44 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/components/Lobby.tsx
+[18:31:44.312] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:31:44.315] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+6:31:50 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+[18:31:50.600] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:31:50.605] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+6:31:56 pm [vite] (client) hmr update /src/index.css, /src/components/Lobby.tsx
+6:32:06 pm [vite] (client) hmr update /src/index.css, /src/components/Lobby.tsx
+[18:32:09.341] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_u8huxvi3"
+    [35mcard[39m: "3♥"
+    [35mautomatic[39m: true
+[18:32:22.827] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "9♦"
+    [35mautomatic[39m: true
+[18:32:43.182] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "6♦"
+    [35mautomatic[39m: true
+6:33:08 pm [vite] (client) hmr update /src/index.css, /src/components/VoiceChatPanel.tsx, /src/pages/Game.tsx
+[18:33:08.760] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:33:09.344] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_axqfkdy8"
+    [35mcard[39m: "3♣"
+    [35mautomatic[39m: true
+6:33:17 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+[18:33:17.511] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:33:24.634] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "8♥"
+    [35mautomatic[39m: true
+[18:33:43.197] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "2♦"
+    [35mautomatic[39m: true
+6:33:56 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[18:33:56.855] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:33:57.652] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:34:09.352] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_ksrxpprr"
+    [35mcard[39m: "5♥"
+    [35mautomatic[39m: true
+[18:34:24.637] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "5♥"
+    [35mautomatic[39m: true
+6:34:37 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[18:34:45.011] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "5♦"
+    [35mautomatic[39m: true
+[18:34:56.770] [32mINFO[39m (2120): [36mPlayer resumed game[39m
+    [35mgameId[39m: "2UHGM0"
+    [35mplayerId[39m: "player_kr6o5kk5"
+[18:35:09.356] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_bu9o737m"
+    [35mcard[39m: "J♥"
+    [35mautomatic[39m: true
+[18:35:26.450] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "8♦"
+    [35mautomatic[39m: true
+[18:35:45.018] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "5♣"
+    [35mautomatic[39m: true
+[18:36:09.107] [32mINFO[39m (2120): [36mPlayer disconnected[39m
+    [35mgameId[39m: "2UHGM0"
+    [35mplayerId[39m: "player_kr6o5kk5"
+[18:36:09.107] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:36:09.366] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "4JLYFU"
+    [35mplayerId[39m: "player_prb7kd30"
+    [35mcard[39m: "5♣"
+    [35mautomatic[39m: true
+[18:36:09.686] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:36:26.459] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "6♦"
+    [35mautomatic[39m: true
+[18:36:38.945] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:36:39.230] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:36:46.838] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "5♦"
+    [35mautomatic[39m: true
+[18:37:21.165] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:37:28.271] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "8♠"
+    [35mautomatic[39m: true
+[18:37:34.641] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:38:00.614] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "4♥"
+    [35mautomatic[39m: true
+[18:38:02.784] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:38:03.070] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[18:38:04.162] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[18:38:28.270] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "6♠"
+    [35mautomatic[39m: true
+[18:39:02.429] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "5♣"
+    [35mautomatic[39m: true
+[18:39:30.083] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "7♥"
+    [35mautomatic[39m: true
+[18:39:47.774] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[19:04:56.297] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "3♣"
+    [35mautomatic[39m: true
+[19:04:56.297] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "4♥"
+    [35mautomatic[39m: true
+[19:04:56.470] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[19:04:59.169] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[10:40:17.121] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "5♦"
+    [35mautomatic[39m: true
+[10:40:17.195] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "7♦"
+    [35mautomatic[39m: true
+[10:40:30.211] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[10:40:33.711] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[10:40:43.280] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[10:41:09.960] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "3♥"
+    [35mautomatic[39m: true
+[10:41:09.960] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "4♦"
+    [35mautomatic[39m: true
+[10:42:11.789] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_nodr1jaa"
+    [35mcard[39m: "5♦"
+    [35mautomatic[39m: true
+[10:42:11.790] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "5♦"
+    [35mautomatic[39m: true
+[10:43:11.801] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "3XWDF7"
+    [35mplayerId[39m: "player_r6aw0a8s"
+    [35mcard[39m: "2♠"
+    [35mautomatic[39m: true
+[10:43:11.832] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "3♦"
+    [35mautomatic[39m: true
+[10:44:13.658] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "5♣"
+    [35mautomatic[39m: true
+[10:45:13.659] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "J♣"
+    [35mautomatic[39m: true
+[10:46:15.469] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "8♣"
+    [35mautomatic[39m: true
+[10:47:15.479] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "4♣"
+    [35mautomatic[39m: true
+[10:48:17.298] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "7♣"
+    [35mautomatic[39m: true
+[10:49:17.310] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "2♣"
+    [35mautomatic[39m: true
+[10:50:19.131] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "5♠"
+    [35mautomatic[39m: true
+[10:51:19.143] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "4♠"
+    [35mautomatic[39m: true
+[10:52:20.953] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "3♥"
+    [35mautomatic[39m: true
+[10:53:20.954] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "3♠"
+    [35mautomatic[39m: true
+[10:53:51.411] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[10:53:52.568] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[10:54:14.661] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[10:54:19.686] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[10:54:19.697] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[10:54:22.776] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "3♣"
+    [35mautomatic[39m: true
+[10:54:24.742] [32mINFO[39m (2120): [36mWebSocket client connected[39m
+[10:54:24.755] [32mINFO[39m (2120): [36mWebSocket client disconnected[39m
+[10:55:22.788] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "2♦"
+    [35mautomatic[39m: true
+[10:56:24.616] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_2dv9zjhm"
+    [35mcard[39m: "3♥"
+    [35mautomatic[39m: true
+[12:52:37.026] [32mINFO[39m (2120): [36mCard played[39m
+    [35mgameId[39m: "OE43WI"
+    [35mplayerId[39m: "player_wkazd9fw"
+    [35mcard[39m: "2♠"
+    [35mautomatic[39m: true

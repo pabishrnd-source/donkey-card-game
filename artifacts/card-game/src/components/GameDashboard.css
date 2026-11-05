@@ -1,0 +1,1233 @@
+.donkey-dashboard {
+  --dd-gold: #f0cf7c;
+  --dd-muted: #a8b8b7;
+  min-height: 100svh;
+  background: #080e12;
+  color: #f5f7f3;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  letter-spacing: 0;
+  padding-top: env(safe-area-inset-top, 0px);
+  color-scheme: dark;
+}
+.donkey-dashboard *,
+.dd-dialog * {
+  box-sizing: border-box;
+}
+.donkey-dashboard button,
+.dd-dialog button {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.donkey-dashboard button:focus-visible,
+.dd-dialog button:focus-visible {
+  outline: 2px solid #f0cf7c;
+  outline-offset: 4px;
+}
+.donkey-dashboard button:disabled,
+.dd-dialog button:disabled {
+  opacity: 0.55;
+  cursor: wait;
+}
+.dd-header {
+  max-width: 1560px;
+  min-height: 88px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  padding: 16px 32px;
+  border-bottom: 1px solid #e3c78c19;
+}
+.dd-brand {
+  display: flex;
+  flex: 0 0 170px;
+  align-items: center;
+  gap: 10px;
+  color: var(--dd-gold);
+}
+.dd-brand > svg {
+  width: 30px;
+  height: 30px;
+}
+.dd-brand > span {
+  font:
+    700 29px/1 Georgia,
+    serif;
+  text-transform: uppercase;
+  text-shadow: 0 2px 0 #795621;
+}
+.dd-header-caption {
+  flex: 1;
+  color: #c4b58e;
+  font-size: 13px;
+}
+.dd-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  margin-left: auto;
+  text-align: left;
+}
+.dd-avatar {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #64b7bc;
+  border-radius: 50%;
+  background: #133c43;
+  color: #97f0e9;
+}
+.dd-avatar svg {
+  width: 27px;
+  height: 27px;
+}
+.dd-profile-copy {
+  display: grid;
+  gap: 4px;
+}
+.dd-profile-copy strong {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+}
+.dd-profile-copy > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--dd-muted);
+  font-size: 11px;
+}
+.dd-profile-gear {
+  margin-left: 16px;
+  color: #cad4d1;
+}
+.donkey-dashboard i.online {
+  background: #3ae499;
+}
+.dd-profile-copy i,
+.dd-footer i {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d7a661;
+}
+.dd-layout {
+  display: grid;
+  grid-template-columns: 186px minmax(0, 1fr);
+  max-width: 1560px;
+  margin: auto;
+}
+.dd-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px 14px 24px 24px;
+  border-right: 1px solid #e3c78c19;
+}
+.dd-navigation button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 54px;
+  padding: 12px;
+  text-align: left;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #b5c3c9;
+  transition: background-color 150ms;
+}
+.dd-navigation button > svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+.dd-navigation button:hover {
+  background: #ffffff08;
+  color: #fff4d4;
+}
+.dd-navigation .is-selected {
+  color: #ffdf8e;
+  background: #be95471d;
+  border-color: #b9904645;
+  box-shadow: inset 3px 0 #e6c66f;
+}
+.dd-navigation .dd-nav-back {
+  margin-top: auto;
+  font-size: 11px;
+  color: #869591;
+}
+.dd-main {
+  min-width: 0;
+}
+.dd-hero {
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: 320px;
+  aspect-ratio: 3 / 1;
+  overflow: hidden;
+  background: #07110d;
+}
+.dd-hero-art {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.dd-hero-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.dd-hero-copy {
+  padding: 30px 38px;
+  text-shadow: 0 2px 10px #000;
+}
+.dd-eyebrow {
+  color: #ead8a5;
+  font-size: 12px;
+}
+.dd-hero h1 {
+  margin: 10px 0 8px;
+  font:
+    700 68px/1 Georgia,
+    serif;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  color: #f1d086;
+  text-shadow:
+    0 3px 0 #74521e,
+    0 4px 20px #000;
+}
+.dd-hero p {
+  margin: 12px 0 18px;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.dd-hero p em {
+  font-style: normal;
+  color: #edd595;
+}
+.dd-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #c2d0c4;
+  font-size: 12px;
+}
+.dd-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 24px 30px 16px;
+}
+.dd-room-actions {
+  order: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.dd-action {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 86px;
+  padding: 15px 20px;
+  text-align: left;
+  border-radius: 8px;
+  border: 1px solid;
+  box-shadow:
+    inset 0 1px 0 #ffffff22,
+    0 4px 0 #0007;
+  transition:
+    filter 150ms,
+    transform 150ms;
+}
+.dd-action:hover {
+  filter: brightness(1.12);
+}
+.dd-action:active {
+  transform: translateY(2px);
+}
+.dd-action-create {
+  border-color: #32d390;
+  background: linear-gradient(135deg, #087b43, #075831);
+}
+.dd-action-join {
+  border-color: #469cfb;
+  background: linear-gradient(135deg, #126bbb, #164595);
+}
+.dd-action-icon {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #ffffff17;
+}
+.dd-action strong {
+  display: block;
+  font-size: 19px;
+}
+.dd-action small {
+  display: block;
+  margin-top: 5px;
+  color: #d0e8dc;
+  font-size: 12px;
+}
+.dd-action-join small {
+  color: #d1e6fc;
+}
+.dd-action-arrow {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+}
+.dd-seats-section {
+  order: 2;
+}
+.dd-section-label {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.dd-section-label h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.dd-section-label > span {
+  color: var(--dd-muted);
+  font-size: 11px;
+}
+.dd-seats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.dd-seat {
+  --seat-accent: #43e6a2;
+  --seat-bg: #07372a;
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  min-height: 150px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  overflow: hidden;
+  padding: 16px 10px;
+  border: 1px solid var(--seat-accent);
+  border-radius: 8px;
+  background: var(--seat-bg);
+  box-shadow:
+    inset 0 0 22px #ffffff06,
+    0 5px 14px #0003;
+  transition:
+    transform 150ms,
+    box-shadow 150ms;
+}
+.dd-seat:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 0 22px #ffffff0f,
+    0 5px 20px #0006;
+}
+.dd-seat-blue {
+  --seat-accent: #40b9ff;
+  --seat-bg: #092d47;
+}
+.dd-seat-violet {
+  --seat-accent: #b286f5;
+  --seat-bg: #292040;
+}
+.dd-seat-amber {
+  --seat-accent: #edb761;
+  --seat-bg: #3d2a15;
+}
+.dd-seat-suit {
+  position: absolute;
+  z-index: -1;
+  width: 72px;
+  height: 72px;
+  left: -12px;
+  top: 22px;
+  color: var(--seat-accent);
+  opacity: 0.11;
+}
+.dd-seat-avatar {
+  position: relative;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid var(--seat-accent);
+  border-radius: 50%;
+  color: var(--seat-accent);
+  background: #0002;
+  box-shadow: 0 0 12px color-mix(in srgb, var(--seat-accent) 15%, transparent);
+}
+.dd-seat-avatar > svg {
+  width: 24px;
+  height: 24px;
+}
+.dd-seat-avatar .dd-seat-crown {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  right: -7px;
+  bottom: -2px;
+  color: #ffe091;
+  fill: #986719;
+}
+.dd-seat strong {
+  display: block;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 13px;
+}
+.dd-seat small {
+  color: #c4d2d4;
+  font-size: 11px;
+}
+.dd-resume {
+  order: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 46px;
+  padding: 12px 0;
+  color: var(--dd-gold);
+  border-bottom: 1px solid #dab87644;
+  font-size: 13px;
+}
+.dd-resume > svg:last-child {
+  margin-left: auto;
+}
+.dd-rules-link {
+  order: 4;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0 0;
+  border-top: 1px solid #c5d7ce20;
+  text-align: left;
+}
+.dd-rules-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  place-items: center;
+  background: #ffffff08;
+  border: 1px solid #9ab6a825;
+  border-radius: 8px;
+  color: #ead8aa;
+}
+.dd-rules-link strong {
+  display: block;
+  font-size: 14px;
+}
+.dd-rules-link small {
+  display: block;
+  margin-top: 5px;
+  color: var(--dd-muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+.dd-rules-link > svg:last-child {
+  margin-left: auto;
+  flex-shrink: 0;
+  color: #c1ae7f;
+}
+.dd-footer {
+  order: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #81958e;
+  font-size: 10px;
+}
+.dd-footer > span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.dd-alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #4b201b;
+  color: #ffe1d8;
+  padding: 14px 22px;
+  font-size: 13px;
+}
+.dd-alert button {
+  flex-shrink: 0;
+}
+
+.dd-dialog {
+  width: min(440px, calc(100% - 32px));
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
+  padding: 28px;
+  border: 1px solid #8d774b;
+  border-radius: 8px;
+  background: #101c1b;
+  color: #f6f4e9;
+  color-scheme: dark;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  letter-spacing: 0;
+  box-shadow: 0 20px 100px #000a;
+}
+.dd-dialog h2 {
+  margin-top: 12px;
+  font-size: 24px;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+.dd-dialog header,
+.dd-dialog [id^="radix"] {
+  letter-spacing: 0;
+}
+.dd-dialog [id][class*="text-muted-foreground"] {
+  color: #a3b5ac;
+  line-height: 1.5;
+}
+.dd-dialog-symbol {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 8px;
+  color: #eed090;
+  background: #d7af5320;
+}
+.dd-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 6px;
+}
+.dd-form > label {
+  margin-top: 8px;
+  color: #d5ddd5;
+  font-size: 13px;
+}
+.dd-form input {
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 14px;
+  border: 1px solid #61756a;
+  border-radius: 8px;
+  outline: none;
+  background: #080f12;
+  color: #fff;
+  font:
+    16px/1.3 "Trebuchet MS",
+    Arial,
+    sans-serif;
+}
+.dd-form input::placeholder {
+  color: #7c9387;
+}
+.dd-form input:focus {
+  border-color: #e4c581;
+  box-shadow: 0 0 0 2px #e4c58133;
+}
+.dd-form .dd-code-input {
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 21px;
+}
+.dd-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #59c58b;
+  border-radius: 8px;
+  background: #13804a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: inset 0 1px 0 #ffffff2a;
+}
+.dd-submit:hover:not(:disabled) {
+  background: #1c9559;
+}
+.dd-submit-blue {
+  background: #2468b5;
+  border-color: #63b0f1;
+}
+.dd-submit-blue:hover:not(:disabled) {
+  background: #2b7ad2;
+}
+.dd-form-meta {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  margin-top: 6px;
+  color: #a0b4a8;
+  font-size: 10px;
+}
+.dd-form-meta svg:nth-of-type(2) {
+  margin-left: 7px;
+}
+.dd-form-error {
+  border-left: 2px solid #f1997e;
+  padding: 8px 12px;
+  color: #ffbdab;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.dd-music-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 8px;
+}
+.dd-music-setting label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 14px;
+}
+.dd-rules-list {
+  padding: 0;
+  margin: 0;
+  counter-reset: rules;
+  list-style: none;
+}
+
+/* Artwork skin for the Create Room dialog; the real form controls remain on top. */
+.game-dialog.dd-dialog.dd-create-dialog {
+  position: relative;
+  width: min(760px, calc(100% - 24px));
+  height: min(720px, calc(100dvh - 24px));
+  aspect-ratio: 1536 / 1024;
+  max-height: calc(100dvh - 24px);
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: transparent url('/fantasy-wooden-create-room-ui.png?v=20261031') center / 100% 100% no-repeat !important;
+  box-shadow: 0 20px 100px #000b;
+}
+.dd-create-art {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+.game-dialog.dd-dialog.dd-create-dialog > header,
+.game-dialog.dd-dialog.dd-create-dialog > [id^="radix"] { display: none !important; }
+.game-dialog.dd-dialog.dd-create-dialog > button {
+  position: absolute;
+  z-index: 4;
+  top: 12%;
+  right: 4%;
+  width: 13%;
+  height: 15%;
+  opacity: 0;
+}
+.game-dialog.dd-dialog.dd-create-dialog .dd-form {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: block;
+  margin: 0;
+}
+.game-dialog.dd-dialog.dd-create-dialog .dd-form > label,
+.game-dialog.dd-dialog.dd-create-dialog .dd-form-meta,
+.game-dialog.dd-dialog.dd-create-dialog .dd-form-error { display: none !important; }
+.game-dialog.dd-dialog.dd-create-dialog .dd-form input#dd-player-name {
+  position: absolute;
+  left: 19%;
+  top: 49%;
+  width: 61%;
+  height: 13%;
+  min-height: 0;
+  padding: 0 18px 0 clamp(72px, 12vw, 190px);
+  border: 0;
+  border-radius: 24px;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font: 700 clamp(18px, 3vw, 32px)/1.1 "Trebuchet MS", Arial, sans-serif;
+  box-shadow: none;
+}
+.game-dialog.dd-dialog.dd-create-dialog .dd-form input#dd-player-name:focus {
+  border: 2px solid #ffd86e;
+  box-shadow: 0 0 0 3px #ffd86e55;
+}
+.game-dialog.dd-dialog.dd-create-dialog .dd-submit {
+  position: absolute;
+  left: 20%;
+  top: 68%;
+  width: 60%;
+  height: 16%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.game-dialog.dd-dialog.dd-create-dialog .dd-submit:disabled { cursor: wait; }
+@media (max-width: 600px) {
+  .dd-create-dialog {
+    width: min(96vw, 760px);
+    max-height: calc(100dvh - 16px);
+  }
+  .dd-create-dialog .dd-form input#dd-player-name { font-size: 18px; }
+}
+
+/* Standalone Create Room modal so the artwork is never hidden by the generic dialog overlay. */
+.dd-create-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  background: transparent;
+  pointer-events: none;
+}
+.dd-create-art-dialog {
+  position: relative;
+  width: min(760px, 96vw);
+  aspect-ratio: 1536 / 1024;
+  overflow: hidden;
+  background: transparent;
+  /* Keep the lobby colors unchanged around the transparent artwork. */
+  box-shadow: none;
+  pointer-events: auto;
+}
+.dd-create-art-dialog > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+.dd-create-close {
+  position: absolute;
+  z-index: 5;
+  top: 12%;
+  right: 4%;
+  width: 13%;
+  height: 15%;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.dd-create-close svg { width: 100%; height: 100%; opacity: 0; }
+.dd-create-form { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+.dd-create-form input {
+  position: absolute;
+  left: 19%;
+  top: 49%;
+  width: 61%;
+  height: 13%;
+  /* The supplied artwork includes a person icon inside the field. Keep typed text clear of it. */
+  padding: 0 18px 0 clamp(72px, 12vw, 190px);
+  border: 2px solid transparent;
+  border-radius: 24px;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font: 700 clamp(18px, 3vw, 32px)/1.1 "Trebuchet MS", Arial, sans-serif;
+  pointer-events: auto;
+}
+.dd-create-form input:focus {
+  border-color: #ffd86e;
+  box-shadow: 0 0 0 3px #ffd86e55;
+}
+.dd-create-submit {
+  position: absolute;
+  left: 20%;
+  top: 68%;
+  width: 60%;
+  height: 16%;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.dd-create-error {
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  top: 63%;
+  margin: 0;
+  color: #7d1c12;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Full artwork modal for How to Play; transparent edges keep the village visible. */
+.dd-rules-art-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  background: transparent;
+  pointer-events: none;
+}
+.dd-rules-art-dialog {
+  position: relative;
+  width: min(96vw, calc(94dvh * 0.666667));
+  height: min(94dvh, 920px);
+  aspect-ratio: 1024 / 1536;
+  pointer-events: auto;
+}
+.dd-rules-art-dialog > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+.dd-rules-art-close {
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  right: 1%;
+  width: 17%;
+  height: 14%;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+.dd-rules-art-close svg { width: 100%; height: 100%; opacity: 0; }
+
+/* Artwork-first Join Room panel with live form controls over the supplied fields. */
+.dd-join-art-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  background: transparent;
+  pointer-events: none;
+}
+.dd-join-art-dialog {
+  position: relative;
+  width: min(96vw, calc(94dvh * 1.094245));
+  height: auto;
+  max-height: 94dvh;
+  aspect-ratio: 1312 / 1199;
+  pointer-events: auto;
+}
+.dd-join-art-dialog > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+.dd-join-art-close {
+  position: absolute;
+  z-index: 5;
+  top: 7%;
+  right: 1%;
+  width: 15%;
+  height: 15%;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+.dd-join-art-close svg { width: 100%; height: 100%; opacity: 0; }
+.dd-join-art-form { position: absolute; inset: 0; z-index: 2; pointer-events: none; }
+.dd-join-art-form input {
+  position: absolute;
+  left: 17%;
+  width: 68%;
+  height: 11%;
+  padding: 0 18px 0 clamp(72px, 10vw, 150px);
+  border: 2px solid transparent;
+  border-radius: 28px;
+  outline: 0;
+  background: transparent;
+  color: #fff;
+  font: 700 clamp(18px, 3vw, 32px)/1.1 "Trebuchet MS", Arial, sans-serif;
+  pointer-events: auto;
+}
+.dd-join-art-form input:first-of-type { top: 43%; }
+.dd-join-art-form input.dd-join-art-code { top: 61%; }
+.dd-join-art-form input:focus {
+  border-color: #ffd86e;
+  box-shadow: 0 0 0 3px #ffd86e55;
+}
+.dd-join-art-error {
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  top: 71%;
+  margin: 0;
+  color: #7d1c12;
+  font-size: 12px;
+  text-align: center;
+}
+.dd-join-art-submit {
+  position: absolute;
+  left: 18%;
+  top: 76%;
+  width: 64%;
+  height: 15%;
+  border: 0;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+.dd-rules-list li {
+  position: relative;
+  padding: 12px 0 12px 34px;
+  border-bottom: 1px solid #ffffff0f;
+}
+.dd-rules-list li::before {
+  position: absolute;
+  left: 0;
+  top: 14px;
+  counter-increment: rules;
+  content: counter(rules, decimal-leading-zero);
+  color: #caac72;
+  font-size: 12px;
+}
+.dd-rules-list strong {
+  color: #efdfbc;
+  font-size: 14px;
+}
+.dd-rules-list p {
+  margin: 6px 0 0;
+  color: #bbc9c2;
+  font-size: 13px;
+  line-height: 1.55;
+}
+.dd-spinner {
+  animation: dd-spin 1s linear infinite;
+}
+@keyframes dd-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 901px) {
+  .dd-layout {
+    grid-template-columns: 156px minmax(0, 1fr);
+  }
+  .dd-navigation {
+    padding-left: 12px;
+  }
+  .dd-navigation button {
+    font-size: 12px;
+    padding: 10px;
+    gap: 8px;
+  }
+  .dd-hero h1 {
+    font-size: 54px;
+  }
+  .dd-hero-copy {
+    padding-left: 26px;
+  }
+  .dd-hero {
+    min-height: 300px;
+  }
+  .dd-seats {
+    gap: 10px;
+  }
+  .dd-seat small {
+    font-size: 10px;
+  }
+  .dd-content {
+    padding: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .donkey-dashboard {
+    padding-bottom: calc(78px + env(safe-area-inset-bottom, 0px));
+  }
+  .dd-header {
+    min-height: 72px;
+    padding: 12px 20px;
+    gap: 16px;
+  }
+  .dd-brand {
+    flex-basis: auto;
+    gap: 7px;
+  }
+  .dd-brand > span {
+    font-size: 24px;
+  }
+  .dd-brand > svg {
+    width: 25px;
+    height: 25px;
+  }
+  .dd-header-caption {
+    display: none;
+  }
+  .dd-profile-gear {
+    margin-left: 3px;
+  }
+  .dd-profile-copy strong {
+    max-width: 90px;
+    font-size: 12px;
+  }
+  .dd-profile-copy > span {
+    font-size: 10px;
+  }
+  .dd-avatar {
+    width: 34px;
+    height: 34px;
+  }
+  .dd-avatar svg {
+    width: 22px;
+    height: 22px;
+  }
+  .dd-layout {
+    display: block;
+  }
+  .dd-navigation {
+    position: fixed;
+    z-index: 30;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+    min-height: 68px;
+    padding: 6px 12px calc(6px + env(safe-area-inset-bottom, 0px));
+    background: #0a1418f5;
+    backdrop-filter: blur(16px);
+    border: 0;
+    border-top: 1px solid #97805265;
+  }
+  .dd-navigation button {
+    flex-direction: column;
+    min-height: 56px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 3px;
+    border: 0;
+    font-size: 10px;
+    text-align: center;
+  }
+  .dd-navigation .is-selected {
+    background: transparent;
+    box-shadow: none;
+    color: #f4d38a;
+  }
+  .dd-navigation .dd-nav-settings,
+  .dd-navigation .dd-nav-back {
+    display: none;
+  }
+  .dd-navigation button > svg {
+    width: 21px;
+    height: 21px;
+  }
+  .dd-hero {
+    min-height: 280px;
+    aspect-ratio: auto;
+  }
+  .dd-hero-copy {
+    padding: 24px;
+  }
+  .dd-hero h1 {
+    font-size: 50px;
+  }
+  .dd-hero p {
+    font-size: 21px;
+  }
+  .dd-content {
+    padding: 18px 20px 12px;
+    gap: 22px;
+  }
+  .dd-room-actions {
+    order: 1;
+    gap: 12px;
+  }
+  .dd-action {
+    min-height: 90px;
+    gap: 10px;
+    padding: 14px 12px;
+  }
+  .dd-action strong {
+    font-size: 15px;
+  }
+  .dd-action small {
+    font-size: 10px;
+  }
+  .dd-action-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .dd-action-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  .dd-action-arrow {
+    display: none;
+  }
+  .dd-resume {
+    order: 0;
+  }
+  .dd-seats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .dd-seat {
+    min-height: 118px;
+    padding: 12px 8px;
+    gap: 5px;
+  }
+  .dd-seat-avatar {
+    width: 38px;
+    height: 38px;
+  }
+  .dd-seat-avatar > svg {
+    width: 20px;
+    height: 20px;
+  }
+  .dd-seat-suit {
+    width: 60px;
+    height: 60px;
+  }
+  .dd-seat strong {
+    font-size: 12px;
+  }
+  .dd-seat small {
+    font-size: 10px;
+  }
+  .dd-rules-link {
+    gap: 12px;
+  }
+  .dd-rules-link small {
+    font-size: 11px;
+  }
+  .dd-footer {
+    font-size: 9px;
+  }
+}
+@media (max-width: 600px) {
+  .dd-hero {
+    min-height: 266px;
+  }
+  .dd-hero-art img {
+    object-position: center;
+  }
+  .dd-hero-copy {
+    width: 53%;
+    padding: 28px 0 24px 20px;
+  }
+  .dd-eyebrow {
+    font-size: 10px;
+  }
+  .dd-hero h1 {
+    font-size: 38px;
+    margin-top: 12px;
+  }
+  .dd-hero p {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 14px 0;
+  }
+  .dd-hero-meta {
+    font-size: 10px;
+  }
+  .dd-dialog {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    max-height: calc(100dvh - 20px);
+    padding: 24px 24px calc(24px + env(safe-area-inset-bottom, 0px));
+    border-radius: 8px 8px 0 0;
+  }
+  .dd-dialog h2 {
+    font-size: 23px;
+  }
+  .dd-dialog > div:first-child {
+    text-align: left;
+  }
+}
+@media (max-width: 359px) {
+  .dd-header {
+    padding: 12px 14px;
+  }
+  .dd-brand > span {
+    font-size: 21px;
+  }
+  .dd-profile-copy {
+    display: none;
+  }
+  .dd-content {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .dd-hero h1 {
+    font-size: 33px;
+  }
+  .dd-hero-copy {
+    padding-left: 14px;
+  }
+  .dd-action {
+    gap: 6px;
+    padding: 12px 9px;
+  }
+  .dd-action strong {
+    font-size: 13px;
+  }
+  .dd-action-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dd-seat,
+  .dd-action,
+  .dd-navigation button {
+    transition: none;
+  }
+  .dd-spinner {
+    animation: none;
+  }
+}

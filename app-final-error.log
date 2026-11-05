@@ -1,0 +1,73 @@
+
+  dist\index.mjs                   1.6mb
+  dist\pino-worker.mjs           153.5kb
+  dist\pino-file.mjs             142.2kb
+  dist\pino-pretty.mjs           115.9kb
+  dist\thread-stream-worker.mjs    7.4kb
+  ...and 5 more output files...
+
+Done in 542ms
+1:40:52 pm [vite] Internal server error: Failed to resolve import "./VillageSignIn.css" from "src/components/AccountHub.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/AccountHub.tsx:13:7
+  13 |  import "./EmeraldFriends.css";
+  14 |  import "./VillageLogin.css";
+  15 |  import "./VillageSignIn.css";
+     |          ^
+  16 |  const AccountContext = createContext(null);
+  17 |  export function AccountButton() {
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:29250:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:29247:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:27370:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:27428:32
+      at async Promise.all (index 12)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:27396:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:29048:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:22914:26)
+      at async viteTransformMiddleware (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:24790:20)
+1:40:54 pm [vite] (client) Pre-transform error: Failed to resolve import "./VillageSignIn.css" from "src/components/AccountHub.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/AccountHub.tsx:13:7
+  13 |  import "./EmeraldFriends.css";
+  14 |  import "./VillageLogin.css";
+  15 |  import "./VillageSignIn.css";
+     |          ^
+  16 |  const AccountContext = createContext(null);
+  17 |  export function AccountButton() {
+1:40:54 pm [vite] (client) Pre-transform error: Failed to resolve import "./VillageSignIn.css" from "src/components/AccountHub.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/AccountHub.tsx:13:7
+  13 |  import "./EmeraldFriends.css";
+  14 |  import "./VillageLogin.css";
+  15 |  import "./VillageSignIn.css";
+     |          ^
+  16 |  const AccountContext = createContext(null);
+  17 |  export function AccountButton() {
+1:40:54 pm [vite] Internal server error: Failed to resolve import "./VillageSignIn.css" from "src/components/AccountHub.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/AccountHub.tsx:13:7
+  13 |  import "./EmeraldFriends.css";
+  14 |  import "./VillageLogin.css";
+  15 |  import "./VillageSignIn.css";
+     |          ^
+  16 |  const AccountContext = createContext(null);
+  17 |  export function AccountButton() {
+      at TransformPluginContext._formatLog (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:29250:43)
+      at TransformPluginContext.error (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:29247:14)
+      at normalizeUrl (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:27370:18)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:27428:32
+      at async Promise.all (index 12)
+      at async TransformPluginContext.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:27396:4)
+      at async EnvironmentPluginContainer.transform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:29048:14)
+      at async loadAndTransform (file:///C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/node_modules/.pnpm/vite@7.3.7_@types+node@25.3_6f2cf024fcf83d747e09d997bfd679a8/node_modules/vite/dist/node/chunks/config.js:22914:26)
+1:40:54 pm [vite] (client) Pre-transform error: Failed to resolve import "./VillageSignIn.css" from "src/components/AccountHub.tsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: C:/Users/pabish/Downloads/Card-Duel-Masters/Card-Duel-Masters/artifacts/card-game/src/components/AccountHub.tsx:13:7
+  13 |  import "./EmeraldFriends.css";
+  14 |  import "./VillageLogin.css";
+  15 |  import "./VillageSignIn.css";
+     |          ^
+  16 |  const AccountContext = createContext(null);
+  17 |  export function AccountButton() {

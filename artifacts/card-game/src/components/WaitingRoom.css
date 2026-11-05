@@ -1,0 +1,102 @@
+.room-lounge { min-height:100vh; min-height:100dvh; background:linear-gradient(#060e0cc9,#060b0be8),url('/donkey-lobby-wide.png') center top / cover fixed; color:#f5f0dc; font-family:Arial,sans-serif; letter-spacing:0; padding: max(14px,env(safe-area-inset-top)) 24px max(24px,env(safe-area-inset-bottom)); }
+.room-lounge * { box-sizing:border-box; min-width:0; letter-spacing:0; }
+.rl-header,.rl-main { max-width:1400px; margin:auto; }
+.rl-header { display:flex; justify-content:space-between; align-items:center; gap:16px; padding-bottom:22px; }
+.rl-heading,.rl-actions { display:flex; align-items:center; gap:14px; }
+.rl-heading>svg { color:#f1c75a; width:32px; height:32px; }
+.rl-heading span { color:#e8c76d; font-size:11px; font-weight:bold; }
+.rl-heading h1 { font-size:30px; line-height:1.2; font-weight:700; margin:0; }
+.room-lounge button { cursor:pointer; }
+.room-lounge button:focus-visible { outline:2px solid #ffe59c; outline-offset:3px; }
+.room-lounge button:hover:not(:disabled) { filter:brightness(1.15); }
+.rl-icon { width:46px; height:46px; flex-shrink:0; display:inline-flex; align-items:center; justify-content:center; border-radius:8px; border:1px solid #667169; background:#1c282b; color:#f4f5ef; }
+.rl-icon svg { width:22px; height:22px; }
+.rl-leave { display:flex; align-items:center; justify-content:center; gap:10px; min-height:46px; padding:10px 18px; background:#b42e36; border:1px solid #e15a5e; border-radius:8px; font-weight:700; color:#fff; }
+.rl-leave svg { width:22px; height:22px; }
+.rl-invite { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:26px 30px; min-height:160px; border-top:1px solid #b49b58; border-bottom:1px solid #74653c; background:linear-gradient(90deg,#071b16f5 0%,#071b16ee 45%,#071b1644 70%),url('/donkey-lobby-wide.png') right center/cover; }
+.rl-label { color:#bac7c6; text-transform:uppercase; font-size:13px; font-weight:700; }
+.rl-code-line { display:flex; align-items:center; gap:24px; margin-top:8px; }
+.rl-code-line strong { color:#ffdd73; font:700 38px monospace; user-select:all; }
+.rl-copy-status { display:block; min-height:16px; font-size:12px; margin-top:4px; color:#b8e3ce; }
+.rl-connection { display:flex; align-items:center; gap:9px; padding:12px 16px; border:1px solid #508662; border-radius:8px; background:#071510eb; font-size:14px; }
+.rl-connection i { width:10px; height:10px; flex-shrink:0; border-radius:50%; background:#e1b857; }
+.rl-connection i.online { background:#0cdb79; }
+.rl-table { padding:24px 0 0; }
+.rl-seats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+.rl-seat { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; min-height:174px; padding:24px 14px 16px; background:#0a2520ee; border:1px solid #58776b; border-radius:8px; text-align:center; }
+.rl-you { border:2px solid #e9d77d; box-shadow:inset 0 0 20px #3fa45530,0 0 12px #edd17122; background:#124524ee; }
+.rl-avatar { position:relative; width:64px; height:64px; border-radius:50%; border:2px solid #eadb91; display:flex; justify-content:center; align-items:center; background:#08715c; font-size:28px; font-weight:700; margin-bottom:5px; flex-shrink:0; }
+.rl-color-1 .rl-avatar { background:#185b84; }
+.rl-color-2 .rl-avatar { background:#714b7e; }
+.rl-color-3 .rl-avatar { background:#805322; }
+.rl-crown { position:absolute; width:30px; height:30px; top:-23px; left:15px; color:#ffda65; fill:#b28d2d; }
+.rl-player-name { overflow-wrap:anywhere; width:100%; font-size:14px; }
+.rl-seat small { color:#ffb1b7; }
+.rl-empty { border-style:dashed; border-color:#536962; color:#b5c3be; background:#071c1bbd; font-size:14px; }
+.rl-empty .rl-avatar { background:#07171c; border-color:#3d5058; color:#d1dddf; }
+.rl-start-row { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:18px 0; border-bottom:1px solid #826d3b; }
+.rl-start-row p { display:flex; align-items:center; gap:12px; margin:0; font-size:14px; }
+.rl-start-row p svg { width:26px; height:26px; color:#f2c354; flex-shrink:0; }
+.rl-start { min-height:48px; display:flex; align-items:center; justify-content:center; gap:10px; padding:10px 18px; border:1px solid #3fe385; border-radius:8px; color:#fff; background:#07803b; font-weight:700; font-size:14px; }
+.rl-start svg { width:18px; height:18px; flex-shrink:0; }
+.rl-start:disabled { background:#142223; border-color:#4d6258; color:#bbc9c1; cursor:default; }
+.rl-waiting { font-size:14px; color:#d1dbcf; }
+.rl-details { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:28px; padding:24px 0; }
+.rl-details>section { background:#071918e8; padding:18px 20px; border-top:1px solid #aa9053; }
+.room-lounge h2 { display:flex; gap:10px; align-items:center; font-size:16px; font-weight:700; margin:0 0 18px; }
+.room-lounge h2>svg { color:#f4c661; width:23px; height:23px; flex-shrink:0; }
+.room-lounge h2>span { font-weight:400; color:#c1ccca; }
+.rl-roster { padding:0; margin:0; list-style:none; }
+.rl-roster li { display:flex; align-items:center; gap:12px; border-top:1px solid #354541; padding:12px 0; }
+.rl-small-avatar { width:42px; height:42px; display:flex; align-items:center; justify-content:center; border:1px solid #d2e7d7; border-radius:50%; background:#086b59; font-size:20px; flex-shrink:0; }
+.rl-roster-name { flex:1; overflow-wrap:anywhere; }
+.rl-roster-name strong { display:block; font-size:14px; }
+.rl-roster-name>span { display:flex; gap:6px; align-items:center; font-size:12px; margin-top:5px; color:#eac964; }
+.rl-roster-name svg { width:15px; height:15px; }
+.rl-count { font-size:12px; color:#b8c9c6; text-align:right; }
+.rl-count small { display:block; color:#ffadb6; margin-top:4px; }
+.rl-state { margin:0; }
+.rl-state>div { border-top:1px solid #354541; padding:12px 0; }
+.rl-state dt { color:#aabdbb; font-size:11px; text-transform:uppercase; margin-bottom:7px; }
+.rl-state dd { font-size:15px; font-weight:700; margin:0; overflow-wrap:anywhere; }
+.rl-state dd>span { display:inline-block; margin-right:10px; font-size:23px; }
+.rl-red { color:#ff8791; }
+.rl-chat { border-top:1px solid #af914f; background:#071719f2; padding:18px 20px; }
+.rl-chat-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+.rl-chat-heading h2 { margin:0; }
+.rl-chat>section { border:0; border-radius:0; background:transparent; box-shadow:none; padding:12px 0 0; }
+.rl-chat>section>div:first-child { display:none; }
+.rl-chat input { background:#15212b; color:#fff; border-color:#475860; font-size:16px; min-height:46px; }
+.rl-chat input::placeholder { color:#a3b1ba; }
+.rl-chat>section button { min-width:44px; min-height:46px; background:#087a3f; color:#fff; border:1px solid #46a960; }
+.rl-chat-heading>div>div { position:static; max-width:220px; width:auto; }
+@media(min-width:1100px) { .rl-seats:has(> :nth-child(5)) { grid-template-columns:repeat(5,minmax(0,1fr)); } }
+@media(max-width:700px) {
+.room-lounge { padding-left:14px; padding-right:14px; background-attachment:scroll; }
+.rl-header { gap:8px; padding-bottom:16px; }
+.rl-heading { gap:8px; }
+.rl-heading>svg { display:none; }
+.rl-heading h1 { font-size:21px; }
+.rl-actions { gap:6px; }
+.rl-leave { width:44px; padding:0; }
+.rl-leave span { display:none; }
+.rl-icon { width:44px; height:44px; }
+.rl-invite { flex-wrap:wrap; padding:16px; gap:10px; }
+.rl-code-block { width:100%; }
+.rl-code-line { justify-content:space-between; gap:12px; }
+.rl-code-line strong { font-size:32px; }
+.rl-connection { padding:7px 10px; font-size:12px; }
+.rl-table { padding-top:16px; }
+.rl-seats { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.rl-seat { min-height:148px; padding:24px 8px 12px; }
+.rl-avatar { width:50px; height:50px; font-size:23px; }
+.rl-crown { left:10px; width:26px; top:-20px; }
+.rl-seat>strong { font-size:13px; }
+.rl-player-name,.rl-empty { font-size:12px; }
+.rl-start-row { flex-direction:column; align-items:stretch; gap:12px; }
+.rl-start-row p { font-size:12px; line-height:1.5; }
+.rl-start { width:100%; font-size:13px; }
+.rl-details { grid-template-columns:minmax(0,1fr); gap:16px; padding:16px 0; }
+.rl-details>section,.rl-chat { padding:16px 12px; }
+}
+@media(prefers-reduced-motion:reduce) { .room-lounge * { animation:none !important; } }

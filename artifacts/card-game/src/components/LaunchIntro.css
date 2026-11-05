@@ -1,0 +1,60 @@
+.launch-intro { position: fixed; inset: 0; background: #071913; overflow: hidden; isolation: isolate; }
+.intro-scenery { position: absolute; inset: 0; animation: intro-moonlit-camera 5s ease-out both; }
+.intro-gold-glint { position: absolute; width: 18px; height: 18px; background: #fff3b5; clip-path: polygon(50% 0, 59% 40%, 100% 50%, 59% 60%, 50% 100%, 41% 60%, 0 50%, 41% 40%); opacity: 0; pointer-events: none; animation: intro-gold-shimmer 2.4s ease-in-out infinite; }
+@keyframes intro-moonlit-camera {
+  from { transform: scale(1.045); }
+  to { transform: scale(1); }
+}
+@keyframes intro-gold-shimmer {
+  0%, 100% { opacity: 0; transform: scale(0.35) rotate(0deg); }
+  45% { opacity: 0.85; transform: scale(1) rotate(12deg); }
+  70% { opacity: 0.15; transform: scale(0.65) rotate(20deg); }
+}
+.intro-backdrop, .intro-blink { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.intro-backdrop { object-fit: cover; }
+.intro-stage { position: absolute; left: 50%; top: 50%; width: min(100vw, 100dvh); height: min(83.333333dvh, 83.333333vw); transform: translate(-50%, -50%); }
+.intro-blink { object-fit: fill; }
+.intro-character, .intro-character-art, .intro-front-plaque { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.intro-character { transform-origin: 50% 59%; }
+.intro-character-art { object-fit: fill; clip-path: polygon(0 0,100% 0,100% 67%,75% 67%,70% 70%,58% 68%,56% 66%,53% 64%,50% 62%,48% 63%,45% 64%,43% 68%,33% 70%,25% 67%,0 67%); }
+.intro-front-plaque { object-fit: fill; clip-path: polygon(0 67%,25% 67%,33% 70%,43% 68%,45% 64%,48% 63%,50% 62%,53% 64%,56% 66%,58% 68%,70% 70%,75% 67%,100% 67%,100% 100%,0 100%); }
+.intro-ready .intro-character { animation: intro-character-dance 1.15s ease-in-out infinite; }
+@keyframes intro-character-dance {
+  0%, 100% { transform: translate(0, 0) rotate(-2deg); }
+  25% { transform: translate(0.5%, -0.8%) rotate(0deg); }
+  50% { transform: translate(0, 0) rotate(2deg); }
+  75% { transform: translate(-0.5%, -0.8%) rotate(0deg); }
+}
+/* Only the eyelids change; the rest of the illustration stays perfectly still. */
+.intro-blink { inset:0; width:100%; height:100%; opacity:0; mask-repeat:no-repeat; -webkit-mask-repeat:no-repeat; }
+.intro-blink-left { mask-image:radial-gradient(ellipse 3.1% 3.8% at 52.8% 31.4%, #000 78%, transparent 100%); -webkit-mask-image:radial-gradient(ellipse 3.1% 3.8% at 52.8% 31.4%, #000 78%, transparent 100%); }
+.intro-blink-right { mask-image:radial-gradient(ellipse 2.5% 3.5% at 61.1% 31.8%, #000 78%, transparent 100%); -webkit-mask-image:radial-gradient(ellipse 2.5% 3.5% at 61.1% 31.8%, #000 78%, transparent 100%); }
+.intro-ready .intro-blink { animation: intro-eye-blink 3s linear infinite; }
+.intro-dancing-title { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.intro-dancing-letter { font: bold 194px Georgia, 'Times New Roman', serif; letter-spacing: 0; fill: url(#intro-letter-gold); stroke: #ffdc72; stroke-width: 2; paint-order: stroke fill; filter: drop-shadow(0 5px 0 #8b4808) drop-shadow(0 9px 4px #001e14); transform-box: fill-box; transform-origin: center bottom; }
+.intro-ready .intro-dancing-letter { animation: intro-letter-dance 0.95s ease-in-out infinite; }
+@keyframes intro-letter-dance {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  30% { transform: translateY(-15px) rotate(3deg); }
+  60% { transform: translateY(2px) rotate(-3deg); }
+  80% { transform: translateY(-5px) rotate(1deg); }
+}
+.intro-card-layer { position: absolute; inset: 0; pointer-events: none; }
+.intro-flying-card { position: absolute; left: var(--start-x); top: var(--start-y); width: 9%; height: 16%; transform: translate(-50%, -50%) rotate(var(--angle)); }
+.intro-flying-card .classic-card { width: 100%; height: 100%; min-width: 0; opacity: 1; box-shadow: 0 4px 12px #00231288; }
+.intro-donkey-card { width: 100%; height: 100%; display: flex; flex-direction: column; padding: 5%; border: 2px solid #e8c65c; border-radius: 5px; background: #fff5d5; box-shadow: 0 4px 12px #00231288; overflow: hidden; }
+.intro-donkey-portrait { flex: 1; min-height: 0; width: 100%; border-radius: 2px; background-size: 380% auto; background-position: 55% 29%; background-repeat: no-repeat; }
+.intro-donkey-card strong { display: block; padding-top: 3%; text-align: center; font: bold 7px/1.3 Georgia, serif; color: #493209; letter-spacing: 0; }
+.intro-ready .intro-flying-card { animation: intro-card-gather 2.35s cubic-bezier(0.45, 0, 0.2, 1) both; }
+@keyframes intro-card-gather {
+  0%, 15% { left: var(--start-x); top: var(--start-y); transform: translate(-50%, -50%) rotate(var(--angle)); }
+  35% { left: var(--start-x); top: var(--start-y); transform: translate(-50%, -60%) rotate(calc(var(--angle) + 8deg)); }
+  100% { left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(var(--stack-angle)) scale(0.8); }
+}
+@keyframes intro-eye-blink { 0%, 27%, 34%, 66%, 73%, 100% { opacity: 0; } 29%, 32%, 68%, 71% { opacity: 1; } }
+/* Full-bleed landscape scenery; keep character proportions independent of screen width. */
+@media (orientation: landscape) {
+  .intro-card-layer { inset: auto; left: 50%; top: 50%; width: 100vw; height: 100dvh; transform: translate(-50%, -50%); }
+  .intro-flying-card { width: min(9vw, 10.8dvh); height: 16dvh; }
+}
+@media (prefers-reduced-motion: reduce) { .intro-scenery, .intro-gold-glint, .intro-ready .intro-flying-card, .intro-ready .intro-blink, .intro-ready .intro-dancing-letter, .intro-ready .intro-character { animation: none; } }

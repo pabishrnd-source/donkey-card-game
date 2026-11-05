@@ -1,0 +1,128 @@
+/* Shared village materials, loaded after screen styles. Table artwork stays intact. */
+:root {
+  --village-leaf: #246c4a;
+  --village-lagoon: #246b80;
+  --village-trim: #d4b777;
+  --village-ink: #fff8e8;
+  --village-shadow: inset 0 1px #ffffff35, 0 3px 0 #64482f, 0 5px 10px #061e2340;
+}
+.account-login-screen {
+  background: #216957 url('/donkey-intro-tropical-bay.png') center / cover;
+}
+.account-login-screen .emerald-login-art {
+  inset: auto auto 8% 1%;
+  width: 53%;
+  height: 80%;
+  object-fit: contain;
+  object-position: center;
+}
+.account-login-screen .account-login-box {
+  background: #103e34f2;
+  border-color: var(--village-trim);
+  border-bottom: 6px solid #8a6544;
+  box-shadow: 0 12px 30px #092c3455;
+}
+.account-login-screen .account-login-box > button {
+  background: #265d50;
+  border-width: 1px;
+  box-shadow: var(--village-shadow);
+}
+.account-login-screen .account-login-box .account-continue {
+  background: var(--village-leaf);
+  box-shadow: var(--village-shadow);
+}
+.account-login-screen .account-login-box > button:last-child { background: var(--village-lagoon); }
+.courtyard-start .donkey-play-button {
+  background: #287743;
+  color: #fff9e1;
+  border: 2px solid var(--village-trim);
+  border-bottom: 5px solid #805b35;
+  box-shadow: inset 0 2px #ffffff45, 0 5px 14px #153d3655;
+  text-shadow: 0 2px #17432d;
+}
+.courtyard-start .donkey-secondary-actions button {
+  background: #28644d;
+  border-color: var(--village-trim);
+  border-bottom: 4px solid #805b35;
+  box-shadow: inset 0 1px #ffffff40, 0 4px 8px #09291f55;
+  backdrop-filter: none;
+}
+.courtyard-start .donkey-secondary-actions button:nth-child(2) { background: var(--village-lagoon); }
+.courtyard-start .donkey-secondary-actions button:nth-child(3) { background: #645263; }
+.courtyard-start .donkey-secondary-actions button:nth-child(4) { background: #866039; }
+.courtyard-start .donkey-secondary-actions svg {
+  background: #0002;
+  box-shadow: none;
+  filter: none;
+  color: #ffe6a5;
+}
+.courtyard-start .donkey-start-footer { background: #123e32ed; border-color: #a6b58a; }
+.courtyard-start .donkey-sound-button,
+.courtyard-start .royal-toolbar button,
+.courtyard-start .account-button {
+  background: #174b40ed;
+  border: 1px solid var(--village-trim);
+  box-shadow: var(--village-shadow);
+  color: var(--village-ink);
+}
+.courtyard-start .donkey-powered-by { color: #fff; text-shadow: 0 2px 3px #183b28; }
+.courtyard-start button:disabled { opacity: .5; filter: saturate(.5); box-shadow: none; }
+
+.game-dialog:is(.dd-dialog, .donkey-menu-dialog, .rl-dealer-dialog, .profile-dialog, .account-dialog) {
+  background: #153f35;
+  border: 2px solid var(--village-trim);
+  border-top: 6px solid #9e784d;
+  border-radius: 8px;
+  color: var(--village-ink);
+  box-shadow: 0 20px 60px #001e2480;
+}
+.dd-submit, .rl-dealer-dialog .rl-start {
+  background: var(--village-leaf);
+  border-color: var(--village-trim);
+  box-shadow: var(--village-shadow);
+  min-height: 44px;
+}
+.dd-submit-blue { background: var(--village-lagoon); }
+.dd-form input { background: #092c26; border-color: #9bb698; }
+.dd-form input::placeholder { color: #b1c4b7; }
+.table-lobby .rl-header { background: #173f34f0; border-bottom: 3px solid #ad8654; }
+.table-lobby .rl-invite { background: #16483df0; color: #fff4d7; }
+.table-lobby .rl-start { background: var(--village-leaf); border-color: var(--village-trim); box-shadow: var(--village-shadow); }
+.table-lobby .rl-start:disabled { background: #42584b; box-shadow: none; }
+.table-lobby .rl-start-row { background: #123e32; }
+.table-lobby .rl-view-tabs button[aria-pressed="true"] { background: #287753; border-color: var(--village-trim); }
+.rl-dealer-option { min-height: 52px; }
+.rl-dealer-option:has(input:checked) { background: #2d674d; outline: 2px solid var(--village-trim); outline-offset: -2px; }
+.match-lounge .match-header { background: #123e32ed; border-color: var(--village-trim); border-radius: 8px; }
+.local-game {
+  background: linear-gradient(#103c32eb, #103c32f5), url('/donkey-tropical-results.png') center / cover;
+}
+.local-game h1 { font-family: Georgia, serif; }
+.local-game header { flex-wrap: wrap; border-bottom: 2px solid #a68250; padding-bottom: 12px; }
+.local-game .local-table { background-image: url('/donkey-village-table.png'); border-color: var(--village-trim); }
+.local-game button:not(.classic-card) { background: #28644d; border-color: var(--village-trim); box-shadow: var(--village-shadow); }
+.local-game nav [aria-pressed="true"] { background: #246b80; color: white; }
+:is(.donkey-start, .donkey-dashboard, .account-login-screen, .table-lobby, .match-lounge, .game-dialog) button {
+  touch-action: manipulation;
+}
+:is(.donkey-start, .donkey-dashboard, .account-login-screen, .table-lobby, .match-lounge, .game-dialog) :is(button, input, select):focus-visible {
+  outline: 3px solid #ffe49a;
+  outline-offset: 3px;
+}
+@media (max-width: 600px) and (orientation: portrait) {
+  .account-login-screen { padding-top: 36svh; background-position: 38% center; }
+  .account-login-screen .emerald-login-art { inset: 2svh 0 auto; width: 100%; height: 35svh; }
+  .account-login-screen .account-login-box { padding: 20px; }
+  .courtyard-start .donkey-start-account { left: 10px; }
+  .courtyard-start .donkey-start-account .account-button { min-height: 44px; padding: 8px; font-size: 13px; }
+  .courtyard-start .royal-toolbar { right: 10px; gap: 6px; }
+  .courtyard-start .donkey-sound-button { right: 110px; }
+}
+@media (orientation: landscape) and (max-height: 500px) {
+  .account-login-screen .emerald-login-art { inset: 3% auto auto 0; width: 51%; height: 94%; }
+  .courtyard-start .donkey-sound-button { top: 16px; right: 128px; }
+  .courtyard-start .donkey-secondary-actions button { min-height: 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dd-action, .dd-seat { transition: none; }
+}

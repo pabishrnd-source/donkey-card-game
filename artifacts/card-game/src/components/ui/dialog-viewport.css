@@ -1,0 +1,31 @@
+/* Keep placement independent of page-specific modal skins and Tailwind translate. */
+.game-dialog.game-dialog {
+  position: fixed;
+  left: calc(var(--dialog-left, 0px) + var(--dialog-width, 100vw) / 2);
+  top: calc(var(--dialog-top, 0px) + var(--dialog-height, 100dvh) / 2);
+  bottom: auto;
+  right: auto;
+  translate: -50% -50%;
+  transform: none;
+  width: min(440px, calc(var(--dialog-width, 100vw) - 32px));
+  max-width: calc(var(--dialog-width, 100vw) - 32px);
+  max-height: calc(var(--dialog-height, 100dvh) - 32px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+  min-width: 0;
+  min-height: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  overflow-wrap: anywhere;
+  border-radius: 8px;
+  padding: 24px;
+  animation: none;
+  box-sizing: border-box;
+  scroll-padding: 20px;
+}
+.game-dialog.game-dialog > * { min-width: 0; }
+.game-dialog.game-dialog input { max-width: 100%; font-size: 16px; }
+.game-dialog.game-dialog > button:last-child { width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; top: 4px; right: 4px; }
+.game-dialog.game-dialog h2 { padding-right: 24px; }
+@media (max-width: 400px), (max-height: 500px) {
+  .game-dialog.game-dialog { padding: 20px 16px; }
+}

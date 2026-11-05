@@ -1,0 +1,403 @@
+[15:36:27.722] [32mINFO[39m (11800): [36mServer listening (HTTP + WebSocket)[39m
+    [35mport[39m: 3001
+
+  VITE v7.3.7  ready in 1464 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://169.254.83.107:5173/
+  ➜  Network: http://172.19.32.1:5173/
+  ➜  Network: http://192.168.0.217:5173/
+[15:36:31.537] [32mINFO[39m (11800): [36mWebSocket client connected[39m
+[15:36:31.622] [32mINFO[39m (11800): [36mWebSocket client connected[39m
+[15:36:33.602] [32mINFO[39m (11800): [36mWebSocket client disconnected[39m
+[15:36:34.684] [32mINFO[39m (11800): [36mWebSocket client disconnected[39m
+[15:36:46.319] [32mINFO[39m (11800): [36mWebSocket client connected[39m
+[15:36:48.746] [32mINFO[39m (11800): [36mWebSocket client connected[39m
+[15:39:56.064] [32mINFO[39m (11800): [36mWebSocket client disconnected[39m
+[15:40:01.884] [32mINFO[39m (11800): [36mWebSocket client connected[39m
+[15:40:16.058] [32mINFO[39m (11800): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 1,
+      "method": "POST",
+      "url": "/api/auth/login"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 179
+[15:41:14.449] [32mINFO[39m (11800): [36mrequest completed[39m
+    [35mreq[39m: {
+      "id": 2,
+      "method": "POST",
+      "url": "/api/auth/login"
+    }
+    [35mres[39m: {
+      "statusCode": 200
+    }
+    [35mresponseTime[39m: 140
+[15:41:31.058] [32mINFO[39m (11800): [36mGame created[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mplayerName[39m: "pabish"
+[15:41:38.020] [32mINFO[39m (11800): [36mPlayer joined game[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mplayerName[39m: "pavi"
+3:48:31 pm [vite] (client) hmr update /src/components/TableLobby.css, /src/index.css
+[15:51:50.153] [32mINFO[39m (11800): [36mGame started[39m
+    [35mgameId[39m: "YBSH1S"
+[15:52:08.899] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "A♠"
+    [35mautomatic[39m: false
+[15:52:15.780] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "K♠"
+    [35mautomatic[39m: false
+[15:52:20.297] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "10♠"
+    [35mautomatic[39m: false
+[15:52:23.072] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "Q♠"
+    [35mautomatic[39m: false
+[15:53:24.891] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "A♥"
+    [35mautomatic[39m: true
+[15:53:35.375] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: false
+[15:53:38.356] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "Q♥"
+    [35mautomatic[39m: false
+[15:53:40.409] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "J♥"
+    [35mautomatic[39m: false
+[15:53:43.456] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "10♥"
+    [35mautomatic[39m: false
+[15:53:45.533] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "9♥"
+    [35mautomatic[39m: false
+[15:53:47.997] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "8♥"
+    [35mautomatic[39m: false
+[15:53:50.196] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "5♥"
+    [35mautomatic[39m: false
+[15:53:52.908] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "7♥"
+    [35mautomatic[39m: false
+[15:53:56.346] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "2♥"
+    [35mautomatic[39m: false
+[15:54:09.371] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "J♠"
+    [35mautomatic[39m: false
+[15:54:11.305] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "7♠"
+    [35mautomatic[39m: false
+[15:54:13.859] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "9♠"
+    [35mautomatic[39m: false
+[15:54:16.042] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "6♠"
+    [35mautomatic[39m: false
+[15:54:18.942] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "8♠"
+    [35mautomatic[39m: false
+[15:54:21.119] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "5♠"
+    [35mautomatic[39m: false
+[15:54:23.476] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "2♠"
+    [35mautomatic[39m: false
+[15:54:26.057] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "4♠"
+    [35mautomatic[39m: false
+[15:54:31.226] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "Q♦"
+    [35mautomatic[39m: false
+[15:54:33.151] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "A♦"
+    [35mautomatic[39m: false
+[15:54:37.986] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "K♦"
+    [35mautomatic[39m: false
+[15:54:39.930] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "10♦"
+    [35mautomatic[39m: false
+[15:54:42.798] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "J♦"
+    [35mautomatic[39m: false
+[15:54:45.026] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "9♦"
+    [35mautomatic[39m: false
+[15:54:47.549] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "8♦"
+    [35mautomatic[39m: false
+[15:54:49.902] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "7♦"
+    [35mautomatic[39m: false
+[15:54:52.552] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "3♦"
+    [35mautomatic[39m: false
+[15:54:55.907] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "4♦"
+    [35mautomatic[39m: false
+[15:55:02.313] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "A♣"
+    [35mautomatic[39m: false
+[15:55:04.907] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "K♣"
+    [35mautomatic[39m: false
+[15:55:07.416] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "Q♣"
+    [35mautomatic[39m: false
+[15:55:09.284] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "10♣"
+    [35mautomatic[39m: false
+[15:55:11.666] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "J♣"
+    [35mautomatic[39m: false
+[15:55:13.523] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "9♣"
+    [35mautomatic[39m: false
+[15:55:15.799] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "7♣"
+    [35mautomatic[39m: false
+[15:55:17.638] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "8♣"
+    [35mautomatic[39m: false
+[15:55:20.464] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "5♣"
+    [35mautomatic[39m: false
+[15:55:23.646] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "6♣"
+    [35mautomatic[39m: false
+[15:55:29.320] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "2♣"
+    [35mautomatic[39m: false
+[15:55:31.101] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "4♣"
+    [35mautomatic[39m: false
+[15:55:34.183] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "6♥"
+    [35mautomatic[39m: false
+[15:55:37.294] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "3♠"
+    [35mautomatic[39m: false
+[15:55:46.607] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "6♥"
+    [35mautomatic[39m: false
+[15:55:48.760] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "6♦"
+    [35mautomatic[39m: false
+[15:55:51.685] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "6♦"
+    [35mautomatic[39m: false
+[15:55:53.658] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "5♦"
+    [35mautomatic[39m: false
+[15:55:56.350] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "6♥"
+    [35mautomatic[39m: false
+[15:55:58.161] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "2♦"
+    [35mautomatic[39m: false
+[15:56:07.448] [32mINFO[39m (11800): [36mNext game prepared[39m
+    [35mgameId[39m: "YBSH1S"
+[15:56:22.226] [32mINFO[39m (11800): [36mGame started[39m
+    [35mgameId[39m: "YBSH1S"
+[15:56:45.722] [32mINFO[39m (11800): [36mPlayer disconnected[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+[15:56:45.722] [32mINFO[39m (11800): [36mWebSocket client disconnected[39m
+[15:57:22.226] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "K♠"
+    [35mautomatic[39m: true
+[15:58:22.229] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "10♠"
+    [35mautomatic[39m: true
+[15:58:29.642] [32mINFO[39m (11800): [36mPlayer disconnected[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+[15:58:29.642] [32mINFO[39m (11800): [36mWebSocket client disconnected[39m
+[15:58:35.027] [32mINFO[39m (11800): [36mWebSocket client connected[39m
+[15:59:24.046] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "Q♦"
+    [35mautomatic[39m: true
+[16:00:24.049] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "A♦"
+    [35mautomatic[39m: true
+[16:01:25.877] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "A♣"
+    [35mautomatic[39m: true
+[16:02:25.889] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "10♣"
+    [35mautomatic[39m: true
+[16:02:39.271] [32mINFO[39m (11800): [36mWebSocket client connected[39m
+[16:03:27.717] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "A♥"
+    [35mautomatic[39m: true
+[16:04:27.719] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "J♥"
+    [35mautomatic[39m: true
+[16:05:04.517] [32mINFO[39m (11800): [36mWebSocket client connected[39m
+[16:05:29.531] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "K♣"
+    [35mautomatic[39m: true
+[16:06:29.541] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "9♣"
+    [35mautomatic[39m: true
+[16:07:31.352] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "K♦"
+    [35mautomatic[39m: true
+[16:08:31.366] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "J♦"
+    [35mautomatic[39m: true
+[16:09:33.167] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "K♥"
+    [35mautomatic[39m: true
+[16:10:33.175] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "7♥"
+    [35mautomatic[39m: true
+[16:11:34.985] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_31c861c7-6a44-4021-aff3-c4bccb22412e"
+    [35mcard[39m: "Q♥"
+    [35mautomatic[39m: true
+[16:12:34.996] [32mINFO[39m (11800): [36mCard played[39m
+    [35mgameId[39m: "YBSH1S"
+    [35mplayerId[39m: "player_17c42c41-70ad-4165-9bbc-1b79cc580751"
+    [35mcard[39m: "5♥"
+    [35mautomatic[39m: true

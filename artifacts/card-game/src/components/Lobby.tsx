@@ -1,239 +1,158 @@
-/**
- * Lobby component
- *
- * Shown before the game starts. Allows players to:
- * - Create a new game (host)
- * - Join an existing game by entering a room code
- * The host can then start the game when at least 2 players have joined.
- */
-
 import { useState } from "react";
-import { type GameState } from "@/lib/gameTypes";
+import { Copy, Check, Crown, LogOut, Play, Plus, Trophy, Users, Volume2, VolumeX, MessageCircle, Settings, LayoutGrid } from "lucide-react";
+import { type ChatMessage, type GameState, type ClientMessage, type VoiceEvent } from "@/lib/gameTypes";
+import { type SavedSession } from "@/hooks/useGameSocket";
+import { GameDashboard } from "./GameDashboard";
+import { ChatPanel } from "./ChatPanel";
+import { VoiceChatControls } from "./VoiceChatPanel";
+import type { useVoiceChat } from "@/hooks/useVoiceChat";
+import "./WaitingRoom.css";
+import "./TableLobby.css";
+import { ProfileButton, PlayerAvatar } from "./ProfileButton";
+import type { Profile } from "@/lib/profile";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
-interface LobbyProps {
+export interface LobbyProps {
+  voiceSession: ReturnType<typeof useVoiceChat>;
+  onProfileSave: (profile: Profile) => void;
   gameState: GameState | null;
   myPlayerId: string | null;
   myGameId: string | null;
   connected: boolean;
+  error: string | null;
+  onClearError: () => void;
+  chatMessages: ChatMessage[];
+  voiceEvents: VoiceEvent[];
+  savedSession: SavedSession | null;
+  musicOn: boolean;
+  onToggleMusic: () => void;
+  onSendChatMessage: (text: string) => void;
+  sendMessage: (message: ClientMessage) => void;
   onCreateGame: (name: string) => void;
   onJoinGame: (gameId: string, name: string) => void;
+  onResumeGame: () => void;
+  onEndGame: () => void;
   onStartGame: () => void;
+  onBackToStart: () => void;
 }
 
-export function Lobby({
-  gameState,
-  myPlayerId,
-  myGameId,
-  connected,
-  onCreateGame,
-  onJoinGame,
-  onStartGame,
-}: LobbyProps) {
-  const [playerName, setPlayerName] = useState("");
-  const [joinCode, setJoinCode] = useState("");
-  const [mode, setMode] = useState<"choose" | "create" | "join">("choose");
+const suitMarks = { spades: "♠", clubs: "♣", hearts: "♥", diamonds: "♦" };
 
-  const isHost = gameState?.hostId === myPlayerId;
+export function Lobby(props: LobbyProps) {
+  const [copyStatus, setCopyStatus] = useState("");
+  const [view, setView] = useState("seats");
+  const [dealerPickerOpen, setDealerPickerOpen] = useState(false);
+  const [selectedDealer, setSelectedDealer] = useState("");
+  const { gameState, myGameId, myPlayerId, connected, musicOn,
+    onToggleMusic, onEndGame, onStartGame, chatMessages, voiceEvents,
+    onSendChatMessage, sendMessage } = props;
 
-  // If already in a lobby, show the waiting room
-  if (gameState && myGameId) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-green-950 via-green-900 to-emerald-950 flex items-center justify-center p-4">
-        <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md">
-          <h1 className="text-2xl font-bold text-gray-900 mb-1">Waiting Room</h1>
-          <p className="text-gray-500 text-sm mb-6">Share this code with other players:</p>
-
-          {/* Room code display */}
-          <div className="bg-green-50 border-2 border-green-200 rounded-xl p-4 mb-6 text-center">
-            <p className="text-xs text-green-600 font-medium uppercase tracking-widest mb-1">Room Code</p>
-            <p className="text-4xl font-mono font-bold text-green-800 tracking-widest">
-              {myGameId}
-            </p>
-          </div>
-
-          {/* Players in lobby */}
-          <div className="mb-6">
-            <p className="text-sm font-semibold text-gray-700 mb-2">
-              Players ({gameState.players.length}/6):
-            </p>
-            <ul className="space-y-2">
-              {gameState.players.map((p) => (
-                <li
-                  key={p.id}
-                  className="flex items-center gap-2 bg-gray-50 rounded-lg px-3 py-2"
-                >
-                  <span
-                    className={`w-2 h-2 rounded-full ${
-                      p.id === gameState.hostId ? "bg-amber-400" : "bg-green-400"
-                    }`}
-                  />
-                  <span className="text-gray-800 font-medium">{p.name}</span>
-                  {p.id === gameState.hostId && (
-                    <span className="text-xs text-amber-600 font-semibold ml-auto">HOST</span>
-                  )}
-                  {p.id === myPlayerId && p.id !== gameState.hostId && (
-                    <span className="text-xs text-blue-500 font-semibold ml-auto">YOU</span>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Start button (host only) */}
-          {isHost ? (
-            gameState.players.length >= 2 ? (
-              <button
-                onClick={onStartGame}
-                className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition-colors"
-              >
-                Start Game ({gameState.players.length} players)
-              </button>
-            ) : (
-              <p className="text-center text-gray-500 text-sm italic">
-                Waiting for at least 1 more player...
-              </p>
-            )
-          ) : (
-            <p className="text-center text-gray-500 text-sm italic animate-pulse">
-              Waiting for host to start...
-            </p>
-          )}
-        </div>
-      </div>
-    );
+  if (!gameState || !myGameId) return <GameDashboard {...props} />;
+  const isHost = gameState.hostId === myPlayerId;
+  const canSelectDealer = isHost && connected && gameState.phase === "lobby";
+  const canStart = canSelectDealer && gameState.players.length >= 2 &&
+    gameState.players.some(player => player.id === selectedDealer);
+  function chooseDealer(playerId: string) {
+    if (!canSelectDealer) return;
+    sendMessage({ type: "select_dealer", payload: { gameId: myGameId!, playerId } });
+  }
+  const penalty = gameState.nextPenaltyCard;
+  // Four seats are a visual preview, not a player limit. Expand with room membership.
+  const emptySeats = Math.max(0, 4 - gameState.players.length);
+  const seatCount = gameState.players.length + emptySeats;
+  function seatPosition(index: number) {
+    if (seatCount >= 5) {
+      const bottomCount = Math.ceil(seatCount / 2);
+      const bottom = index < bottomCount;
+      const count = bottom ? bottomCount : seatCount - bottomCount;
+      const column = bottom ? index : index - bottomCount;
+      return { left: `${10 + column * 80 / (count - 1)}%`, top: bottom ? "84%" : "16%" };
+    }
+    const angle = Math.PI / 2 + index * Math.PI * 2 / seatCount;
+    return { left: `${50 + 41 * Math.cos(angle)}%`, top: `${50 + 34 * Math.sin(angle)}%` };
   }
 
-  // Initial screen — choose create or join
+  async function copyCode() {
+    try {
+      await navigator.clipboard.writeText(myGameId!);
+      setCopyStatus("Room code copied");
+    } catch {
+      setCopyStatus("Select the code to copy it");
+    }
+  }
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-950 via-green-900 to-emerald-950 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <div className="text-5xl mb-3">🃏</div>
-          <h1 className="text-3xl font-bold text-gray-900">Card Game</h1>
-          <p className="text-gray-500 text-sm mt-1">2–6 players · Trick-taking</p>
+    <div className="room-lounge table-lobby" data-view={view}>
+      <header className="rl-header">
+        <div className="rl-heading"><Users aria-hidden="true" /><div><span>DONKEY</span><h1>Waiting Room</h1></div></div>
+        <div className="rl-actions">
+          <ProfileButton onSave={props.onProfileSave} />
+          <nav className="rl-view-tabs" aria-label="Room views">{[{id: "seats", label: "Table", icon: LayoutGrid}, {id: "details", label: "Players and details", icon: Users}, {id: "chat", label: "Chat and voice", icon: MessageCircle}].map(({id, label, icon: Icon}) => <button type="button" key={id} title={label} aria-label={label} aria-pressed={view === id} onClick={() => setView(id)}><Icon size={20} /></button>)}</nav>
+          <button className="rl-icon" type="button" onClick={onToggleMusic} aria-label={musicOn ? "Turn music off" : "Turn music on"} title={musicOn ? "Turn music off" : "Turn music on"}>{musicOn ? <Volume2 /> : <VolumeX />}</button>
+          <button className="rl-leave" type="button" onClick={onEndGame} aria-label="Leave room" title="Leave room"><LogOut /><span>Leave Room</span></button>
         </div>
+      </header>
+      <main className="rl-main">
+        <section className="rl-invite" aria-label="Room invitation">
+          <div className="rl-code-block"><span className="rl-label">Room code</span><div className="rl-code-line"><strong>{myGameId}</strong><button type="button" className="rl-icon" onClick={copyCode} aria-label="Copy room code" title="Copy room code">{copyStatus === "Room code copied" ? <Check /> : <Copy />}</button></div><span className="rl-copy-status" role="status">{copyStatus}</span></div>
+          <div className="rl-connection"><i className={connected ? "online" : ""} />{connected ? `${gameState.players.length} player${gameState.players.length === 1 ? "" : "s"} connected` : "Reconnecting..."}</div>
+          <label className="rl-dealer">Round {gameState.dealNumber + 1} · Dealer
+            <select aria-label="Dealer" value={gameState.dealerId ?? ""} disabled={!canSelectDealer}
+              onChange={event => chooseDealer(event.target.value)}>
+              <option value="" disabled>Select dealer</option>
+              {gameState.players.map(player => <option key={player.id} value={player.id}>{player.name}</option>)}
+            </select>
+          </label>
+        </section>
 
-        {/* Connection status */}
-        <div className={`flex items-center gap-2 text-xs mb-6 ${connected ? "text-green-600" : "text-red-500"}`}>
-          <span className={`w-2 h-2 rounded-full ${connected ? "bg-green-500 animate-pulse" : "bg-red-500"}`} />
-          {connected ? "Connected to server" : "Connecting..."}
+        <section className="rl-table" aria-label="Player seats">
+          <div className="rl-seats">
+            <div className="rl-center-deck" aria-hidden="true"><img src={`${import.meta.env.BASE_URL}donkey-golden-intro.png`} alt="" /></div>
+            {gameState.players.map((player, index) => (
+              <div key={player.id} style={seatPosition(index)} className={`rl-seat rl-color-${index % 4} ${player.id === myPlayerId ? "rl-you" : ""}`}>
+                <div className="rl-avatar">{player.id === gameState.hostId && <Crown className="rl-crown" aria-label="Host" />}<PlayerAvatar name={player.name} avatarUrl={player.avatarUrl} /></div>
+                <strong>{player.id === myPlayerId ? "YOU" : player.id === gameState.hostId ? "HOST" : "PLAYER"}</strong>
+                <span className="rl-player-name" title={player.name}>{player.name}</span>
+                {player.penaltyCards.length > 0 && <small>{player.penaltyCards.length} locked</small>}
+              </div>
+            ))}
+            {Array.from({ length: emptySeats }, (_, index) => <button type="button" key={`empty-${index}`} style={seatPosition(gameState.players.length + index)} className="rl-seat rl-empty" onClick={copyCode} aria-label="Copy room code to invite a player" title="Copy room code to invite a player"><div className="rl-avatar"><Plus /></div><span>Invite</span></button>)}
+          </div>
+          <div className="rl-start-row"><p><Trophy /><span>First finisher wins. Last remaining player loses.</span></p>
+            {isHost ? <button className="rl-start" type="button" disabled={!canSelectDealer}
+              aria-haspopup="dialog"
+              onClick={() => { setSelectedDealer(gameState.dealerId ?? ""); setDealerPickerOpen(true); }}>
+              <Users />{!connected ? "Reconnecting..." : "Select dealer"}
+            </button> : <span className="rl-waiting">Waiting for the host to start.</span>}
+          </div>
+        </section>
+
+        <div className="rl-details">
+          <section aria-labelledby="rl-players-title"><h2 id="rl-players-title"><Users />Players <span>({gameState.players.length}/10)</span></h2>
+            <ul className="rl-roster">{gameState.players.map(player => <li key={player.id}><div className="rl-small-avatar"><PlayerAvatar name={player.name} avatarUrl={player.avatarUrl} /></div><div className="rl-roster-name"><strong>{player.name}</strong><span>{player.id === gameState.hostId ? <><Crown /> Host</> : "Player"}</span></div><span className="rl-count">{player.id === myPlayerId && `${player.hand.length} playable`}{player.penaltyCards.length > 0 && <small>{player.penaltyCards.length} locked</small>}</span></li>)}</ul>
+          </section>
+          <section aria-labelledby="rl-state-title"><h2 id="rl-state-title"><Settings />Game State</h2><dl className="rl-state"><div><dt>Next penalty</dt><dd>{penalty ? <><span className={penalty.suit === "hearts" || penalty.suit === "diamonds" ? "rl-red" : ""} aria-label={penalty.suit}>{suitMarks[penalty.suit]}</span> {penalty.rank} of {penalty.suit[0].toUpperCase() + penalty.suit.slice(1)}</> : "No penalty queued"}</dd></div><div><dt>Lobby message</dt><dd className="rl-message" role="status">{gameState.message}</dd></div></dl></section>
         </div>
-
-        {mode === "choose" && (
-          <div className="space-y-3">
-            <button
-              onClick={() => setMode("create")}
-              disabled={!connected}
-              className="w-full bg-green-600 hover:bg-green-700 disabled:opacity-50 text-white font-bold py-3 rounded-xl transition-colors"
-            >
-              Create New Game
-            </button>
-            <button
-              onClick={() => setMode("join")}
-              disabled={!connected}
-              className="w-full border-2 border-green-600 text-green-700 hover:bg-green-50 disabled:opacity-50 font-bold py-3 rounded-xl transition-colors"
-            >
-              Join Existing Game
-            </button>
+        <section className="rl-chat" aria-label="Lobby chat"><div className="rl-chat-heading"><h2><MessageCircle />Chat <span>(Lobby)</span></h2><VoiceChatControls session={props.voiceSession} /></div><ChatPanel messages={chatMessages} myPlayerId={myPlayerId} onSend={onSendChatMessage} compact /></section>
+      </main>
+      <Dialog open={dealerPickerOpen && canSelectDealer} onOpenChange={setDealerPickerOpen}>
+        <DialogContent className="rl-dealer-dialog">
+          <DialogHeader><DialogTitle>Select dealer - Round {gameState.dealNumber + 1}</DialogTitle><DialogDescription className="sr-only">Confirm or change the dealer before starting this game.</DialogDescription></DialogHeader>
+          <div className="rl-dealer-options" role="radiogroup" aria-label="Dealer">
+            {gameState.players.map(player => <label key={player.id} className="rl-dealer-option">
+              <input type="radio" name="dealer" value={player.id} checked={selectedDealer === player.id} onChange={() => setSelectedDealer(player.id)} />
+              <span className="rl-small-avatar"><PlayerAvatar name={player.name} avatarUrl={player.avatarUrl} /></span>
+              <span>{player.name}{player.id === myPlayerId ? " (you)" : ""}</span>
+            </label>)}
           </div>
-        )}
-
-        {mode === "create" && (
-          <div className="space-y-4">
-            <button
-              onClick={() => setMode("choose")}
-              className="text-sm text-gray-500 hover:text-gray-700 flex items-center gap-1"
-            >
-              ← Back
-            </button>
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1">Your Name</label>
-              <input
-                type="text"
-                placeholder="Enter your name"
-                value={playerName}
-                onChange={(e) => setPlayerName(e.target.value)}
-                maxLength={20}
-                className="w-full border-2 border-gray-200 rounded-xl px-4 py-2.5 text-gray-800 focus:outline-none focus:border-green-400"
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" && playerName.trim()) {
-                    onCreateGame(playerName.trim());
-                  }
-                }}
-              />
-            </div>
-            <button
-              onClick={() => playerName.trim() && onCreateGame(playerName.trim())}
-              disabled={!playerName.trim()}
-              className="w-full bg-green-600 hover:bg-green-700 disabled:opacity-50 text-white font-bold py-3 rounded-xl transition-colors"
-            >
-              Create Game
-            </button>
-          </div>
-        )}
-
-        {mode === "join" && (
-          <div className="space-y-4">
-            <button
-              onClick={() => setMode("choose")}
-              className="text-sm text-gray-500 hover:text-gray-700 flex items-center gap-1"
-            >
-              ← Back
-            </button>
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1">Your Name</label>
-              <input
-                type="text"
-                placeholder="Enter your name"
-                value={playerName}
-                onChange={(e) => setPlayerName(e.target.value)}
-                maxLength={20}
-                className="w-full border-2 border-gray-200 rounded-xl px-4 py-2.5 text-gray-800 focus:outline-none focus:border-green-400"
-              />
-            </div>
-            <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-1">Room Code</label>
-              <input
-                type="text"
-                placeholder="e.g. AB12CD"
-                value={joinCode}
-                onChange={(e) => setJoinCode(e.target.value.toUpperCase())}
-                maxLength={6}
-                className="w-full border-2 border-gray-200 rounded-xl px-4 py-2.5 text-gray-800 font-mono uppercase tracking-widest focus:outline-none focus:border-green-400"
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" && playerName.trim() && joinCode.trim()) {
-                    onJoinGame(joinCode.trim(), playerName.trim());
-                  }
-                }}
-              />
-            </div>
-            <button
-              onClick={() => {
-                if (playerName.trim() && joinCode.trim()) {
-                  onJoinGame(joinCode.trim(), playerName.trim());
-                }
-              }}
-              disabled={!playerName.trim() || !joinCode.trim()}
-              className="w-full bg-green-600 hover:bg-green-700 disabled:opacity-50 text-white font-bold py-3 rounded-xl transition-colors"
-            >
-              Join Game
-            </button>
-          </div>
-        )}
-
-        {/* Rules summary */}
-        <div className="mt-8 border-t pt-5">
-          <p className="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-2">How to Play</p>
-          <ul className="text-xs text-gray-500 space-y-1">
-            <li>• First round starts with the Ace of Spades</li>
-            <li>• Follow the lead suit if you can</li>
-            <li>• Highest card of the lead suit wins the round</li>
-            <li>• Player with most tricks at the end loses</li>
-            <li>• Loser receives the Ace of Spades as a penalty</li>
-          </ul>
-        </div>
-      </div>
+          <button className="rl-start" type="button" disabled={!canStart} onClick={() => {
+            if (!canStart) return;
+            chooseDealer(selectedDealer);
+            setDealerPickerOpen(false);
+            onStartGame();
+          }}><Play />{gameState.players.length < 2 ? "Waiting for one more player..." : "Confirm & Start"}</button>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }

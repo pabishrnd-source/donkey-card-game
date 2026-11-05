@@ -1,0 +1,176 @@
+[15:04:49.885] [32mINFO[39m (34984): [36mServer listening (HTTP + WebSocket)[39m
+    [35mport[39m: 3001
+
+  VITE v7.3.2  ready in 1224 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://169.254.83.107:5173/
+  ➜  Network: http://192.168.0.64:5173/
+  ➜  Network: http://172.21.96.1:5173/
+  ➜  press h + enter to show help
+[15:07:49.801] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+3:09:42 pm [vite] (client) page reload intro-preview.html
+[15:09:43.265] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:09:49.958] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+3:10:51 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+3:10:51 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[15:10:52.191] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:10:58.957] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+3:11:21 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[15:15:06.250] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+3:23:33 pm [vite] (client) hmr update /src/App.tsx, /src/index.css
+3:23:35 pm [vite] (client) hmr update /src/index.css, /src/components/GameDashboard.tsx
+3:23:36 pm [vite] (client) hmr update /src/components/AccountHub.tsx, /src/index.css
+3:23:38 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+3:23:40 pm [vite] (client) hmr update /src/components/Lobby.tsx
+[15:24:17.973] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:24:23.388] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+3:25:48 pm [vite] (client) hmr update /src/components/AccountHub.tsx, /src/index.css
+3:29:56 pm [vite] (client) hmr update /src/index.css, /src/components/GameDashboard.tsx
+3:29:57 pm [vite] (client) hmr update /src/components/VillageLobby.css, /src/index.css
+[15:32:50.192] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:32:55.555] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[15:33:12.182] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:33:18.002] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+3:36:00 pm [vite] (client) hmr update /src/VillageTheme.css, /src/index.css
+3:38:39 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+3:38:39 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[15:38:39.658] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:38:40.154] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:38:45.001] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[15:38:46.983] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+3:38:59 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[15:42:29.725] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:42:35.001] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[15:42:46.560] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:44:46.971] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[15:44:46.985] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:48:46.971] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[15:48:47.048] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+3:50:53 pm [vite] (client) hmr update /src/components/AccountHub.tsx, /src/index.css
+3:50:55 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/components/ProfileButton.tsx, /src/components/StartScreen.tsx
+[15:50:55.326] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:50:55.331] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+3:54:46 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+3:54:47 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[15:54:47.327] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:54:53.248] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+3:55:08 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[15:55:41.621] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:56:07.508] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[15:57:03.109] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[15:57:08.385] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:04:46.974] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:04:47.009] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:08:37.911] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:08:40.097] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:08:45.602] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+4:15:02 pm [vite] (client) hmr update /src/components/StartScreen.tsx, /src/index.css
+4:15:04 pm [vite] (client) hmr update /src/pages/Game.tsx
+[16:15:04.821] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:15:04.827] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:15:04.962] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:15:04.965] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:16:46.559] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+4:16:57 pm [vite] (client) hmr update /src/components/VillageMenu.css
+4:20:30 pm [vite] (client) hmr update /src/components/VillageMenu.css
+[16:21:28.927] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:21:28.999] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:21:34.636] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:21:39.868] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:21:45.350] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+4:23:08 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+4:23:08 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[16:23:08.666] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:23:09.103] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:23:14.588] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:23:16.987] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+4:23:31 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[16:23:46.557] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:24:46.963] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:24:46.971] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:26:46.966] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:26:47.156] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+4:27:27 pm [vite] (client) hmr update /src/components/VillageMenu.css, /src/index.css
+[16:27:52.575] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:28:25.112] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:28:30.790] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:28:39.740] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:28:45.337] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+4:28:56 pm [vite] (client) hmr update /src/components/VillageMenu.css, /src/index.css
+4:31:22 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+4:31:22 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[16:31:22.663] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:31:23.655] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:31:28.209] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:31:29.957] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+4:31:51 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+4:37:28 pm [vite] (client) hmr update /src/components/StartScreen.tsx, /src/index.css
+4:37:30 pm [vite] (client) hmr update /src/components/VillageMenu.css, /src/index.css
+[16:39:49.209] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:39:54.671] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:40:00.383] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:40:06.965] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+4:41:49 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+4:41:49 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[16:41:50.011] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:41:50.275] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:41:55.689] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:41:55.824] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+4:42:08 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[16:50:43.416] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:50:48.796] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+4:52:07 pm [vite] (client) hmr update /src/components/LaunchIntro.tsx, /src/index.css
+4:52:09 pm [vite] (client) hmr update /src/components/LaunchIntro.css, /src/index.css
+4:53:29 pm [vite] (client) page reload intro-preview.html
+[16:53:29.434] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:53:30.359] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:53:34.756] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:53:36.966] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:56:44.989] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+4:57:48 pm [vite] (client) page reload intro-preview.html
+[16:57:48.944] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:57:54.300] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+4:58:22 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+4:58:22 pm [vite] (client) page reload android/app/src/main/assets/public/index.html
+[16:58:22.432] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:58:27.787] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+4:58:43 pm [vite] (client) page reload android/app/build/intermediates/assets/debug/mergeDebugAssets/public/index.html
+[16:58:45.413] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:58:45.632] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:58:57.759] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[16:59:05.038] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[16:59:10.502] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[17:00:00.464] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[17:00:05.771] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+5:05:44 pm [vite] (client) hmr update /src/components/StartScreen.tsx, /src/index.css
+5:05:46 pm [vite] (client) hmr update /src/components/VillageMenu.css, /src/index.css
+[17:11:29.149] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[17:11:34.501] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[17:15:33.607] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[17:15:40.126] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+5:16:33 pm [vite] (client) hmr update /src/components/VillageMenu.css, /src/index.css
+5:19:18 pm [vite] (client) hmr update /src/components/VillageMenu.css, /src/index.css
+[17:20:30.568] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[17:20:37.056] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[17:32:44.999] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[17:36:45.397] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[17:36:45.406] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[17:38:45.384] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[17:38:48.030] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+5:45:53 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/components/DealAnimation.tsx, /src/index.css
+[17:45:53.503] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+[17:45:53.504] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+5:45:54 pm [vite] (client) hmr update /src/components/DealAnimation.tsx, /src/index.css
+5:45:55 pm [vite] (client) hmr update /src/pages/Game.tsx, /src/index.css
+[17:45:55.958] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[17:45:55.961] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+5:45:57 pm [vite] vite.config.ts changed, restarting server...
+5:45:57 pm [vite] server restarted.
+
+  ➜  Local:   http://127.0.0.1:5173/
+[17:45:57.499] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+[17:46:06.052] [32mINFO[39m (34984): [36mWebSocket client connected[39m
+6:03:08 pm [vite] (client) hmr update /src/components/LocalGame.tsx, /src/index.css
+[18:03:08.137] [32mINFO[39m (34984): [36mWebSocket client disconnected[39m
+6:03:11 pm [vite] (client) hmr update /src/components/LocalGame.tsx
